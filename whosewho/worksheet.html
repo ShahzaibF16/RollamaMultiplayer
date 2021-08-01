@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whose / who's  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+        <th>Focus: whose / who's<br><br>Task: fill the gap</th>
+        <th style="text-align: center">
+          Teacher Tip: <br><br>whose = belonging to who &nbsp; | &nbsp; who's = who is / who has
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody">
+
+      </tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: whose / who's</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+   var options_easy = {
+        
+        "Does anyone know _____ coat this is?": "whose",
+        "_____ house shall we go to?": "Whose",
+        "Look at this mess! _____ job is it to tidy up?": "whose",
+        "Let's see _____ artwork this is.": "whose",
+        "____ table is the tidiest?": "Whose",
+        "_____ seen my pen?": "Who's",
+        "Do you know _____ coming to the party?": "who's",
+        "_____ going to help us tidy up?": "Who's",
+        "Let's see _____ done their best artwork today.": "who's",
+        "_____ made this mess?!": "Who's",
+        "Does anyone know _____ left this coat?": "who's",
+
+        "I know a person ______ hat has been left on the bus.": "whose",
+        "He has a friend _____ house is pretty big. ": "whose",
+        "My mum was the woman ____ bag was stolen. ": "whose",
+        "I want to know ______ book this is. ": "whose",
+        "The teacher always reads out _______ work is best.": "whose",
+        "The boy would like to know ______ ball is on the field. ": "whose",
+        "My dad likes to know _______ house I am visiting. ": "whose",
+        "The child wants to ask _____ dog this is. ": "whose",
+        "It doesn't matter ________ pen this is. ": "whose",
+        "_____ bag is this? ": "whose",
+        "________ pencil is this? ": "whose",
+        "_________ the boy with the blue shoes?": "whose",
+        "_______ the principal of this school?": "whose",
+        "______ lunch is left on the table?": "whose",
+ 
+ 
+        "I know _______ the tallest in the class. ": "who's",
+        "The teacher wants to know _______ talking.": "who's",
+        "I am the girl _______ new to the school.": "who's",
+        "He is the boy ______ always teasing everyone else. ": "who's",
+        "It's my mum ______ always checking in on me. ": "who's",
+        "I am studying _____ our nation's biggest hero.": "who's",
+        "She knows ______ stealing from the lockers.": "who's",
+        
+        "____ talking when the teacher is talking? ": "who's",
+        "_______ the fastest runner?": "who's",
+        "_____ got a good idea to share? ": "who's",
+        "___________ heard a good ghost story?": "who's",
+        "______ eaten all the cakes? ": "who's",
+ 
+      };
+ 
+var options_medium = {
+    
+          "_________ clothing is this?": "whose",
+        "I don't like to work with people ________ work is untidy.": "whose",
+        "_______ mess is this?": "whose",
+        "The girl, _____ party it is, is opening her presents.": "whose",
+        "The teacher, ______ classroom this is, has gone for lunch. ": "whose",
+        "The person, _____ house this is, has lovely pictures on the wall.": "whose",
+        "The person, _____ dog this is, left him outside in the sun.": "whose", 
+       "_______ drawing is this? ": "whose",
+        "_______ painting is hung here? ": "whose",
+        "________ pet is the most interesting?": "whose",
+        "We have names on our lockers so we know _____ is _____.": "whose",
+        "_________ drawings are in my book? ": "whose",
+        "I like to hang out with people ______ interests are like mine.": "whose",
+        "I can't wait to find out _____ trophy this is.": "whose",
+ 
+ 
+        "Daniel, ______ from England, has many pets. ": "who's",
+        "The teacher, _____ often strict, shouted at the children. ": "who's",
+        "The boss, ______ never late, expects everyone to be on time. ": "who's",
+        "The principal, _______ talking to the students, is wearing a blue suit. ": "who's",
+        "The student, ______ got the brown hair, needs to tuck in her shirt.": "who's",
+        "I wonder ______ the new president going to be. ": "who's",
+        "I have a dog _____ often chasing rabbits instead of listening to me. ": "who's",
+        "The teacher asks questions to the student ______ not paying attention. ": "who's",
+        "The principal wants to investigate ______ been cheating in the test.": "who's",
+        "My parents like to be sure _______ my best friend at school.": "who's",
+        "My teacher checks ________ been listening frequently. ": "who's",
+        "________ painting the spare room? ": "who's",
+        "________ going to tell them the bad news?": "who's",
+        "_____ the most important player on the team? ": "who's",
+        "_________ the unfortunate individual who left their passport at home?": "who's",
+         "__________ the main actor in the new play?": "who's",
+         "I can't wait to find out _____ won the trophy.": "who's",
+        "_____ dog is this?": "Whose",
+        "_____ lunch card is that?": "Whose",
+        "I'm not sure _____ book this is.": "whose",
+        "____ uniform is the smartest?": "Whose",
+        "_____ looking for their bottle?": "Who's",
+        "_____ ready to go?": "Who's",
+        "_____ going to the shop?": "Who's",
+        "_____ hiding in there?!": "Who's",
+        "_____ lost their pencil?": "Who's",
+        "_____ coming with me?": "Who's",
+        "_____ ball shall we use?": "Whose",
+      };
+
+
+      var options_hard = {
+              "________ happiness is most important? ": "whose",
+        "I like people ____ hobbies are interesting and diverse.": "whose",
+        "The school are looking for students _____ parents are supportive at home.": "whose",
+        "The best reports go to those ______ attitude to learning is positive. ": "whose",
+         "How can we know ______ wallet this is if it doesn't have a name? ": "whose",
+        "The coach only works with those _______ goal is to become a professional.": "whose",
+        "________ responsibility is it to clean up the kitchen?": "whose",
+        "_________ job is it to protect people?": "whose",
+        "I'd like to know ________ training had the best results. ": "whose",
+        "I know _______ cooking I prefer.": "whose",
+        "________ baking is most successful? ": "whose",
+        "______ singing sounds best?": "whose",
+        "The director will only hire actors ______ singing is in tune.": "whose",
+          "______ writing is most creative?": "whose",
+        "______ drawing is most accurate?": "whose",
+        "______ cooking is tastiest?": "whose",
+        "______ feelings are going to be hurt?": "whose",
+ 
+ 
+ 
+        "The rock singer, _______ been in the band for years, has decided to go solo!": "who's",
+        "I like someone _____ always trying to improve. ": "who's",
+        "The company are looking for someone ________ experienced and talented. ": "who's",
+         "What's the best way to investigate ______ healthiest? ": "who's",
+         "What's the best way to find out ______ the best swimmer? ": "who's",
+        "I will only tell my secrets to someone ________ honest. ": "who's",
+        "_______ been sneaking into the kitchen cupboards at night? ": "who's",
+        "Police need to be certain ______ committed the crime. ": "who's",
+        "The president is the person ________ been voted in.": "who's",
+        "Businesses should research _______ buying their products.": "who's",
+        "_______ singing loudly in the middle of the night? ": "who's",
+        "The girl, ______ drawing, is very pretty.": "who's",
+        "How do you know ______ telling the truth? ": "who's",
+        "________ winning the most gold medals in this Olympics? ": "who's",
+        "For good team work, we should decide _______ responsible for what.": "who's",
+ 
+        "It's clear _____ work this is.": "whose",
+        "_____ got time to listen to my story?": "Who's",
+        "I don't know _____ jumper this is.": "whose",
+        "It's clear _____ been trying their best": "who's",
+        "Do you know _____ ruler this is?": "whose",
+        "_____ going on the bus?": "Who's",
+        "I want to know _____ ready.": "who's",
+        "_____ making that noise?": "Who's",
+        "_____ forgot their bag": "Who's",
+        "Do you know _____ lost their ruler?": "who's",
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

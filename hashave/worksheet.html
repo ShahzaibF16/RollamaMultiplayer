@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Has / Have  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+        <th>
+          Focus: has / have<br><br>Task: fill the gap
+          <br>
+
+        
+        </th>
+
+        <th>Teacher Tip: <br><br>singular = has &nbsp; | &nbsp; plural = have
+          &nbsp; | &nbsp; (exception: I = have &nbsp; | &nbsp; you = have)</th> </th>
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: has / have</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+
+var options_easy = {
+"He _____ two dogs.": "has",
+"He _____ freckles.": "has",
+"It _____ many sizes. ": "has",
+"She _____ brown hair.": "has",
+"Ivan _____ a new toy.": "has",
+"When _____ she eaten?": "has",
+"She _______ long hair.": "has",
+"The boy _____ a hat on.": "has",
+"She _____ a nice smile.": "has",
+"My mum _____ curly hair.": "has",
+"Bethany _____ green eyes.": "has",
+"My teacher _____ my book.": "has",
+"His belt _____ a buckle. ": "has",
+"The boy _______ many pets.": "has",
+"Who ______ the best shoes?": "has",
+"His dad _____ many hobbies.": "has",
+"The boy _____ many friends.": "has",
+"It _______ the loudest roar!": "has",
+"It _____ a handle and a lid.": "has",
+"The cup _______ beads inside.": "has",
+"His dad ________ a small car.": "has",
+"They ____ a dog.": "have",
+"They ____ a cat.": "have",
+"I _____ a new bag. ": "have",
+"I _____ strong legs.": "have",
+"How ______ you been?": "have",
+"I ________ many toys.": "have",
+"I ________ three cats.": "have",
+"I ________ a loud voice.": "have",
+"____ you been to Germany?": "have",
+"What did you ____ to eat?": "have",
+"What did you ____ to eat?": "have",
+"I _______ some nice shoes.": "have",
+"They _______ all the cake!": "have",
+"We _____ two minutes left.": "have",
+"The people _____ coats on.": "have",
+"I ________ nothing to say.": "have",
+"I ________ a joke to tell.": "have",
+"_____ you been to Germany?": "have",
+"_______ you had a nice day?": "have",
+
+};
+var options_medium = {
+"His dad ________ a very small car.": "has",
+"Where ______ she eaten before?": "has",
+"She _____ copied my homework. ": "has",
+"The planet _____ many habitats": "has",
+"Where ______ she eaten before?": "has",
+"The table _____ flowers on top.": "has",
+"He _____ been to Greece before.": "has",
+"The bag _____ lots of pockets. ": "has",
+"The tiger _____ lots of stripes.": "has",
+"He _______ a hole in his t-shirt!": "has",
+"My mum ______ a great imagination.": "has",
+"The person _____ something to say.": "has",
+"My teacher _____ called my parents": "has",
+"Your friend _____ taken my pencil.": "has",
+"She _____ forgotten her house key.": "has",
+"My mum ______ a great imagination.": "has",
+"Your friend _____your reading book.": "has",
+"The picture _____ a frame around it.": "has",
+"_________ she seen the new classroom?": "has",
+"My mum _____ cooked my dinner for me.": "has",
+
+"They _____ some good ideas.": "have",
+"I ________ lots of hobbies.": "have",
+"I ________ a messy bedroom.": "have",
+"_______ you had a nice day?": "have",
+"We _______ the biggest ball.": "have",
+"I ________eggs each morning.": "have",
+"____ the boys had their food?": "have",
+"The chairs _____ cushions on.": "have",
+"____ the boys had their food?": "have",
+"Children _______ lots of toys.": "have",
+"You _______ the biggest smile.": "have",
+"I ________ a fun game to play.": "have",
+"I ________ the nicest brother.": "have",
+"I ________ a new shirt to wear.": "have",
+"I ________ some advice for you.": "have",
+"Where ______ the children gone?": "have",
+"Llamas _____ invaded my garden!": "have",
+"Our teachers _____ our homework.": "have",
+"Your parents _____ a nice house.": "have",
+"I ________ a good science score.": "have",
+
+}
+var options_hard = {
+
+"_________ she seen the new classroom?": "has",
+"His dad _____ built him a tree house. ": "has",
+"The robot _________ been switched on. ": "has",
+"Joyce _______ fantastic musical talent.": "has",
+"Who _____ seen the new superhero movie?": "has",
+"_____ the boy returned the library book?": "has",
+"My teacher _________ lots of great ideas.": "has",
+"The answer _________ already been given. ": "has",
+"The new girl _______ started this morning.": "has",
+"August _______ the most national holidays.": "has",
+"The box _____ something interesting inside.": "has",
+"She ________ visited many cities in her life. ": "has",
+"Daniel ________ already seen the end to this movie.": "has",
+"What ____ been the best thing about your new school?": "has",
+"Your friend _____your reading book.": "has",
+"The picture _____ a frame around it.": "has",
+"_________ she seen the new classroom?": "has",
+"My mum _____ cooked my dinner for me.": "has",
+"The test _______ many questions.": "has",
+"________ he left the house yet?": "has",
+"My friend _____ a lot of holidays.": "has",
+"She always ________ a healthy lunch.": "has",
+"______ it been installed yet?": "has",
+"He _____ PE after lunch.": "has",
+
+"I ________ a present for my friend.": "have",
+"They _____ten people in their group.": "have",
+"The people _____ made their decision.": "have",
+"Does your teacher _____ your homework?": "have", 
+"Our teachers _____ written our reports.": "have",
+"I _______ tried every cake in the shop.": "have",
+"Elephants _______ destroyed the crops. ": "have",
+"Our teachers ______ many papers to mark.": "have",
+"Children _____ten minutes at break time.": "have",
+"This month, I ________ studied every day!": "have",
+"Schools _______ many kinds of classrooms.": "have",
+" I ______ eaten pizza so I am not hungry. ": "have",
+"How ____ you improved your grades so much?": "have",
+"New movies ____ the most exciting trailers.": "have",
+"Which teachers did you ___ for PE last year?": "have",
+"Your parents _____ prepared a party for you.": "have",
+"Which teachers did you ___ for PE last year?": "have",
+"Which class did you ____ on Friday afternoon?": "have",
+"Which class did you ____ on Friday afternoon?": "have",
+"Tomorrow, I ________ a lot of different classes.": "have",
+"The tests _______ become more difficult each year. ": "have",
+"There ______ been many differed leaders over the years.": "have",
+"After school, I ________ lots of fun activities planned. ": "have",
+"Lorries _____ transported our furniture to our new house. ": "have",
+};// Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

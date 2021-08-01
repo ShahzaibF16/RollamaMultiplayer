@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple present tense (subject-verb agreement)  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>
+            Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th> 
+          
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: Simple present tense
+  <br />(subject-verb agreement)<br><br>Task: choose the right verb form to match the subject<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>singular subject = -s / -es &nbsp; | &nbsp; plural subject = no s
+          &nbsp; | &nbsp; (exception: you = no -s)
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: Simple present tense <br />(subject-verb agreement)</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+   var options_easy = {
+ 
+        "Children ____  (go / goes)":"go",
+        "I ____ (wash / washes)":"wash" ,
+        "The buses ____ (go / goes)":"go" ,
+        "They ____ (go / goes))":"go" ,
+        "We ____ (go / goes)":"go" ,
+        "You ____ (go / goes)":"go" ,
+        "A car ____ (go / goes)":"goes" ,
+        "He ____ (wash / washes)":"washes" ,
+        "It ____ (go / goes)":"goes" ,
+        "She ____ (go / goes)":"goes" ,
+        "The boy ____ (go / goes)":"goes" ,
+        "Jude ____ (go / goes)":"goes" ,
+        "Children ____ (hold / holds)":"hold" ,
+        "I ____ (hold / holds)":"hold" ,
+        "They ____ (hold / holds)":"hold" ,
+        "We ____ (hold / holds)":"hold" ,
+        "You ____ (hold / holds)":"hold" ,
+        "A glass ____ (hold / holds)":"holds" ,
+        "He ____ (hold / holds)":"holds" ,
+        "It ____ (hold / holds)":"holds" ,
+        "She ____ (watch / watches)":"watches" ,
+        "The boy ____ (hold / holds)":"holds" ,
+        "The library ____ (hold / holds)":"holds" ,
+        "I _____  (find / finds)":"find",
+        "It _____  (like / likes)":"likes",
+        "She _____ (like / likes)":"likes",
+        "He _____  (hate / hates)":"hates",
+        "The tiger _____  (sit / sits)":"sits",
+        "The boy _____  (hate / hates)":"hates",
+        "Bethany _____  (listen / listens)":"listens",
+        "We _____  (want / wants)":"want",
+        "They _____ (want / wants)":"want",
+        "The chairs _____  (stand / stands)":"stand",
+        "Children _____ (want / wants)":"want",
+        "My teacher _____  (want / wants)":"wants",
+        "Our teachers _____ (want / wants)":"want",
+        "Your parents _____  (sit / sits)":"sit",
+        "His dad _____  (build / builds)":"builds",
+        "My mum _____  (build / builds)":"builds",
+        "The table _____  (have / has)":"has",
+        "His eyes _____  (look / looks)":"look",
+        "The people _____  (hate / hates)":"hate",
+        "The person _____  (hate / hates)":"hates",
+        "Your friend _____ (say / says)":"says",
+        "I _____ (sit / sits)":"sit",
+        "It _____  (look / looks)":"looks",
+        "She _____  (sit / sits)":"sits",
+        "He _____  (bite / bites)":"bites",
+        "The picture _____  (look / looks)":"looks",
+        "The boy _____. (look / looks)":"looks",
+        "Ivan _____  (want / wants)":"wants",
+        "We _____  (want / wants)":"want",
+        "They _____  (build / builds)":"build",
+        "The chairs _____ (look / looks)":"look",
+        "Children _____  (play / plays)":"play",
+"I ________  (walk / walks)":"walk",
+"I ________  (listen / listens)":"listen",
+"I ________  (call / calls)":"call",
+"I ________  (study / studies)":"study",
+"I ________  (wait / waits)":"wait",
+"I ________  (search / searches)":"search",
+"I ________  (collect / collects)":"collect",
+"I ________  (read / reads)":"read",
+"I ________  (shout / shouts)":"shout",
+"I ________ (carry / carries)":"carry",
+"I ________   (shake / shakes)":"shake",
+"I ________  (bring / brings)":"bring",
+"I ________  (hug / hugs)":"hug",
+"I ________  (draw / draws)":"draw",
+"I ________  (grab / grabs)":"grab",
+   }
+   var options_medium = {
+        "My teacher _____ (grab / grabs)":"grabs",
+        "Our teachers _____  (read / reads)":"read",
+        "Your parents _____  (guess / guesses)":"guess",
+        "His dad _____ (buy / buys)":"buys",
+        "My mum _____ (carry / carries)":"carries",
+        "The box _____ (have / has)":"has",
+        "His belt _____  (squash / squashes)":"squashes",
+        "The people _____  (consider / considers)":"consider",
+        "She _____  (shove / shoves)":"shoves",
+        "Your friend _____  (bully / bullies)":"bullies",
+        "She _____  (grab / grabs)":"grabs",
+        "He _____  (question / questions)":"questions",
+        "The bag _____  (hold / holds)":"holds",
+        "The planet _____ (support / supports)":"supports",
+"This month, I ________  (research / researches)":"research",
+"Tomorrow, I ________  (visit / visits)":"visit",
+" I ______  (investigate / investigates)":"investigates",
+"I _______ . (experiment / experiments)":"experiments",
+"After school, I ________  (prepare / prepares)":"prepare",
+"In the mornings, I ____  (walk / walks)":"walk",
+"How ____ you study? (do / does)":"do",
+"The new girl _______  (shout / shouts)":"shouts",
+"The answer _________  (determine / determines)":"determines",
+"Where _______  you work? (do / does)":"do",
+"Daniel ________  (annoy / annoys)":"annoys",
+"The robot _________  (grab / grabs)":"grabs",
+"When _____ she eat? (do / does)":"does",
+"August _______  (have / has)":"has",
+"In December, she ________  (snowboard / snowboards)":"snowboards",
+"Elephants _______  (communicate / communicates)":"communicate",
+"The tests _______  (confirm / confirms)":"confirm",
+"Schools _______  (inform / informs)":"inform",
+"New movies ____  (entertain / entertains)":"entertain",
+"Where ______ the children? (is / are)":"are",
+"How ______ you doing? (is / are)":"are",
+"What ______ the best shoes? (is / are)":"are",
+"Lorries _____  (transport / transports)":"transport",
+"Llamas _____  (walk / walks)":"walk",
+"There ______  (is / are)":"are",
+        "Daniel ____ (push / pushes)":"pushes" ,
+        "Children ____ (make / makes)":"make" ,
+        "I ____ (make / makes)":"make" ,
+        "The machines ____ (make / makes)":"make" ,
+        "They ____ (make / makes)":"make" ,
+        "We ____ (make / makes)":"make" ,
+        "You ____ (make / makes)":"make" ,
+        "A factory ____ (make / makes)":"makes" ,
+        "He ____ (wish / wishes)":"wishes" ,
+        "It ____ (wash / washes)":"washes" ,
+        "She ____ (make / makes)":"makes" ,
+        "The boy ____ (make / makes)":"makes" ,
+        "Bethany ____ (make / makes)":"makes" ,
+        "Women ____ (put / puts)":"put" ,
+        "I ____ (put / puts)":"put" ,
+        "The teachers ____ (put / puts)":"put" ,
+        "They ____ (put / puts)":"put" ,
+        "Your mum and dad____ (put / puts)":"put" ,
+        "You ____ (put / puts)":"put" ,
+        "A girl ____ (put / puts)":"puts" ,
+        "My brother ____ (fetch / fetches)":"fetches" ,
+        "It ____ (put / puts)":"puts" ,
+        "She ____ (put / puts)":"puts" ,
+        "The robot ____ (put / puts)":"puts" ,
+        "Joey ____ (put / puts)":"puts" ,
+        "The dog and cat ____ (see / sees)":"see" ,
+        "I ____ (see / sees)":"see" ,
+        "The students ____ (see / sees)":"see" ,
+        "They ____  (see / sees)":"see" ,
+        "We ____ (see / sees)":"see" ,
+        "You ____ (see / sees)":"see" ,
+        "Our family ____ (miss / misses)":"misses" ,
+   }
+   var options_hard = {
+        "He ____ (see / sees)":"sees" ,
+        "It ____ (wash / washes)":"washes" ,
+        "She ____ (see / sees)":"sees" ,
+        "The dog ____ (see / sees)":"sees" ,
+        "Hannah ____ (see / sees)":"sees" ,
+        "I ____ (have / has)":"have" ,
+        "We ____ (have / has)":"have" ,
+        "They ____ (have / has)":"have" ,
+        "The chairs ____ (have / has)":"have" ,
+        "Zebras ____ (have / has)":"have" ,
+        "It ____ (have / has)":"has" ,
+        "She ____ (have / has)":"has" ,
+        "He ____ (have / has)":"has" ,
+        "The cup ____ (have / has)":"has" ,
+        "The boy ____ (have / has)":"has" ,
+        "Joyce ____ (have / has)":"has" ,
+        "You ____ (have / has)":"have" ,
+        "My teacher ____ (have / has)":"has" ,
+        "Our teachers ____ (have / has)":"have" ,
+        "Your parents ____ (have / has)":"have" ,
+        "His dad ____ (have / has)":"has" ,
+        "My mum ____ (have / has)":"has" ,
+        "Jane and Bob _____  (devour / devours)":"devour",
+        "The cat and dog _____  (fight / fights)":"fight",
+        "Their house _____  (stand / stands)":"stands",
+        "His brothers _____  (tease / teases)":"tease",
+        "The fruit _____  (hang / hangs)":"hang",
+        "My sister and I _____  (squabble / squabbles)":"squabble",
+        "Everyone ______  (believe / believes)":"believes",
+        "Someone ______  (suggest / suggests)":"suggests",
+        "Anyone ____  (understand / understands)":"understands",
+        "Everybody ______  (concentrate / concentrates)":"concentrates",
+        "Somebody _____  (advise / advises)":"advises",
+        "Water ________  (run / runs)":"runs",
+        "Sand ________  (scratch / scratches)":"scratches",
+        "Glass _______  (shatter / shatters)":"shatters",
+        "Hair ______  (grow / grows)":"grows",
+        "Trousers _____  (flatter / flatters)":"flatter",
+        "Shoes ___  (protect / protects)":"protect",
+        "Scissors _______  (cut / cuts)":"cut",
+        "Mice _______  (dig / digs)":"dig",
+        "Chess _______  (challenge / challenges)":"challenges",
+        "Listening _________ (require / requires)":"requires",
+        "Balance _____  (need / needs)":"needs",
+        "Studying _______  (support / supports)":"supports",
+        "Reading _________  (entertain / entertains)":"entertains",
+        "My band _______ (practise / practises)":"practises",
+        "Ben and Jenny ______  (meet / meets)":"meet",
+        "Both the teachers and the students ____ (agree / agrees)":"agree",
+        "The monkey and the panda ____  (live / lives)":"live",
+        "The men ______  (huddle / huddles)":"huddle",
+        "The women ______  (gather / gathers)":"gather",
+        "The geese ____  (quack / quacks)":"quack",
+        "The box of cakes ________ (tempt / tempts)":"tempts",
+        "The bag of sweets ____  (attract / attracts)":"attracts",
+        "The bars of chocolate _______  (shimmer / shimmers)":"shimmer",
+        "The basket of fruit ____  (invite / invites)":"invites",
+        "The box of chocolates _____  (glisten / glistens)":"glistens",
+        "The pot of pens ____  (hold / holds)":"holds",
+        "The packet of popcorn_______  (smell / smells)":"smells",
+        "The boxes of cakes ________ (tempt / tempts)":"tempt",
+        "The bags of sweets ____  (attract / attracts)":"attract",
+        "The bar of chocolate _______  (shimmer / shimmers)":"shimmers",
+        "The baskets of fruit ____  (invite / invites)":"invite",
+        "The boxes of chocolates _____  (glisten / glistens)":"glisten",
+        "The pots of pens ____  (hold / holds)":"hold",
+        "The packets of popcorn_______  (smell / smells)":"smell",
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

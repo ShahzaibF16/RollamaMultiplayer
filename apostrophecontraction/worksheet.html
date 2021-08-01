@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apostrophe of Contraction  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>
+            Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th>
+          
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: apostrophe of
+  contraction<br><br>Task: add an apostrophe to show the missing letter/s<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>not -> n't
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: apostrophe of contraction</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+   var options_easy = {
+        "cant (cannot)": "can't",
+        "couldnt  (could not)": "couldn't ",
+        "couldve (could have)": "could've",
+        "didnt (did not)": "didn't",
+        "doesnt (does not)": "doesn't",
+        "dont (do not)": "don't",
+        "havent  (have not)": "haven't ",
+        "hes (he is)": "he's",
+        "Ill (I will)": "I'll",
+        "Im (I am)": "I'm",
+        "isnt (is not)": "isn't",
+        "Its cold (it is)": "It's cold.",
+        "Ive (I have)": "I've",
+        "Johns (John is)": "John's",
+        "lets (let us)": "let's",
+        "shant  (shall not)": "shan't ",
+        "shes (she is)": "she's",
+        "shouldnt (should not)": "shouldn't",
+        "shouldve (should have)": "should've",
+        "thats (that is)": "that's",
+        "The cats hungry. (The cat is)": "The cat's hungry.",
+        "theyll (they will)": "they'll",
+        "theyre (they are)": "they're",
+        "theyve (they have)": "they've",
+        "well (we will)": "we'll",
+        "were (we are)": "we're",
+        "werent (were not)": "weren't",
+        "wont (will not)": "won't",
+        "wouldnt (would not)": "wouldn't",
+        "wouldve (would have)": "would've",
+        "youll  (you will )": "you'll ",
+        "youve (you have)": "you've",
+        "its (it has)": "it's",
+        "The boys (The boy has)": "The boy's",
+        "shes  (she has)": "she's",
+        "hes (he has)": "he's",
+        "arent (are not)": "aren't",
+        "hasnt (has not)": "hasn't",
+        "whats (what is)": "what's",
+        "wheres (where is)": "where's",
+        "whos (who is)": "who's",
+        "whos (who has)": "who's",
+        "theres (there is)": "there's",
+        "hell (he will)": "he'll",
+        "shell (she will)": "she'll",
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

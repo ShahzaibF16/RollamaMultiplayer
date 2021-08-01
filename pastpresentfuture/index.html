@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head> 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PNPTEPE4LC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>past / present / future</title>
+<link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--new css file added-->
+    <link rel="stylesheet" href="../css/fa/css/all.css">
+    <link rel="stylesheet" href="../css/layout_2021-7.css" />
+  </head>
+  <body>
+    <div class="container">
+<div class="nameblk1 qblock top-block" style="margin-bottom: 25px;">
+          <h1></h1>
+        </div>
+      <div class="row">
+        <div class="col">
+          <div class="nameblk1 name1 names">
+            <h1></h1>
+          </div>
+        </div>
+        <div class="col" style="text-align: center">
+           <img src="../img/illama low res grey.gif"  alt="btn" height="110px" />
+        </div>
+        <div class="col">
+          <div class="nameblk1 name2 names">
+            <h1></h1>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 15px; margin-left: 15px">
+        <div class="col">
+          <div class="row">
+            <img src="../img/num1.png" alt="number1" class="numberhands" />
+            <div class="nameblk1 qblock optionblock">
+              <h2>past</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <img src="../img/num2.png" alt="number2" class="numberhands" />
+            <div class="nameblk1 qblock optionblock">
+              <h2>present</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <img src="../img/num3.png" alt="number3" class="numberhands" />
+            <div class="nameblk1 qblock optionblock">
+              <h2>future</h2>
+            </div>
+          </div>
+        </div>
+  
+      <div class="row">
+        
+          <h1></h1>
+        </div>
+      </div>
+      <div class="row " style="margin-top: 25px">
+        <div class="nameblk1 qblock2"><h1></h1></div>
+      </div>
+      <div class="row btnrow" style="margin-top: 25px">
+        <div class="col">
+          <a href="../" id="homebtn">
+            <img src="../img/homebtn.png" alt="homebtn" height="100px" class="homebutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <a href="javascript:void(0);" id="teachbtn">
+            <img src="../img/teach.png" alt="Teacher Tip" height="100px" class="teacherbutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./worksheet.html" target="_blank"  id="paper">
+            <img src="../img/paper.png" alt="Levelled Worksheet" height="100px" class="teacherbutton"/>
+          </a>
+        </div>
+        <!--Points table button-->
+        <div class="col">
+          <a href="#" id="pointstablebtn" data-bs-toggle="modal" data-bs-target="#pointstable" class="pointsbtn2">
+            <img src="../img/Leaderboardbtn.png" alt="paperbtn" height="100px" class="teacherbutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <img src="../img/low_diff.png" usemap="#diffmap" height="100px" class="levelbutton diff-img">
+
+          <map name="diffmap">
+              <area target="" alt="1" title="1" href="#easy" coords="20,60,40,85" shape="rect" class="easy-diff">
+            <area target="" alt="2" title="2" href="#mid" coords="51,45,74,89" shape="rect" class="mid-diff">
+            <area target="" alt="3" title="3" href="#max" coords="84,26,105,89" shape="rect" class="max-diff">
+          </map>
+        </div>
+        <div class="col">
+          <div class="rollbtn button">
+            <a href="javascript:void(0);" id="rollbtn"></a>
+               <img src="../img/rollbtn.png" alt="rollbtn" height="100px" id="roll-btn"/>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="namesbtn button">
+            <a href="javascript:void(0);" id="namesbtn"></a>
+              <img src="../img/namesbtn.png" alt="namesbtn" height="100px"/>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="checkbtn button">
+            <a href="javascript:void(0);" id="checkbtn"></a>
+              <img src="../img/checkbtn.png" alt="checkbtn" height="100px" />
+            </a>
+          </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="clistmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="img-center">
+            <img src="../teacher_tips/Tensestip.PNG" alt="teachboard" style="max-height: 650px"height="700px"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Points table modal-->
+    <div
+      class="modal fade"
+      id="pointstable"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Points</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-content">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Points</th>
+                  <th scope="col">Add/Remove Points</th>
+                </tr>
+              </thead>
+              <tbody class="ptstable">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>0</td>
+                  <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>0</td>
+                  <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>*Failure to load php*</td>
+                  <td>0</td>
+                  <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger resetpts">Reset Points</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    <script>
+      var names;
+      var difficulty = "0";
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = '';
+      if(!Cookies.get("llama_teacher_idx")){
+        $.post("../js/process.php", {"add_teacher_idx": "1", "course_data": "{}"}).done(function(data){
+          Cookies.set("llama_teacher_idx", data);
+        });
+      }
+      else{
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", {"get_course_data": "1", "teacher_idx": teacherIdx}).done(function(data){
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if(Object.keys(courseData).length && currentList == ''){
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          }
+          else if(currentList != ''){
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if(names){
+          var num = Math.floor(Math.random() * names.length);
+          name1 = names[num];
+  
+          name2 = name1;
+          while (name2 == name1) {
+            num = Math.floor(Math.random() * names.length);
+            name2 = names[num];
+          }
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1);
+        $(".name2 h1").text(name2);
+      });
+
+      var thiskey;
+
+var options_easy = {
+ 
+        "The boy wanted a chocolate bar.": "past",
+        "Pete watched the television.": "past",
+        "The dogs played together.": "past",
+        "Hannah shouted to her friend in the playground.": "past",
+        "Sophie studied carefully.": "past",
+        "The cats climbed up the fence.": "past",
+        "The car stopped suddenly.": "past",
+        "Kate and Charlotte waited for the bus.": "past",
+        "The children had a party together.": "past",
+        "The gorillas held hands.": "past",
+        "She went to her friend’s house.": "past",
+        "He bought a new toy.": "past",
+        "The people left the restaurant.": "past",
+        "The children baked a cake together.": "past",
+        "He found his pencil case.": "past",
+"~I was going to the shop.": "past",
+"~It was too big to carry.": "past",
+"~She was in the classroom.": "past",
+"~He was playing outside.": "past",
+"~The cup was blue.": "past",
+"~The boy was having a bad day.": "past",
+"~Bethany was on her bike.": "past",
+"~My teacher was full of energy.": "past",
+"~His dad was good at drawing.": "past",
+"~My mum was reading in the kitchen.": "past",
+"~The table was large.": "past",
+"~The person was holding their phone.": "past",
+"~Your friend was very nice.": "past",
+"~I was going to the shop.": "past",
+"~It was too big to carry.": "past",
+"~She was in the classroom.": "past",
+"~He was playing outside.": "past",
+"~The cup was blue.": "past",
+"~The boy was having a bad day.": "past",
+"~Bethany was on her bike.": "past",
+"~My teacher was full of energy.": "past",
+"~His dad was good at drawing.": "past",
+"~My mum was reading in the kitchen.": "past",
+"~The table was large.": "past",
+"~The person was holding their phone.": "past",
+"~Your friend was very nice.": "past",
+"~I was with my dog.": "past",
+"~It was the best day ever.": "past",
+"~She was taller than him.": "past",
+"~He was studying inside.": "past",
+"~The cup was full of milk.": "past",
+"~The boy was busy with his homework.": "past",
+"~Ivan was afraid of the dark.": "past",
+"~I was finding my key.": "past",
+"~I was always on time.": "past",
+"~I was full of joy.": "past",
+"~I was a girl.": "past",
+"~I was seven years old.": "past",
+"~I was from a large country.": "past",
+"~I was excited to see the movie.": "past",
+"~I was interested in fossils.": "past",
+"~I was the tallest in my class.": "past",
+"~I was the fastest runner.": "past",
+"~I was excited to make friends.": "past",
+"~I was never too full for cake.": "past",
+"~I was watching my little brother play.": "past",
+"~I was often playing games with my siblings.": "past",
+"~We were together.": "past",
+"~They were the loudest group.": "past",
+"~The chairs were made from wood.": "past",
+"~Children were pushing and shoving.": "past",
+"~Our teachers were eating lunch.": "past",
+"~Your parents were very caring.": "past",
+"~His eyes were bright green.": "past",
+"~The people were in the airport.": "past",
+"~We were together.": "past",
+"~They were the loudest group.": "past",
+"~The chairs were made from wood.": "past",
+"~Children were pushing and shoving.": "past",
+"~Our teachers were eating lunch.": "past",
+"~Your parents were very caring.": "past",
+"~His eyes were bright green.": "past",
+"~The people were in the airport.": "past",
+"~We were working well as a team.": "past",
+"~They were talking about the news.": "past",
+"~The chairs were all over the place.": "past",
+"~Children were behaving well.": "past",
+"~I was happy today.":"past",
+ 
+ 
+"Whales live in the ocean.": "present",
+"She likes strawberries and apples.": "present",
+"The shop is open.": "present",
+"She has brown hair.": "present",
+"The family live nearby.": "present",
+        "The school has teachers from lots of different countries.": "present",
+"The cat wears a collar.": "present",
+"India is a large country.": "present",
+"I have dinner at 6pm.": "present",
+"He practices on his piano every day.": "present",
+        "The class are well behaved.": "present",
+"He has a blue backpack.": "present",
+"The teacher talks to the class.": "present",
+"The man is from China.": "present",
+"The dresses are in the wardrobe.": "present",
+"I am going to the shop.": "present",
+"I am with my dog.": "present",
+"I am finding my key. ":"present",
+"I am happy today.":"present",
+"I am always on time.":"present",
+"I am full of joy. ":"present",
+"I am a girl.":"present",
+"I am seven years old.":"present",
+"I am from a large country.":"present",
+"I am excited to see the movie.":"present",
+"I am interested in fossils.":"present",
+"I am the tallest in my class.":"present",
+"I am the fastest runner. ":"present",
+"I am excited to make friends.":"present",
+"I am never too full for cake.":"present",
+"I am watching my little brother play. ":"present",
+"I am often playing games with my siblings. ":"present",
+"We are together.": "present",
+"They are the loudest group.": "present",
+"The chairs are made from wood.": "present",
+"Children are pushing and shoving.": "present",
+"Our teachers are eating lunch.": "present",
+"Your parents are very caring.": "present",
+"His eyes are bright green.": "present",
+"The people are in the airport.": "present",
+"We are working well as a team.": "present",
+"They are talking about the news.": "present",
+"The chairs are all over the place.": "present",
+"Children are behaving well.": "present",
+"It is too big to carry.": "present",
+"She is in the classroom.": "present",
+"He is playing outside.": "present",
+"The cup is blue.": "present",
+"The boy is having a bad day.": "present",
+"Bethany is on her bike.": "present",
+"My teacher is full of energy.": "present",
+"His dad is good at drawing.": "present",
+"My mum is reading in the kitchen.": "present",
+"The table is large.": "present",
+"The person is holding their phone.": "present",
+"Your friend is very nice.": "present",
+"It is the best day ever.": "present",
+"She is taller than him.": "present",
+"He is studying inside.": "present",
+"The cup is full of milk.": "present",
+"The boy is busy with his homework.": "present",
+"Ivan is afraid of the dark.": "present",
+ 
+ 
+ 
+"He will come to the party.": "future",
+"The meeting will be at 4pm.": "future",
+"I will go visit my parents this Christmas.": "future",
+"It will rain later.": "future",
+"The school will have a new sports field.": "future",
+"I will save some space for a dessert.": "future",
+"I will save up for a new phone with my new job.": "future",
+"My parents will pick me up.": "future",
+"I will have a new sister soon.": "future",
+"The next phone I buy will be so much better.": "future",
+"The caterpillar will become a butterfly.": "future",
+"I will stop looking at my phone in the evenings.": "future",
+"My mum will love her present.": "future",
+"The new house will be bigger than this one.": "future",
+"Your English will improve if you practise.": "future",
+"He won’t come to the party.": "future",
+"The meeting won’t be until 7pm.": "future",
+"I won’t be able to go visit my parents this Christmas.": "future",
+"It won’t rain this afternoon.": "future",
+"The school won’t have many new students this term.": "future",
+"I won’t have a dessert.": "future",
+"I won’t be able to buy a new phone for a while.": "future",
+"My parents won’t let me take the bus.": "future",
+"I won’t be able to come to you party.": "future",
+"The next phone I buy won’t be as expensive.": "future",
+"I won’t look at my phone in the evenings in anymore.": "future",
+"My mum won’t expect this present from me.": "future",
+"The new house won’t have such a small garden.": "future",
+"Your English won’t improve unless you practise.": "future",
+"I will be going to the shop.": "future",
+"I will be with my dog.": "future ",
+"I will be happy today.":"future",
+"I will always be on time.":"future",
+"I will be full of joy when I see my grandma. ":"future ",
+"I will be a doctor.":"future ",
+"I will be old enough to have a dog next year.":"future ",
+"She will be coming from the trains station.":"future ",
+"I will be excited to see the movie.":"future ",
+"He will be looking forward to the museum.":"future ",
+"This girl will be a great police officer.":"future ",
+"That dog will not follow instructions. ":"future ",
+"Tomorrow will be a sunny day.":"future ",
+"Parents will want to visit the school.":"future ",
+"My mum will be watching my little brother play. ":"future ",
+"Ben will enjoy playing games with his siblings. ":"future ",
+"We will be together.": "future ",
+"They will be the loudest group.": "future ",
+"The chairs will be in the classroom.": "future ",
+ 
+ 
+ 
+      };
+ 
+var options_medium = {
+    
+        "Did you get the milk?": "past",
+        "He did not find his phone.": "past",
+        "The boy was playing outside.": "past",
+        "The cake fell on the floor.": "past",
+        "The bus was very late.": "past",
+        "He didn’t know I was home.": "past",
+        "They didn’t have their books.": "past",
+        "She broke her arm on the field.": "past",
+        "The teacher told me the rules.": "past",
+        "Was the child in their room?": "past",
+        "Did the dog finish his food?": "past",
+        "I could play outside in the summer.": "past",
+        "Were the children quiet in the library?": "past",
+        "She didn’t bring her homework.": "past",
+        "They fought loudly over the last apple.": "past",
+ 
+ 
+"Do you have a new phone?": "present",
+        "He can run really fast! ": "present",
+"Does the cat enjoy his toy?": "present",
+"He should buy her a special gift.": "present",
+"I have become a better basketball player in recent months.": "present",
+"Are the puppies safe in their basket?": "present",
+"Are the eggs broken?": "present",
+"Do the activities finish before 4pm?": "present",
+"Are the cakes available tomorrow?": "present",
+"He can get a job next year after he finishes his studies.": "present",
+"He needs to be coached carefully before playing on our team.": "present",
+        "Does she need to be tested before getting into the school?": "present",
+"Can they try calling the hotel?": "present",
+"The chocolates have many flavours.": "present",
+"I have written my essay so I can go out this evening.": "present",
+ 
+ 
+ 
+"How will we know we passed our exam?": "future",
+"Where will the driver be when we arrive at the airport?": "future",
+"He will do his homework before playing computer games.": "future",
+"She will start her cake before making the topping.": "future",
+"How will this couch look in our living room?": "future",
+"When will the movie end?": "future",
+"How will you improve your top score?": "future",
+"When will you be ready to leave in the morning?": "future",
+"The dog will always return the ball when we play catch.": "future",
+"I will buy a new laptop when I go to university.": "future",
+"She will tell her teacher if she forgot her homework.": "future",
+"What will happen if we miss our bus?": "future",
+"Will practicing every day improve my English?": "future",
+"She will already be planning her birthday party.": "future",
+"It will be so much fun to see my friends.": "future",
+"Won’t you tell us if we’ve passed our exam?": "future",
+"Won’t the driver be there when we arrive at the airport?": "future",
+"He won’t do his homework without being asked many times.": "future",
+"She won’t start her cake until she has all the ingredients ready.": "future",
+"What if this couch won’t fit in our living room?": "future",
+"Won’t the movie have a happy ending?": "future",
+"What if your cat won’t go in the cage?": "future",
+"Won’t you want to try the fastest rollercoaster?": "future",
+"The dog won’t follow instructions when we play catch.": "future",
+"I won’t buy a new laptop just for when I go to university.": "future",
+"She won’t tell her teacher if she forgot her homework.": "future",
+"Won’t we miss our bus if we don’t hurry up?": "future",
+ 
+ 
+      };
+ 
+ 
+var options_hard = {
+        "He started to speak to the audience.": "past",
+        "Could he travel to see his family?": "past",
+        "Was the child happy when sitting on the plane?": "past",
+        "Were the dogs sleeping during the fireworks?": "past",
+        "The car began to make strange noises.": "past",
+        "They discussed collaborating together on their next project.": "past",
+        "Bob thought about buying a new car.": "past",
+        "She had been living in Italy for three years.": "past",
+        "She practiced diving until she got it right.": "past",
+        "He was waiting in the queue to buy his coffee.": "past",
+        "The cat tried to catch the mouse.": "past",
+        "I had wanted to get a dog for many years.": "past",
+        "He cut his own hair.": "past",
+        "The child put their bag in the wrong place.": "past",
+ 
+        "I cut my finger earlier.": "past",
+        "I wanted to go to New York.": "past",
+        "He could have bought the tickets earlier.": "past",
+      "How could you have known what the right thing to do was?": "past",
+ 
+ 
+ 
+ 
+        "I know I had the lowest score.": "present",
+"I have beaten my best score on this game.": "present",
+"I have been studying English for many years.": "present",
+"Have you got a pet dog?": "present",
+        "The boy has been playing outside for three hours.": "present",
+"Have the tickets been ordered?": "present",
+"Is the phone broken?": "present",
+"I have started to learn Spanish.": "present",
+"Has the homework been completed?": "present",
+        "I think I tried my best.": "present",
+"I know there were a lot of students at school yesterday.": "present",
+"I have decided to go to university.": "present",
+"I want the copied homework as evidence.": "present",
+"The broken mirror has been left in the car.": "present",
+"I have been to Budapest in the last year.": "present",
+        "I haven’t looked at my bank balance in a while.": "present",
+      "Are accidental injuries covered on the insurance?": "present",
+"The owners cut their dog’s claws each month.": "present",
+      "Do you think you will want to eat after the movie?": "present",
+      "Do you think she will want to rest before going out again?": "present",
+"What do you think she will want to do for her birthday?": "present",
+"I hope they brought the right clothes for this trip.": "present",
+"We all agree the exhibition will be interesting.": "present",
+"What if it rains on our wedding day?": "present",
+ 
+ 
+ 
+"Will he have been at the school long when he takes his exams?": "future",
+"Will the movie have started by the time we arrive?": "future",
+"Will the actors have their costumes before the play opens?": "future",
+"How will you prove to me you are motivated when we next have our meeting?": "future",
+"The clock will chime in ten minutes.": "future",
+"I will have already eaten all the pizza if you are late to the party.": "future",
+"My puppy will have grown up by the time we move house.": "future",
+"What will it take to become an astronaut?": "future",
+"Swimming will improve your health significantly.": "future",
+"What will the future be like for our children?": "future",
+"The flight will take three hours to reach our destination.": "future",
+"I will want to have a second chance but I know I won’t.": "future",
+"Won’t you try my tasty lasagna?": "future",
+"Ben won’t come to my party.": "future",
+"The girl won’t eat her vegetables.": "future",
+"The flight won’t take too long to reach our destination.": "future",
+"I will want to beat my best score but I know I won’t.": "future",
+"Yoga class once a week won’t be enough exercise for you.": "future",
+"Will practising every day improve my English?": "future",
+"She won’t suspect anything about the surprise birthday party.": "future",
+"It won’t be very fun during the flight.": "future",
+
+ 
+ 
+      };
+
+      // part of difficulty code
+      var options;
+
+      // Unique questions each time
+      var totalqs = Object.keys(options_easy).length;
+      var questionsDoneEasy = [];
+      var questionsDoneMedium = [];
+      var questionsDoneHard = [];
+      var questionsDone;
+      var qAdded;
+      // end of unique questions each time
+
+      $(".rollbtn").click(function () {
+
+        // Difficulty code start
+        if(difficulty == "0"){
+          options = options_easy;
+          questionsDone = questionsDoneEasy;
+          totalqs = Object.keys(options_easy).length;
+        }
+        else if(difficulty == "1"){
+          options = options_medium;
+          questionsDone = questionsDoneMedium;
+          totalqs = Object.keys(options_medium).length;
+        }
+        else if(difficulty == "2"){
+          options = options_hard;
+          questionsDone = questionsDoneHard;
+          totalqs = Object.keys(options_hard).length;
+        }
+        // Difficulty code end
+
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+
+        // Unique questions each time
+        qAdded = false;
+        while(!qAdded){
+            if(!questionsDone.includes(thiskey)){
+            $(".qblock h1").text(thiskey.substring(thiskey.indexOf ("~") + 1));
+            getname();
+            $(".name1 h1").text("");
+            $(".name2 h1").text("");
+            $(".qblock2 h1").text("");
+            questionsDone.push(thiskey);
+            qAdded = true;
+            console.log(questionsDone.length);
+          }
+          else{
+            if(questionsDone.length == totalqs){
+              questionsDone.length = 0;
+            }
+            var num = Math.floor(Math.random() * keys.length);
+            thiskey = keys[num];
+          }
+        }
+        // End of unique questions each time
+        $(".qblock h1").text(thiskey.substring(thiskey.indexOf("~") + 1));
+        getname();
+        $(".name1 h1").text("");
+        $(".name2 h1").text("");
+        $(".qblock2 h1").text("");
+      });
+
+     
+
+      $(".checkbtn").click(function () {
+        $(".qblock2 h1").text(options[thiskey]);
+      });
+
+      $("#teachbtn").click(function(){
+        $("#clistmodal").modal("show");
+      });
+      
+      $(function(){
+        // spin the top questionbar
+        $("#roll-btn").on('click',function () {
+          $('.top-block').addClass('topbar__spin');
+          setTimeout(function(){
+            $('.top-block').removeClass('topbar__spin');
+          },300)
+        });
+
+        // spin the names button
+        $(".namesbtn").on('click',function () {
+          $('.names ').addClass('name__speen');
+          setTimeout(function(){
+            $('.names ').removeClass('name__speen');
+          },300)
+        });
+      })
+    </script>
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

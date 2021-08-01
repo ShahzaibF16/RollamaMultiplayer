@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head> 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PNPTEPE4LC");
+    </script>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Question Syntax</title>
+  <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--new css file added-->
+    <link rel="stylesheet" href="../css/fa/css/all.css">
+    <link rel="stylesheet" href="../css/layout_2021-7.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" style="margin-bottom: 25px">
+        <div class="nameblk1 qblock tall ">
+          <h2>Is this word order correct?
+          </h2><h1></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="nameblk1 name1 names">
+            <h1></h1>
+          </div>
+        </div>
+        <div class="col rollbtn" style="text-align: center">
+           <img src="../img/illama low res grey.gif"  alt="btn" height="110px" />
+        </div>
+        <div class="col">
+          <div class="nameblk1 name2 names">
+            <h1></h1>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 25px; margin-left: 100px">
+        <div class="col">
+          <div class="row">
+            <img src="../img/thumbup.png"  alt="thumb up" class="thumbs" />
+            <div class="nameblk1 qblock optionblock h1">
+              <h2>correct</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <img src="../img/thumbdown.png" width="100px" alt="thumb down" class="thumbs" />
+            <div class="nameblk1 qblock optionblock h1">
+              <h2>incorrect</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row" style="margin-top: 25px">
+        <div  class="nameblk1 qblock2" style= "padding: 25px"><h1 style= "font-size: 2rem"></h1></div>
+      </div>
+      <div class="row btnrow" style="margin-top: 25px">
+        <div class="col">
+          <a href="../" id="homebtn">
+            <img src="../img/homebtn.png" alt="homebtn" height="100px" class="homebutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <a href="javascript:void(0);" id="teachbtn">
+            <img src="../img/teach.png" alt="Teacher Tip" height="100px" class="teacherbutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./worksheet.html" target="_blank"  id="paper">
+            <img src="../img/paper.png" alt="Levelled Worksheet" height="100px" class="teacherbutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" id="pointstablebtn" data-bs-toggle="modal" data-bs-target="#pointstable" class="pointsbtn2">
+            <img src="../img/Leaderboardbtn.png" alt="paperbtn" height="100px" class="teacherbutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <img src="../img/low_diff.png" usemap="#diffmap" height="100px" class="levelbutton diff-img">
+
+          <map name="diffmap">
+              <area target="" alt="1" title="1" href="#easy" coords="20,60,40,85" shape="rect" class="easy-diff">
+            <area target="" alt="2" title="2" href="#mid" coords="51,45,74,89" shape="rect" class="mid-diff">
+            <area target="" alt="3" title="3" href="#max" coords="84,26,105,89" shape="rect" class="max-diff">
+          </map>
+        </div>
+        <div class="col">
+          <div class="rollbtn button">
+            <a href="javascript:void(0);" id="rollbtn"></a>
+               <img src="../img/rollbtn.png" alt="rollbtn" height="100px" id="roll-btn"/>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="namesbtn button">
+            <a href="javascript:void(0);" id="namesbtn"></a>
+              <img src="../img/namesbtn.png" alt="namesbtn" height="100px"/>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="checkbtn button">
+            <a href="javascript:void(0);" id="checkbtn"></a>
+              <img src="../img/checkbtn.png" alt="checkbtn" height="100px"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="clistmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+         
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+         
+          <div class="img-center" >
+            <img src="../teacher_tips/Under_construction.PNG" style="max-height: 650px"/>
+                    </div>
+        </div>
+      </div>
+    </div>
+    <!--Points table modal-->
+    <div
+      class="modal fade"
+      id="pointstable"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Points</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-content">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                 
+          </div>
+        </div>
+      </div>
+    </div>  <!--Points table modal-->
+  <div
+  class="modal fade"
+  id="pointstable"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Points</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-content">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Points</th>
+              <th scope="col">Add/Remove Points</th>
+            </tr>
+          </thead>
+          <tbody class="ptstable">
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>0</td>
+              <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>0</td>
+              <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>*Failure to load php*</td>
+              <td>0</td>
+              <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger resetpts">Reset Points</button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    <script>
+      var names;
+      var difficulty = "0";
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = '';
+      if(!Cookies.get("llama_teacher_idx")){
+        $.post("../js/process.php", {"add_teacher_idx": "1", "course_data": "{}"}).done(function(data){
+          Cookies.set("llama_teacher_idx", data);
+        });
+      }
+      else{
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", {"get_course_data": "1", "teacher_idx": teacherIdx}).done(function(data){
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if(Object.keys(courseData).length && currentList == ''){
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          }
+          else if(currentList != ''){
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if(names){
+          var num = Math.floor(Math.random() * names.length);
+          name1 = names[num];
+  
+          name2 = name1;
+          while (name2 == name1) {
+            num = Math.floor(Math.random() * names.length);
+            name2 = names[num];
+          }
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1)
+        $(".name2 h1").text(name2)
+      
+      });
+
+      var thiskey;
+      var options_easy = {
+        "Where is he?": "Correct",
+        "What is her name?": "Correct",
+        "Which one do you want?": "Correct",
+        "Who does this belong to?": "Correct",
+        "Where did you go?": "Correct",
+        "How should I spell your name?": "Correct",
+        "Why are you crying?": "Correct",
+        "When will she arrive?": "Correct",
+        "When does the bus arrive?": "Correct",
+        "What would you like for dinner?": "Correct",
+        "Where is she?": "Correct",
+        "What is his name?": "Correct",
+        "Which ones do you want?": "Correct",
+        "Whose bottle is this?": "Correct",
+        "Where are we?": "Correct",
+        "How tall are you?": "Correct",
+        "Why is the sky blue?": "Correct",
+        "When will it arrive?": "Correct",
+        "What time is dinner served?": "Correct",
+        "What would you to be when you grow up?": "Correct",
+        "He is where?": "Incorrect",
+        "Her name is what?": "Incorrect",
+        "You want which one?": "Incorrect",
+        "This belongs to who?": "Incorrect",
+        "You went where?": "Incorrect",
+        "Your name is spelled how?": "Incorrect",
+        "You are crying for why?": "Incorrect",
+        "She will arrive when?": "Incorrect",
+        "The bus arrives when?": "Incorrect",
+        "For dinner you want what?": "Incorrect",
+        "She is where?": "Incorrect",
+        "His name is what?": "Incorrect",
+        "You want which ones?": "Incorrect",
+        "This belongs to who?": "Incorrect",
+        "You went where?": "Incorrect",
+        "You are called what?": "Incorrect",
+        "You arrived here how?": "Incorrect",
+        "The car will arrive when?": "Incorrect",
+        "Your friend is going where?": "Incorrect",
+        "For dinner you want what?": "Incorrect",
+      };
+      var options;
+
+// Unique questions each time
+      var totalqs = Object.keys(options_easy).length;
+      var questionsDoneEasy = [];
+      var questionsDoneMedium = [];
+      var questionsDoneHard = [];
+      var questionsDone;
+      var qAdded;
+      // end of unique questions each time
+
+ $(".rollbtn").click(function () {
+
+           // Difficulty code start
+           if(difficulty == "0"){
+          options = options_easy;
+        }
+        else if(difficulty == "1"){
+          options = options_medium;
+        }
+        else if(difficulty == "2"){
+          options = options_hard;
+        }
+        // Difficulty code end
+
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+        $(".qblock h1").text(thiskey);
+        getname();
+        $(".name1 h1").text("");
+        $(".name2 h1").text("");
+        $(".qblock2 h1").text("");
+      });
+
+      $(".checkbtn").click(function () {
+        $(".qblock2 h1").text(options[thiskey]);
+      });
+
+      $("#teachbtn").click(function () {
+        $("#clistmodal").modal("show");
+      });
+        $("#teachbtn").click(function(){
+        $("#clistmodal").modal("show");
+      });
+      
+      $(function(){
+        // spin the top questionbar
+        $("#roll-btn").on('click',function () {
+          $('.top-block').addClass('topbar__spin');
+          setTimeout(function(){
+            $('.top-block').removeClass('topbar__spin');
+          },300)
+        });
+
+        // spin the names button
+        $(".namesbtn").on('click',function () {
+          $('.names ').addClass('name__speen');
+          setTimeout(function(){
+            $('.names ').removeClass('name__speen');
+          },300)
+        });
+      })
+    </script>
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

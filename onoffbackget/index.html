@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-PNPTEPE4LC");
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On / off / back / get Multiplayer</title>
+  <link rel="icon" href="../img/Baby_Logo.png" />
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  <!--new css file added-->
+  <link rel="stylesheet" href="../css/fa/css/all.css">
+  <link rel="stylesheet" href="../css/layout-31-07.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div style="text-align: left" class="row">
+      <div>
+        <a href="../" id="homebtn">
+          <img src="../img/homebtn.png" alt="homebtn" height="50px" class="homebutton" />
+        </a>
+
+        <div style="text-align: right">
+          <img src="../img/Exitbtn_.png" alt="checkbtn" height="50px" />
+        </div>
+        <div>
+          <p>Timer</p>
+        </div>
+      </div>
+
+      <div class="row" id="answers">
+        <div class="col">
+          <div class="row">
+            <div class="nameblk1 qblock optionblock tall" data-player="0" data-answer="am">
+              <h2>Player 1:</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="nameblk1 qblock optionblock tall" data-player="1" data-answer="is">
+              <h2>Player 2:</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="nameblk1 qblock optionblock tall" data-player="2" data-answer="are">
+              <h2>Player 3:</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="start-overlay" id="start-overlay">
+      <h2 class="start-overlay__title"></h2>
+      <button class="button" data-timemode="1">
+        <a href="javascript:void(0);" id="startGame">
+          <img src="../img/Gamesettingsbtn.png" alt="btn" height="110px"></button>
+      <img src="../img/ROLFrules.png" alt="btn" height="300px" style="
+        margin-top: 15px;
+        margin-bottom: 150px;
+        border-radius: 25px;
+        box-shadow: 5px 10px #733381;" />
+    </div>
+
+
+
+
+    <div id="gameScreen">
+      <div id="chooseEnd">
+        <div style="margin-right: 15px">
+          <a href="../" id="homebtn">
+            <img src="../img/homebtn.png" alt="homebtn" height="90px" class="homebutton" />
+          </a>
+        </div>
+        <!--  <button
+          style="
+            margin: 0%;
+            background: url('../img/Exitbtn_.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 100px;
+            width: 150px;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="endGame"
+        ></button> -->
+
+        <div style="margin-left: 15px">
+          <img src="../img/Low_Level_Yellow_Btn_.png" usemap="#diffmap" height="90px" class="levelbutton diff-img" />
+
+          <map name="diffmap">
+            <area target="" alt="1" title="1" href="#easy" coords="20,60,40,85" shape="rect" class="easy-diff-game" />
+            <area target="" alt="2" title="2" href="#mid" coords="51,45,74,89" shape="rect" class="mid-diff-game" />
+            <area target="" alt="3" title="3" href="#max" coords="84,26,105,89" shape="rect" class="max-diff-game" />
+          </map>
+        </div>
+
+        <button style="
+            margin-left: 15px;
+            background: url('../img/Firsttotenbtn_.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          " class="gameButton chooseGameTimeBtn" id="firstToTen" data-gameTime="0"></button>
+        <button style="
+            background: url('../img/1minracebtn_.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          " class="gameButton chooseGameTimeBtn" id="oneMinute" data-gameTime="1"></button>
+        <!-- <button
+          style="
+            background: url('../img/2minracebtn.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="twoMinute"
+          data-gameTime="2"
+        ></button>
+        <button
+          style="
+            background: url('../img/3minracebtn.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="threeMinute"
+          data-gameTime="3"
+        ></button> !-->
+      </div>
+      <div id="gameDisplay">
+        <div id="gameButtons">
+          <div>
+            <a href="../" id="homebtn">
+              <img src="../img/homebtn.png" alt="homebtn" height="60px" class="homebutton" />
+            </a>
+          </div>
+          <div id="restart">
+            <img src="../img/Exitbtn_.png" alt="checkbtn" height="60px" />
+          </div>
+          <div id="timer">
+            <p>Timer</p>
+          </div>
+        </div>
+        <div id="questionBlock" class="row" style="margin-top: 10px">
+          <div class="nameblk1 qblock top-block">
+            <h1></h1>
+          </div>
+        </div>
+        <div id="resultsBar">
+          <span class="bar">
+            <p>Player 1</p>
+          </span>
+          <span class="bar">
+            <p>Player 2</p>
+          </span>
+          <span class="bar">
+            <p>Player 3</p>
+          </span>
+        </div>
+
+        <div class="row" id="answers">
+          <div class="col">
+            <div class="row">
+              <div class="nameblk1 qblock optionblock" data-player="0" data-answer="am">
+                <h2>am</h2>
+              </div>
+              <div class="nameblk1 qblock optionblock" data-player="0" data-answer="is">
+                <h2>is</h2>
+              </div>
+              <div class="nameblk1 qblock optionblock" data-player="0" data-answer="are">
+                <h2>are</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="nameblk1 qblock optionblock" data-player="1" data-answer="am">
+                <h2>am</h2>
+              </div>
+              <div class="nameblk1 qblock optionblock" data-player="1" data-answer="is">
+                <h2>is</h2>
+              </div>
+              <div class="nameblk1 qblock optionblock" data-player="1" data-answer="are">
+                <h2>are</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="nameblk1 qblock optionblock" data-player="2" data-answer="am">
+                <h2>am</h2>
+              </div>
+              <div class="nameblk1 qblock optionblock" data-player="2" data-answer="is">
+                <h2>is</h2>
+              </div>
+              <div class="nameblk1 qblock optionblock" data-player="2" data-answer="are">
+                <h2>are</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="game.js"></script> -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    <script>
+      var names;
+      var difficulty = "0";
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = '';
+      if (!Cookies.get("llama_teacher_idx")) {
+        $.post("../js/process.php", { "add_teacher_idx": "1", "course_data": "{}" }).done(function (data) {
+          Cookies.set("llama_teacher_idx", data);
+        });
+      }
+      else {
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", { "get_course_data": "1", "teacher_idx": teacherIdx }).done(function (data) {
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if (Object.keys(courseData).length && currentList == '') {
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          }
+          else if (currentList != '') {
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if (!names || !names.length || names.length <= 0) return;
+        var num = Math.floor(Math.random() * names.length);
+        name1 = names[num];
+
+        name2 = name1;
+        while (name2 == name1) {
+          num = Math.floor(Math.random() * names.length);
+          name2 = names[num];
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1);
+        $(".name2 h1").text(name2);
+      });
+
+      var thiskey;
+      var options_easy = {
+        "____ up": "back",
+        "cut ____ on": "back",
+        "drop ____": "is",
+        "get ____ at": "is",
+        "get ____ into": "is",
+        "go ____": "is",
+        "grow ____": "is",
+        "think ____": "are",
+        "call ____": "are",
+        "give ____": "are",
+        "hold ____": "are",
+        "pay ____": "is",
+        "send ____": "are",
+        "take ____": "are",
+        "His dad _____ good at drawing.": "is",
+        "My mum _____ reading in the kitchen.": "is",
+        "The table _____ large.": "is",
+        "His eyes _____ bright green.": "are",
+        "The people _____ in the airport.": "are",
+        "The person _____ holding their phone.": "is",
+        "Your friend _____ very nice.": "is",
+        "I _____ with my dog.": "am",
+        "It _____ the best day ever.": "is",
+        "She _____ taller than him.": "is",
+        "He _____ studying inside.": "is",
+        "The cup _____ full of milk.": "is",
+        "The boy _____ busy with his homework.": "is",
+        "Ivan _____ afraid of the dark.": "is",
+        "We _____ working well as a team.": "are",
+        "They _____ talking about the news.": "are",
+        "The chairs _____ all over the place.": "are",
+        "Children _____ behaving well.": "are",
+        "I ________ finding my key. ": "am",
+        "I ________ happy today.": "am",
+        "I ________ always on time.": "am",
+        "I ________ full of joy. ": "am",
+        "I ________ a girl.": "am",
+        "I ________ seven years old.": "am",
+        "I ________ from a large country.": "am",
+        "I ________ excited to see the movie.": "am",
+        "I ________ interested in fossils.": "am",
+        "I ________ the tallest in my class.": "am",
+        "I ________ the fastest runner. ": "am",
+        "I ________ excited to make friends.": "am",
+        "I ________ never too full for cake.": "am",
+        "I ________ watching my little brother play. ": "am",
+        "I ________ often playing games with my siblings. ": "am",
+      };
+
+      var options_medium = {
+
+        "My teacher _____ marking my work.": "is",
+        "Our teachers _____ walking with us.": "are",
+        "Your parents _____ waiting for you.": "are",
+        "His dad _____ building a time machine.": "is",
+        "My mum _____ always excited to see me.": "is",
+        "The table _____ in the hallway.": "is",
+        "His eyes _____ round and glistening.": "are",
+        "The people _____ lining up.": "are",
+        "She _____ not looking at you.": "is",
+        "Your friend _____ not at your party.": "is",
+        "She _____ happiest with her sister.": "is",
+        "He _____ caring and kind.": "is",
+        "The bag _____ on the table.": "is",
+        "The planet _____ orbiting the Sun.": "is",
+        "This month, I ________ working on my spellings. ": "am",
+        "Tomorrow, I ________ going to play tennis.": "am",
+        "Whenever someone is speaking, I ______ always listening.": "am",
+        "I _______ the youngest player on the basketball team.": "am",
+        "After school, I ________ going out for dinner.": "am",
+        "In the mornings, I ____ always organised. ": "am",
+        "How ____ I going to make friends at my new school?": "am",
+        "The new girl _______ very kind to everyone. ": "is",
+        "The answer _________ a mystery to me.": "is",
+        "Where _______ the new classroom?": "is",
+        "Daniel ________ a good artist. ": "is",
+        "The robot _________ fully charged and ready to be used!": "is",
+        "When _____ break time?": "is",
+        "August _______ the hottest month here. ": "is",
+        "In December, she ________  having her birthday party. ": "is",
+        "Elephants _______ quite dangerous.": "are",
+        "The tests _______ all in the same month.": "are",
+        "Schools _______ often open during the day. ": "are",
+        "New movies ____ often shown in cinemas. ": "are",
+        "Where ______ the children?": "are",
+        "How ______ you doing?": "are",
+        "What ______ the best shoes to buy?": "are",
+        "Cars _____ a great invention.": "are",
+        "Llamas _____ similar to camels. ": "are",
+        "There ______ many colours in the rainbow. ": "are",
+        "Why _______ parents often worried about us?": "are",
+      };
+
+      var options_hard = {
+
+        "Jane and Bob _____ in the garden.": "are",
+        "The cat and dog _____ good friends.": "are",
+        "Their house _____ enormous. ": "is",
+        "His brothers _____ kind to him. ": "are",
+        "The fruit _____ in the bowl. ": "is",
+        "My sister and I _____ traveling to China.": "are",
+        "Everyone ______ at the party. ": "is",
+        "Someone ______ speaking to loudly. ": "is",
+        "Anyone ____ welcome to the dinner.": "is",
+        "Everybody ______ looking forward to the new year. ": "is",
+        "Somebody _____ going to bring the boardgames. ": "is",
+        "Water ________ good for you. ": "is",
+        "Sand ________ all over the car!": "is",
+        "Glass _______ delicate. ": "is",
+        "Hair ______ a great way to warm your head.": "is",
+        "Trousers _____ comfortable to wear. ": "are",
+        "Shoes ___ kept in the hall. ": "are",
+        "Scissors _______ used for cutting.": "are",
+        "Mice _______ living in our basement. ": "are",
+        "Chess _______ a great game.": "is",
+        "Listening _________ an important skill.": "is",
+        "Balance _____ great to prevent injury. ": "is",
+        "Studying _______ vital for good grades. ": "is",
+        "Reading _________ fun to do when you have spare time. ": "is",
+        "My band _______ always practising.": "is",
+        "Ben and Jenny ______ trying to find a nice house for themselves. ": "are",
+        "Both the teachers and the students ____ paying attention.": "are",
+        "The monkey and the panda ____ good friends. ": "are",
+        "The men ______ meeting later. ": "are",
+        "The women ______ taller than the girls. ": "are",
+        "The geese ____ so loud today.": "are",
+        "The box of cakes ________ on the table.": "is",
+        "The bag of sweets ____ in my room.": "is",
+        "The bars of chocolate _______ melting.": "are",
+        "The basket of fruit ____ in the market. ": "is",
+        "The box of chocolates _____ being shared by everyone.": "is",
+        "The pot of pens ____ for the children. ": "is",
+        "The packet of popcorn _____ still hot. ": "is",
+      };
+      var options;
+
+      // Unique questions each time
+      var totalqs = Object.keys(options_easy).length;
+      var questionsDoneEasy = [];
+      var questionsDoneMedium = [];
+      var questionsDoneHard = [];
+      var questionsDone;
+      var qAdded;
+      // end of unique questions each time
+
+      $(".rollbtn").click(function () {
+        // Difficulty code start
+        if (difficulty == "0") {
+          options = options_easy;
+          questionsDone = questionsDoneEasy;
+          totalqs = Object.keys(options_easy).length;
+        }
+        else if (difficulty == "1") {
+          options = options_medium;
+          questionsDone = questionsDoneMedium;
+          totalqs = Object.keys(options_medium).length;
+        }
+        else if (difficulty == "2") {
+          options = options_hard;
+          questionsDone = questionsDoneHard;
+          totalqs = Object.keys(options_hard).length;
+        }
+        // Difficulty code end
+
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+
+        // Unique questions each time
+        qAdded = false;
+        while (!qAdded) {
+          if (!questionsDone.includes(thiskey)) {
+            $(".qblock h1").text(thiskey.substring(thiskey.indexOf("~") + 1));
+            getname();
+            $(".name1 h1").text("");
+            $(".name2 h1").text("");
+            $(".qblock2 h1").text("");
+            questionsDone.push(thiskey);
+            qAdded = true;
+            console.log(questionsDone.length);
+          }
+          else {
+            if (questionsDone.length == totalqs) {
+              questionsDone.length = 0;
+            }
+            var num = Math.floor(Math.random() * keys.length);
+            thiskey = keys[num];
+          }
+        }
+        // End of unique questions each time
+      });
+
+      $(".checkbtn").click(function () {
+        $(".qblock2 h1").text(options[thiskey]);
+      });
+
+      $("#teachbtn").click(function () {
+        $("#clistmodal").modal("show");
+      });
+
+      $(function () {
+        // spin the top questionbar
+        $("#roll-btn").on('click', function () {
+          $('.top-block').addClass('topbar__spin');
+          setTimeout(function () {
+            $('.top-block').removeClass('topbar__spin');
+          }, 300)
+        });
+
+        // spin the names button
+        $(".namesbtn").on('click', function () {
+          $('.names ').addClass('name__speen');
+          setTimeout(function () {
+            $('.names ').removeClass('name__speen');
+          }, 300)
+        });
+      })
+    </script>
+    <script>
+      document.getElementById("startGame").onclick = function () {
+        const gameScreen = document.getElementById("gameScreen");
+        gameScreen.style.display = "block";
+        setTimeout(() => {
+          gameScreen.style.transform = "translateY(0)";
+        }, 5);
+      };
+      document.querySelectorAll(".chooseGameTimeBtn").forEach((gameTimeBtn) => {
+        gameTimeBtn.onclick = function (e) {
+          const time = e.target.dataset.gametime;
+          e.target.parentElement.style.display = "none";
+          switch (time) {
+            case "0":
+              loadFirstToTen();
+              break;
+            default:
+              loadGameWithTimer(time);
+              break;
+          }
+        };
+      });
+      let scores = [0, 0, 0]; // Player 1, 2 and 3
+      var loadNextQuestion;
+      var countdown;
+      let firstToTen = false;
+      function resetScores() {
+        scores = [0, 0, 0];
+      }
+      function setTimerToNextQuestion() {
+        loadNextQuestion = setTimeout(() => {
+          loadNextQuestionInHTML();
+        }, 10000);
+      }
+      function clearQuestionTimerManually() {
+        clearTimeout(loadNextQuestion);
+      }
+      function startTheGame() {
+        document.getElementById("gameDisplay").style.display = "block";
+        document.getElementById("chooseEnd").style.display = "none";
+      }
+      function restartGame() {
+        if (countdown) clearInterval(countdown);
+        clearQuestionTimerManually();
+        document.querySelectorAll("#resultsBar .bar").forEach((bar) => {
+          bar.style.height = "0px";
+          bar.style.transform = "translateY(0px)";
+          bar.querySelector("p").innerText = "Score: 0";
+        });
+        firstToTen = false;
+        document.getElementById("gameDisplay").style.display = "none";
+        document.getElementById("chooseEnd").style.display = "flex";
+      }
+      document.getElementById("restart").onclick = restartGame;
+
+      function endGame() {
+        restartGame();
+        const gameScreen = document.getElementById("gameScreen");
+        gameScreen.style.transform = "translateY(100vh)";
+        setTimeout(() => {
+          gameScreen.style.display = "none";
+        }, 300);
+      }
+      document.getElementById("endGame").onclick = endGame;
+
+      function loadFirstToTen() {
+        firstToTen = true;
+        document.querySelector("#timer").style.display = "none";
+        resetScores();
+        startTheGame();
+        loadNextQuestionInHTML();
+      }
+      function startTimer(time) {
+        let relativeMinutes = Number(time);
+        if (!Number(relativeMinutes) || Number(relativeMinutes) < 0) return;
+        else {
+          relativeMinutes = Date.now() + relativeMinutes * 60 * 1000;
+          countdown = setInterval(() => {
+            let difference = relativeMinutes - Date.now();
+            // let hours = Math.floor(
+            //   (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            // );
+            let minutes = Math.floor(
+              (difference % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            let timerString = `${minutes} mins : ${seconds} secs`;
+            document.querySelector("#timer p").innerText = timerString;
+
+            // Checking end of timer
+            if (difference < 0) {
+              document.querySelector("#timer p").innerText = "Time up!";
+              clearInterval(countdown);
+              finishGameAndShowResults(true);
+            }
+          }, 1000);
+        }
+      }
+      function loadGameWithTimer(timer) {
+        document.querySelector("#timer").style.display = "flex";
+        resetScores();
+        startTheGame();
+        loadNextQuestionInHTML();
+        startTimer(timer);
+      }
+
+      function checkScores() {
+        return scores.indexOf(10);
+      }
+      function finishGameAndShowResults(finish = false) {
+        // It can be called if first to ten or when timer finishes
+        if (finish) {
+          clearQuestionTimerManually();
+          document
+            .querySelectorAll("#answers .optionblock")
+            .forEach((option) => {
+              option.onclick = () => { };
+            });
+        }
+        // Show the results now
+        const allScoresBars = document.querySelectorAll("#resultsBar .bar");
+        for (let i = 0; i < allScoresBars.length; i++) {
+          const currentScore = scores[i];
+          if (currentScore > 0) {
+            allScoresBars[i].style.height = `${currentScore * 10}px`;
+            allScoresBars[i].style.transform = `translateY(${currentScore * 10 * -1
+              }px)`;
+          } else {
+            allScoresBars[i].style.height = `${currentScore * 10 * -1}px`;
+          }
+          allScoresBars[i].querySelector(
+            "p"
+          ).innerText = `Score: ${currentScore}`;
+        }
+      }
+      function loadNextQuestionInHTML() {
+        // Check scores before loading next question if firstToTen mode active
+        if (firstToTen) {
+          let result = checkScores();
+          if (result >= 0) {
+            finishGameAndShowResults(true);
+            return;
+          }
+        }
+        // Randomize
+        // difficulty = Math.floor(Math.random() * 3);
+        // load question
+        document.querySelectorAll("#answers .optionblock").forEach((answer) => {
+          answer.className = "nameblk1 qblock optionblock";
+        });
+        // document.querySelector(".rollbtn").click();
+        // Loading next question
+        if (difficulty == "0") {
+          options = options_easy;
+        } else if (difficulty == "1") {
+          options = options_medium;
+        } else if (difficulty == "2") {
+          options = options_hard;
+        }
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+        $(".qblock h1").text(thiskey.substring(thiskey.indexOf("~") + 1));
+        // Next question loaded
+        enableAnswering();
+        setTimerToNextQuestion();
+      }
+      function enableAnswering() {
+        // Enable clicking of answers buttons
+        document.querySelectorAll("#answers .optionblock").forEach((answer) => {
+          answer.onclick = (e) => {
+            const answerButton = answer;
+            const playerAnswer = answer.dataset.answer;
+            const playerNumber = Number(answerButton.dataset.player);
+            const correctAnswer = options[thiskey];
+
+            if (playerAnswer.toLowerCase() == correctAnswer.toLowerCase()) {
+              answerButton.classList.add("correctAnswer");
+              scores[playerNumber]++;
+              clearQuestionTimerManually();
+              setTimeout(() => {
+                loadNextQuestionInHTML();
+              }, 300);
+            } else {
+              answerButton.classList.add("wrongAnswer");
+              scores[playerNumber]--;
+            }
+            finishGameAndShowResults();
+            answer.onclick = () => { };
+          };
+        });
+      }
+    </script>
+
+    <script src="../js/tasks.js"></script>
+</body>
+
+</html>

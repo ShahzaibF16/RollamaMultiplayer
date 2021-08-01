@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PNPTEPE4LC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to / two / too risky roll</title>
+    <link rel="icon" href="../img/Baby_Logo.png" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--new css file added-->
+    <link rel="stylesheet" href="../css/fa/css/all.css" />
+    <link rel="stylesheet" href="../css/layout_2021-7.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+  </head>
+  <body>
+    <div class="start-overlay" id="start-overlay">
+      <h2 class="start-overlay__title"></h2>
+      <img
+        src="../img/Low_Level_Yellow_Btn_.png"
+        usemap="#diffmap"
+        height="100px"
+        class="levelbutton diff-img"
+      />
+      <map name="diffmap">
+        <area
+          target=""
+          alt="1"
+          title="1"
+          href="#easy"
+          coords="20,60,40,85"
+          shape="rect"
+          class="easy-diff-game"
+        />
+        <area
+          target=""
+          alt="2"
+          title="2"
+          href="#mid"
+          coords="51,45,74,89"
+          shape="rect"
+          class="mid-diff-game"
+        />
+        <area
+          target=""
+          alt="3"
+          title="3"
+          href="#max"
+          coords="84,26,105,89"
+          shape="rect"
+          class="max-diff-game"
+        />
+      </map>
+      <button class="button" data-timemode="1">
+        <img src="../img/Startgamebtn_.png" alt="btn" height="110px" />
+      </button>
+      <img
+        src="../img/riskyrollrules.png"
+        alt="btn"
+        height="400px"
+        style="
+          margin-top: 15px;
+          border-radius: 25px;
+          box-shadow: 5px 10px #733381;
+        "
+      />
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col">
+          <div class="nameblk1 name1 names">
+            <h1></h1>
+          </div>
+        </div> -->
+        <div class="status" style="padding: 0px">
+          <div class="custom-container">
+            <p class="status__title"></p>
+            <div
+              class="countdown countdown--wide countdown--ended"
+              id="countdown"
+              style="
+                touch-action: pan-x pan-y;
+                user-select: none;
+                -webkit-user-drag: none;
+                -webkit-tap-highlight-color: #ff5c33;
+              "
+            >
+              <div class="countdown__fill" id="ticker" style="height: 0%"></div>
+              <div class="countdown__digit" id="seconds"></div>
+              <!--.countdown__buttons-->
+              <!--	.countdown__button +-->
+              <!--	.countdown__button --->
+            </div>
+          </div>
+        </div>
+        <div class="col" style="text-align: center">
+          <img src="../img/illama low res grey.gif" alt="btn" height="110px" />
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="status">
+              Unbanked Points:&nbsp;<br /><span data-points>0</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="status" id="points">
+              Banked points:&nbsp;<br /><span data-banked-points>0</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="nameblk1 name2 names">
+            <h1></h1>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="row" style="margin-top: 25px">
+        <div class="nameblk1 qblock top-block">
+          <h1></h1>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 25px; margin-left: 15px">
+        <div class="col">
+          <div class="row">
+            <img src="../img/num1.png" alt="number1" class="numberhands" />
+            <div class="nameblk1 qblock button optionblock" data-answer="to">
+              <h2>to</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <img src="../img/num2.png" alt="number2" class="numberhands" />
+            <div class="nameblk1 qblock button optionblock" data-answer="two">
+              <h2>two</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <img src="../img/num3.png" alt="number3" class="numberhands" />
+            <div class="nameblk1 qblock button optionblock" data-answer="too">
+              <h2>too</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row" style="margin-top: 25px">
+        <div class="nameblk1 qblock2"><h1></h1></div>
+      </div> -->
+
+      <div class="row" style="margin-top: 35px">
+        <div class="col">
+          <a href="../" id="homebtn">
+            <img
+              src="../img/homebtn.png"
+              alt="homebtn"
+              height="100px"
+              class="homebutton"
+            />
+          </a>
+        </div>
+
+        <!-- <div class="col">
+          <img src="../img/low_diff.png" usemap="#diffmap" height="100px" class="levelbutton diff-img">
+
+          <map name="diffmap">
+              <area target="" alt="1" title="1" href="#easy" coords="20,60,40,85" shape="rect" class="easy-diff">
+            <area target="" alt="2" title="2" href="#mid" coords="51,45,74,89" shape="rect" class="mid-diff">
+            <area target="" alt="3" title="3" href="#max" coords="84,26,105,89" shape="rect" class="max-diff">
+          </map>
+        </div> -->
+        <div class="col">
+          <a href="javascript:void(0);" id="teachbtn">
+            <img
+              src="../img/teach.png"
+              alt="paperbtn"
+              height="100px"
+              class="teacherbutton"
+            />
+          </a>
+        </div>
+        <div class="col">
+          <div class="button custom-button disabled" id="bankingBtn">
+            <a href="javascript:void(0);" id="rollbtn"></a>
+            <img src="../img/Bankbtn.png" alt="rollbtn" height="100px" />
+            <!-- </a> -->
+          </div>
+        </div>
+        <div class="col">
+          <div class="rollbtn button custom-button disabled" id="rollbtn">
+            <a href="javascript:void(0);" id="rollbtn"></a>
+            <img src="../img/Next_btn.png" alt="rollbtn" height="100px" />
+
+            <!-- </a> -->
+          </div>
+          <div class="button custom-button" id="restartBtn">
+            <!-- <a href="javascript:void(0);" id="rollbtn"></a> -->
+            <img src="../img/Restartbtn.png" alt="restart" height="100px" />
+            <!-- </a> -->
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="namesbtn button">
+            <a href="javascript:void(0);" id="namesbtn"></a>
+              <img src="../img/namesbtn.png" alt="namesbtn" height="100px"/>
+            </a>
+          </div>
+        </div> -->
+      </div>
+
+      <div
+        class="modal fade"
+        id="clistmodal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="img-center">
+            <img
+              src="../teacher_tips/To_Two_Too.png"
+              alt="teachboard"
+              style="max-height: 650px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+    <script
+      src="https://cdpn.io/cp/internal/boomboom/pen.js?key=pen.js-6efa810b-f4c4-6a26-1959-2ef3bfbadada"
+      crossorigin=""
+    ></script>
+
+    <script>
+      var names;
+      var difficulty = "0";
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = "";
+      if (!Cookies.get("llama_teacher_idx")) {
+        $.post("../js/process.php", {
+          add_teacher_idx: "1",
+          course_data: "{}",
+        }).done(function (data) {
+          Cookies.set("llama_teacher_idx", data);
+        });
+      } else {
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", {
+          get_course_data: "1",
+          teacher_idx: teacherIdx,
+        }).done(function (data) {
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if (Object.keys(courseData).length && currentList == "") {
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          } else if (currentList != "") {
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if (names) {
+          var num = Math.floor(Math.random() * names.length);
+          name1 = names[num];
+
+          name2 = name1;
+          while (name2 == name1) {
+            num = Math.floor(Math.random() * names.length);
+            name2 = names[num];
+          }
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1);
+        $(".name2 h1").text(name2);
+      });
+
+      var thiskey;
+      var options_easy = {
+        "I want ___ break free!": "to",
+        "Let's go ___ the park.": "to",
+        "Do you want ___ read my story?": "to",
+        "I've got ___ go soon.": "to",
+        "It's time ___ say goodbye.": "to",
+        "They went ____ work. ": "to",
+        "You go ____ see a movie. ": "to",
+        "We travel ____  the hotel. ": "to",
+        "They throw the ball ____ their friends. ": "to",
+        "You cycle ____ the shop. ": "to",
+        "We drive ____ the beach. ": "to",
+        "Jane calls ____ her friend. ": "to",
+        "People walk ____ the exit. ": "to",
+
+        "They study for ____ hours every day. ": "two",
+        "We will both eat ____ cakes. ": "two",
+        "The ____ birds are chirping loudly. ": "two",
+        "The ____ buildings are nearby. ": "two",
+        "The _____ teachers spoke about the students. ": "two",
+        "Children are playing with ____ toys outside. ": "two",
+        "_____ trees are cut down to make the bed. ": "two",
+        "We are both taking ____ trains together. ": "two",
+        "I'd like ___ bags.": "two",
+        "Look at those ___ llamas!": "two",
+        "Three, ___, one, go!": "two",
+        "Sixteen times ___ is thirty-two.": "two",
+        "___ turtle doves…": "two",
+        "I have ___ hands": "two",
+
+        "I can't listen because the noise is _____ loud.": "too",
+        "He couldn't watch because the movie was ____ scary. ": "too",
+        "It is ____ heavy for me to carry. ": "too",
+        "I am ___ tired to stay awake any longer. ": "too",
+        "He would like some popcorn _____. ": "too",
+        "The dog wants to go for a walk ______. ": "too",
+        "She had a lot of fun at the fair _____. ": "too",
+        "Hannah likes dogs _______. ": "too",
+        "I had ___ much dessert!": "too",
+        "It's ___ hot.": "too",
+        "The volume is ___ loud.": "too",
+        "This is ___ messy.": "too",
+        "Do you think we're ___ late?": "too",
+      };
+
+      var options_medium = {
+        "I have ____ check my diary.": "to",
+        "He wants ____ desserts!": "two",
+        "The children like ___ play together.": "to",
+        "She is looking forward ____ seeing her family.": "to",
+        "They need ____ take care of their pets.": "to",
+        "If you like ____ draw, you should practise often.": "to",
+        "I am about ____ go on holiday.": "to",
+        "They want ____ be friends with each other. ": "to",
+        "You try ____ improve your work. ": "to",
+        "We travel ____ see new places. ": "to",
+        "They sent a message ____ cheer up their family. ": "to",
+        "The parcel is sent ____ your house. ": "to",
+        "We drive ____ make the journey more comfortable. ": "to",
+        "Jane calls ____ ask me about my day. ": "to",
+        "People like ____ try the newest recipes. ": "to",
+
+        "They have their snack at ____ o'clock.": "two",
+        "Which ______ would you like to try? ": "two",
+        "The boy wants ____ of each flavour. ": "two",
+        "The hungry cat catches ____ ginormous mice.": "two",
+        "____ of the best students will win the award.": "two",
+        "Would you like one or _____ of the cakes?": "two",
+        "What are you ____ doing in the holidays?": "two",
+        "How are you ____ finding the school?": "two",
+        "What do you ____ want for dinner?": "two",
+        "I can't paint until I have the _____ correct colours.": "two",
+        "You have three cats but I only have _____. ": "two",
+        "I'd like ____ of those cakes please. ": "two",
+        "I have ____ classes of piano each week.": "two",
+        "The _____ dogs I have are always fighting each other.": "two",
+        "I'd like to invite ______ friends to my party.": "two",
+
+        "The television is _____ loud for me to hear the phone call.": "too",
+        "He started ____ early so he was thrown out of the race. ": "too",
+        "You can never have ______ much fruit in my opinion. ": "too",
+        "He was excited for his birthday and his parents were ______. ": "too",
+        "The rollercoaster is a bit _____ thrilling for me. ": "too",
+        "That is ____ much cake for me so please take some back.": "too",
+        "Are you going to the wedding ____?": "too",
+        "I have ___ much homework tonight.": "too",
+        "My bag is ______ heavy so I can't lift it.": "too",
+        "You're _____ kind!": "too",
+        "There are _____ many people on this bus!": "too",
+        "The bag is ____ full and now it won't close properly.": "too",
+        "You worry ____ much about what other people think. ": "too",
+      };
+
+      var options_hard = {
+        "It is important ____ study English frequently.": "to",
+        "Try ______ memorise the grammar rules you're unsure about. ": "to",
+        "Do you want ___ leave early?": "to",
+        "I'd like ___ collect my bag.": "to",
+        "Look at my painting __.": "too",
+        "It's quarter ___ nine in the morning": "to",
+        "How far ___ our destination?": "to",
+        "Does he know how ____ bake a good cake? ": "to",
+        "It is important _____ study carefully before an exam.": "to",
+        "Jo and Dan travel ____ experience different cultures. ": "to",
+        "He sent an email _____ the bank. ": "to",
+        "Do you like ____ do lots of exercise? ": "to",
+        "We listen ____ many different kinds of music. ": "to",
+        "Josh looks forward ____ his birthday party. ": "to",
+        "The children have ____ line up after break time. ": "to",
+
+        "I would like to have ____ of those cakes please. ": "two",
+        "I have to have ____ classes of piano each week.": "two",
+        "The _____ dogs are too cute but they are always fighting each other.":
+          "two",
+        "I'd like to invite ______ friends to my party.": "two",
+        "You have more than one so can't I have ____ as well?": "two",
+        "I have made a mistake, how we have ____ hotel bookings!": "two",
+        "The pair of rabbits each had _____ carrots.": "two",
+        "_____ winning scores are all that stands between us and the trophy.":
+          "two",
+        "How can _____ puppies cause all this damage?": "two",
+        "You need to have finished tidying up by ____ pm.": "two",
+        "These pies are delicious so I'd like to buy _____ more of them.":
+          "two",
+        "How many will there be if I take ____ away? ": "two",
+        "I would like three bottles and ____ salad boxes, please. ": "two",
+        "It looks like the flight will be delayed by ____ hours.": "two",
+
+        "There are _____ many people on this bus!": "too",
+        "The bag is ____ full and now it won't close properly.": "too",
+        "You worry ____ much about what other people think. ": "too",
+        "I'm ___ short to reach the shelf": "too",
+        "The children get ____ excited after eating sweets in the evenings.":
+          "too",
+        "Many soda drinks have _______ much sugar. ": "too",
+        "You are walking _______ fast; I need to stop for a moment. ": "too",
+        "It's not just July; August is very hot _____. ": "too",
+        "You should eat healthily and exercise ______. ": "too",
+        "He might not get the job because he is _____ inexperienced. ": "too",
+        "That is ____ much! You didn't have to get me a big gift.": "too",
+        "Are you staying at home this summer ____?": "too",
+      };
+
+      let answered = true;
+      let points = 0;
+      let bankedPoints = 0;
+      let nextQuestionTimeout;
+      let streak = 0;
+
+      $("#restartBtn").hide();
+      $(".rollbtn").click(function () {
+        if (difficulty == "0") {
+          options = options_easy;
+        } else if (difficulty == "1") {
+          options = options_medium;
+        } else if (difficulty == "2") {
+          options = options_hard;
+        }
+        if (!answered) return;
+
+        if (nextQuestionTimeout) {
+          clearTimeout(nextQuestionTimeout);
+          nextQuestionTimeout = null;
+        }
+
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+        $(".qblock h1").text(thiskey.substring(thiskey.indexOf("~") + 1));
+        getname();
+        $(".name1 h1").text("");
+        $(".name2 h1").text("");
+        $(".qblock2 h1").text("");
+
+        // reset classes
+        $("[data-answer]").each((index, element) => {
+          element.classList.remove("correct");
+          element.classList.remove("wrong");
+        });
+        answered = false;
+        $(".rollbtn").addClass("disabled");
+      });
+
+      $("[data-answer]").click(function () {
+        if (answered || countDownTime == 0) return;
+        answered = true;
+
+        const userAnswer = $(this).data("answer");
+        const correctAnswer = options[thiskey];
+        $(".qblock2 h1").text(userAnswer);
+
+        if (userAnswer == correctAnswer) {
+          streak++;
+          $(this).addClass("correct");
+          points += streak;
+          $("[data-points]").text(points);
+
+          nextQuestionTimeout = setTimeout(() => {
+            $(".rollbtn").click();
+          }, 1000);
+
+          $("#bankingBtn").removeClass("disabled");
+        } else {
+          $(this).addClass("wrong");
+          $("[data-answer]").each(function (index, element) {
+            if (correctAnswer == element.dataset.answer)
+              $(this).addClass("correct");
+          });
+          points = 0;
+          streak = 0;
+          $("[data-points]").text(points);
+
+          nextQuestionTimeout = setTimeout(() => {
+            $(".rollbtn").click();
+          }, 2000);
+        }
+
+        $(".rollbtn").removeClass("disabled");
+      });
+
+      $(".checkbtn").click(function () {
+        answered = true;
+        $(".qblock2 h1").text(options[thiskey]);
+        $(".rollbtn").removeClass("disabled");
+      });
+
+      $("#teachbtn").click(function () {
+        $("#clistmodal").modal("show");
+      });
+
+      let countDownTime, countDownInterval;
+
+      $("[data-timemode]").click(function () {
+        $("#start-overlay").hide();
+        countDownTime = $(this).data("timemode") * 60 + 1;
+
+        countDownInterval = setInterval(() => {
+          $("[data-time]").text(--countDownTime);
+          if (countDownTime == 0) {
+            clearInterval(countDownInterval);
+            answered = true;
+            $(".rollbtn").hide();
+            $("#bankingBtn").hide();
+
+            bankedPoints += points;
+            points = 0;
+            $("[data-banked-points]").text(bankedPoints);
+            $("[data-points]").text(points);
+
+            $("#points").addClass("shake");
+          }
+        }, 1000);
+      });
+
+      $("#bankingBtn").click(() => {
+        bankedPoints += points;
+        streak = 0;
+        $("[data-banked-points]").text(bankedPoints);
+
+        points = 0;
+        $("[data-points]").text(points);
+
+        $("#bankingBtn").addClass("disabled");
+      });
+      $("#restartBtn").click(() => {
+        location.reload();
+      });
+
+      function Timer(duration, element) {
+        var self = this;
+        this.duration = duration;
+        this.element = element;
+        this.running = false;
+
+        this.els = {
+          ticker: document.getElementById("ticker"),
+          seconds: document.getElementById("seconds"),
+        };
+
+        // document.getElementById('toggle').addEventListener('click', function() {
+        // 	var cl = 'countdown--wide';
+        // 	if (self.element.classList.contains(cl)) {
+        // 		self.element.classList.remove(cl);
+        // 	} else {
+        // 		self.element.classList.add(cl);
+        // 	}
+        // });
+
+        var hammerHandler = new Hammer(this.element);
+        hammerHandler.get("pan").set({ direction: Hammer.DIRECTION_VERTICAL });
+        hammerHandler.on("panup pandown", function (ev) {
+          if (!self.running) {
+            if (
+              ev.direction === Hammer.DIRECTION_UP &&
+              self.duration < 999000
+            ) {
+              self.setDuration(self.duration + 1000);
+            } else if (
+              ev.direction === Hammer.DIRECTION_DOWN &&
+              self.duration > 0
+            ) {
+              self.setDuration(self.duration - 1000);
+            }
+          }
+        });
+
+        hammerHandler.on("tap", function () {
+          if (self.running) {
+            self.reset();
+          } else {
+            // self.start();
+          }
+        });
+      }
+
+      Timer.prototype.start = function () {
+        var self = this;
+        var start = null;
+        this.running = true;
+        var remainingSeconds = (this.els.seconds.textContent =
+          this.duration / 1000);
+
+        function draw(now) {
+          if (!start) start = now;
+          var diff = now - start;
+          var newSeconds = Math.ceil((self.duration - diff) / 1000);
+
+          if (diff <= self.duration) {
+            self.els.ticker.style.height =
+              100 - (diff / self.duration) * 100 + "%";
+
+            if (newSeconds != remainingSeconds) {
+              self.els.seconds.textContent = newSeconds;
+              remainingSeconds = newSeconds;
+            }
+
+            self.frameReq = window.requestAnimationFrame(draw);
+          } else {
+            //self.running = false;
+            self.els.seconds.textContent = "Time up!";
+            self.els.ticker.style.height = "0%";
+            self.element.classList.add("countdown--ended");
+            answered = true;
+            $(".rollbtn").hide();
+            $("#points").addClass("shake");
+            $("#restartBtn").show();
+          }
+        }
+
+        self.frameReq = window.requestAnimationFrame(draw);
+      };
+
+      Timer.prototype.stop = function () {
+        this.running = false;
+        window.cancelAnimationFrame(this.frameReq);
+        this.els.seconds.textContent = this.duration / 1000;
+        this.els.ticker.style.height = null;
+        this.element.classList.remove("countdown--ended");
+      };
+
+      Timer.prototype.setDuration = function (duration) {
+        this.duration = duration;
+        this.els.seconds.textContent = this.duration / 1000;
+      };
+
+      var timer = new Timer(60000, document.getElementById("countdown"));
+      timer.start();
+      timer.stop();
+    </script>
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apostrophe of Possession  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>
+            Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th><br /><br />
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: apostrophe of
+  possession
+<br><br>Task: add an apostrophe to show possession<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>if the last s shows a plural -> s' &nbsp; | &nbsp; otherwise -> 's
+          &nbsp; | &nbsp; (exception: names ending in s are a style choice -> Chris's / Chris'
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: apostrophe of possession</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+       var options_easy = {
+        "My *teachers* bag": "before s",
+        "A *boys* jacket": "before s",
+        "The *cups* handle": "before s",
+        "The *dogs* owner   (one dog)": "before s",
+        "The *aliens* ship (one alien)": "before s",
+        "The *schools* name": "before s",
+        "The *singers* name": "before s",
+        "An *apples* core": "before s",
+        "The *cats* whiskers (one cat)": "before s",
+        "*Billys* bedroom": "before s",
+
+        "The two *dogs* beds": "after s",
+        "The nine *planets* orbits": "after s",
+        "Three *cats* food": "after s",
+        "Many *countries* flags": "after s",
+        "The *aliens* ship (two aliens)": "after s",
+        "The two *players* mistakes": "after s",
+        "The two *dogs* beds": "after s",
+        "The nine *planets* orbits": "after s",
+       
+        "The *boys* are playing": "no apostrophe",
+        "The *girls* sing for fun": "no apostrophe",
+        "The *twins* ride on the trail": "no apostrophe",
+        "The *girls* play happily": "no apostrophe",
+        "The *parents* waited": "no apostrophe",
+        "It *freezes* the ice": "no apostrophe",
+        "The bananas are cheap": "no apostrophe",
+        "Some websites load quickly": "no apostrophe",
+        "Pandas eat bamboo": "no apostrophe",
+        "Play some *games*": "no apostrophe",
+
+      };
+
+var options_medium = {
+
+        "A good *days* work": "before s",
+        "The *womens* discovery": "before s",
+        "The *mens* conversation": "before s",
+        "The *Earths* orbit": "before s",
+        "*Peoples* opinions": "before s",
+        "*Childrens* section": "before s",
+        "The *farms* pets (one farm)": "before s",
+        "The *schools* principal":"before s",
+
+        "The *dogs* owner     (two dogs)": "after s",
+        "The *cups* handles ": "after s",
+        "Three *weeks* time": "after s",
+        "The *boys* changing room  (all boys)": "after s",
+        "The *aliens* ship (two aliens)": "after s",
+        "The *girls* bathroom   (all girls)": "after s",
+        "*Pets* Corner     (all pets)": "after s",
+        "The *farms* fields (two farms)": "after s",
+
+        "A month of *Sundays*": "no apostrophe",
+        "The *bananas* are ripe today": "no apostrophe",
+        "Some *websites* load quickly": "no apostrophe",
+        "*News* headlines": "no apostrophe",
+        "The project was two *months* overdue": "no apostrophe",
+        "Top *stories* of the day": "no apostrophe",
+        "My birthday is in two *days*": "no apostrophe",
+        "The *apples* are rotting": "no apostrophe",
+
+};
+
+var options_hard = {
+
+        "You can be proud of a good *days* work.": "before s",
+        "The *womens* discovery was groundbreaking.": "before s",
+        "The *mens* conversation was loud.": "before s",
+        "The *Earths* orbit is elliptical.": "before s",
+        "*Peoples* opinions are hard to predict.": "before s",
+        "The *childrens* section of the bookshop was full.": "before s",
+        "The *farms* pet sheepdog was so smart.": "before s",
+        "The *schools* principal was kind.":"before s",
+        "My birthday is in two *days* time.": "before s",
+
+
+        "The *dogs* owner is training them to follow commands.": "after s",
+        "The *cups* handles are both shaped like boomerangs.": "after s",
+        "Our trip is in three *weeks* time.": "after s",
+        "The *boys* changing room is spotless.": "after s",
+        "The two *aliens* spacecraft looked like a lunchbox": "after s",
+        "The *girls* bathroom was noisy.": "after s",
+        "*Pets* Corner smelled a bit stale.": "after s",
+        "The *farms* fields bordered each other": "after s",
+
+        "I've never seen that in a month of *Sundays*.": "no apostrophe",
+        "The *bananas* are ripe today.": "no apostrophe",
+        "Some *websites* load quickly.": "no apostrophe",
+        "The *news* headlines are too negative.": "no apostrophe",
+        "The project was two *months* overdue.": "no apostrophe",
+        "Here are the top *stories* of the day": "no apostrophe",
+        "My birthday is in two *days*.": "no apostrophe",
+        "It seems the *apples* are rotting.": "no apostrophe",
+
+      };
+
+     // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

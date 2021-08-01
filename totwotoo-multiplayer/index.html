@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PNPTEPE4LC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to / two / too multiplayer</title>
+    <link rel="icon" href="../img/Baby_Logo.png" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--new css file added-->
+    <link rel="stylesheet" href="../css/fa/css/all.css">
+    <link rel="stylesheet" href="../css/layout_2021-7.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div style="text-align: left" class="row">
+        <div>
+          <a href="../" id="homebtn">
+            <img
+              src="../img/homebtn.png"
+              alt="homebtn"
+              height="100px"
+              class="homebutton"
+            />
+          </a>
+
+          <div style="text-align: right">
+            <img src="../img/Exitbtn_.png" alt="checkbtn" height="100px" />
+          </div>
+          <div><p>Timer</p></div>
+        </div>
+
+        <span class="bar"><p>Player 1</p></span>
+        <span class="bar"><p>Player 2</p></span>
+        <span class="bar"><p>Player 3</p></span>
+      </div>
+      <div class="row" id="answers">
+        <div class="col">
+          <div class="row">
+            <div
+              class="nameblk1 qblock optionblock tall"
+              data-player="0"
+              data-answer="to"
+            >
+              <h2>Player 1:<br />to</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div
+              class="nameblk1 qblock optionblock tall"
+              data-player="1"
+              data-answer="two"
+            >
+              <h2>Player 2:<br />two</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div
+              class="nameblk1 qblock optionblock tall"
+              data-player="2"
+              data-answer="too"
+            >
+              <h2>Player 3:<br />too</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="start-overlay" id="start-overlay">
+      <h2 class="start-overlay__title"></h2>
+      <button class="button" data-timemode="1">
+        <a href="javascript:void(0);" id="startGame">
+          <img src="../img/Gamesettingsbtn.png" alt="btn" height="110px" ></button>
+       <img
+      src="../img/ROLFrules.png"
+      alt="btn"
+      height="300px"
+      style="
+        margin-top: 15px;
+        margin-bottom: 150px;
+        border-radius: 25px;
+        box-shadow: 5px 10px #733381;"
+    />
+    </div>
+
+    <div id="gameScreen">
+      <div id="chooseEnd">
+        <div style="margin-right: 15px">
+          <a href="../" id="homebtn">
+            <img
+              src="../img/homebtn.png"
+              alt="homebtn"
+              height="90px"
+              class="homebutton"
+            />
+          </a>
+        </div>
+        <!--  <button
+          style="
+            margin: 0%;
+            background: url('../img/Exitbtn_.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 100px;
+            width: 150px;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="endGame"
+        ></button> -->
+
+        <div style="margin-left: 15px">
+          <img
+            src="../img/Low_Level_Yellow_Btn_.png"
+            usemap="#diffmap"
+            height="90px"
+            class="levelbutton diff-img"
+          />
+
+          <map name="diffmap">
+            <area
+              target=""
+              alt="1"
+              title="1"
+              href="#easy"
+              coords="20,60,40,85"
+              shape="rect"
+              class="easy-diff-game"
+            />
+            <area
+              target=""
+              alt="2"
+              title="2"
+              href="#mid"
+              coords="51,45,74,89"
+              shape="rect"
+              class="mid-diff-game"
+            />
+            <area
+              target=""
+              alt="3"
+              title="3"
+              href="#max"
+              coords="84,26,105,89"
+              shape="rect"
+              class="max-diff-game"
+            />
+          </map>
+        </div>
+
+        <button
+          style="
+            margin-left: 15px;
+            background: url('../img/Firsttotenbtn_.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="firstToTen"
+          data-gameTime="0"
+        ></button>
+        <button
+          style="
+            background: url('../img/1minracebtn_.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="oneMinute"
+          data-gameTime="1"
+        ></button>
+        <!-- <button
+          style="
+            background: url('../img/2minracebtn.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="twoMinute"
+          data-gameTime="2"
+        ></button>
+        <button
+          style="
+            background: url('../img/3minracebtn.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="threeMinute"
+          data-gameTime="3"
+        ></button> !-->
+      </div>
+      <div id="gameDisplay">
+        <div id="gameButtons">
+          <div>
+            <a href="../" id="homebtn">
+              <img
+                src="../img/homebtn.png"
+                alt="homebtn"
+                height="100px"
+                class="homebutton"
+              />
+            </a>
+          </div>
+          <div id="restart">
+            <img src="../img/Exitbtn_.png" alt="checkbtn" height="100px" />
+          </div>
+          <div id="timer"><p>Timer</p></div>
+        </div>
+        <div id="questionBlock" class="row" style="margin-top: 25px">
+          <div class="nameblk1 qblock top-block">
+            <h1></h1>
+          </div>
+        </div>
+        <div id="resultsBar">
+          <span class="bar"><p>Player 1</p></span>
+          <span class="bar"><p>Player 2</p></span>
+          <span class="bar"><p>Player 3</p></span>
+        </div>
+        <div class="row" id="answers">
+          <div class="col">
+            <div class="row">
+              <div
+                class="nameblk1 qblock optionblock"
+                data-player="0"
+                data-answer="to"
+              >
+                <h2>to</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div
+                class="nameblk1 qblock optionblock"
+                data-player="1"
+                data-answer="two"
+              >
+                <h2>two</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div
+                class="nameblk1 qblock optionblock"
+                data-player="2"
+                data-answer="too"
+              >
+                <h2>too</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="game.js"></script> -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    <script>
+      var names;
+      var difficulty = "0";
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = '';
+      if(!Cookies.get("llama_teacher_idx")){
+        $.post("../js/process.php", {"add_teacher_idx": "1", "course_data": "{}"}).done(function(data){
+          Cookies.set("llama_teacher_idx", data);
+        });
+      }
+      else{
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", {"get_course_data": "1", "teacher_idx": teacherIdx}).done(function(data){
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if(Object.keys(courseData).length && currentList == ''){
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          }
+          else if(currentList != ''){
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if (!names || !names.length || names.length <= 0) return;
+        var num = Math.floor(Math.random() * names.length);
+        name1 = names[num];
+
+        name2 = name1;
+        while (name2 == name1) {
+          num = Math.floor(Math.random() * names.length);
+          name2 = names[num];
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1);
+        $(".name2 h1").text(name2);
+      });
+
+      var thiskey;
+      var options_easy = {
+        "I want ___ break free!": "to",
+        "Let's go ___ the park.": "to",
+        "Do you want ___ read my story?": "to",
+        "I've got ___ go soon.": "to",
+        "It's time ___ say goodbye.": "to",
+        "They went ____ work. ": "to",
+        "You go ____ see a movie. ": "to",
+        "We travel ____  the hotel. ": "to",
+        "They throw the ball ____ their friends. ": "to",
+        "You cycle ____ the shop. ": "to",
+        "We drive ____ the beach. ": "to",
+        "Jane calls ____ her friend. ": "to",
+        "People walk ____ the exit. ": "to",
+
+        "They study for ____ hours every day. ": "two",
+        "We will both eat ____ cakes. ": "two",
+        "The ____ birds are chirping loudly. ": "two",
+        "The ____ buildings are nearby. ": "two",
+        "The _____ teachers spoke about the students. ": "two",
+        "Children are playing with ____ toys outside. ": "two",
+        "_____ trees are cut down to make the bed. ": "two",
+        "We are both taking ____ trains together. ": "two",
+        "I'd like ___ bags.": "two",
+        "Look at those ___ llamas!": "two",
+        "Three, ___, one, go!": "two",
+        "Sixteen times ___ is thirty-two.": "two",
+        "___ turtle doves…": "two",
+        "I have ___ hands": "two",
+
+        "I can't listen because the noise is _____ loud.": "too",
+        "He couldn't watch because the movie was ____ scary. ": "too",
+        "It is ____ heavy for me to carry. ": "too",
+        "I am ___ tired to stay awake any longer. ": "too",
+        "He would like some popcorn _____. ": "too",
+        "The dog wants to go for a walk ______. ": "too",
+        "She had a lot of fun at the fair _____. ": "too",
+        "Hannah likes dogs _______. ": "too",
+        "I had ___ much dessert!": "too",
+        "It's ___ hot.": "too",
+        "The volume is ___ loud.": "too",
+        "This is ___ messy.": "too",
+        "Do you think we're ___ late?": "too",
+      };
+
+      var options_medium = {
+        "I have ____ check my diary.": "to",
+        "He wants ____ desserts!": "two",
+        "The children like ___ play together.": "to",
+        "She is looking forward ____ seeing her family.": "to",
+        "They need ____ take care of their pets.": "to",
+        "If you like ____ draw, you should practise often.": "to",
+        "I am about ____ go on holiday.": "to",
+        "They want ____ be friends with each other. ": "to",
+        "You try ____ improve your work. ": "to",
+        "We travel ____ see new places. ": "to",
+        "They sent a message ____ cheer up their family. ": "to",
+        "The parcel is sent ____ your house. ": "to",
+        "We drive ____ make the journey more comfortable. ": "to",
+        "Jane calls ____ ask me about my day. ": "to",
+        "People like ____ try the newest recipes. ": "to",
+
+        "They have their snack at ____ o'clock.": "two",
+        "Which ______ would you like to try? ": "two",
+        "The boy wants ____ of each flavour. ": "two",
+        "The hungry cat catches ____ ginormous mice.": "two",
+        "____ of the best students will win the award.": "two",
+        "Would you like one or _____ of the cakes?": "two",
+        "What are you ____ doing in the holidays?": "two",
+        "How are you ____ finding the school?": "two",
+        "What do you ____ want for dinner?": "two",
+        "I can't paint until I have the _____ correct colours.": "two",
+        "You have three cats but I only have _____. ": "two",
+        "I'd like ____ of those cakes please. ": "two",
+        "I have ____ classes of piano each week.": "two",
+        "The _____ dogs I have are always fighting each other.": "two",
+        "I'd like to invite ______ friends to my party.": "two",
+
+        "The television is _____ loud for me to hear the phone call.": "too",
+        "He started ____ early so he was thrown out of the race. ": "too",
+        "You can never have ______ much fruit in my opinion. ": "too",
+        "He was excited for his birthday and his parents were ______. ": "too",
+        "The rollercoaster is a bit _____ thrilling for me. ": "too",
+        "That is ____ much cake for me so please take some back.": "too",
+        "Are you going to the wedding ____?": "too",
+        "I have ___ much homework tonight.": "too",
+        "My bag is ______ heavy so I can't lift it.": "too",
+        "You're _____ kind!": "too",
+        "There are _____ many people on this bus!": "too",
+        "The bag is ____ full and now it won't close properly.": "too",
+        "You worry ____ much about what other people think. ": "too",
+      };
+
+      var options_hard = {
+        "It is important ____ study English frequently.": "to",
+        "Try ______ memorise the grammar rules you're unsure about. ": "to",
+        "Do you want ___ leave early?": "to",
+        "I'd like ___ collect my bag.": "to",
+        "Look at my painting __.": "too",
+        "It's quarter ___ nine in the morning": "to",
+        "How far ___ our destination?": "to",
+        "Does he know how ____ bake a good cake? ": "to",
+        "It is important _____ study carefully before an exam.": "to",
+        "Jo and Dan travel ____ experience different cultures. ": "to",
+        "He sent an email _____ the bank. ": "to",
+        "Do you like ____ do lots of exercise? ": "to",
+        "We listen ____ many different kinds of music. ": "to",
+        "Josh looks forward ____ his birthday party. ": "to",
+        "The children have ____ line up after break time. ": "to",
+
+        "I would like to have ____ of those cakes please. ": "two",
+        "I have to have ____ classes of piano each week.": "two",
+        "The _____ dogs are too cute but they are always fighting each other.":
+          "two",
+        "I'd like to invite ______ friends to my party.": "two",
+        "You have more than one so can't I have ____ as well?": "two",
+        "I have made a mistake, how we have ____ hotel bookings!": "two",
+        "The pair of rabbits each had _____ carrots.": "two",
+        "_____ winning scores are all that stands between us and the trophy.":
+          "two",
+        "How can _____ puppies cause all this damage?": "two",
+        "You need to have finished tidying up by ____ pm.": "two",
+        "These pies are delicious so I'd like to buy _____ more of them.":
+          "two",
+        "How many will there be if I take ____ away? ": "two",
+        "I would like three bottles and ____ salad boxes, please. ": "two",
+        "It looks like the flight will be delayed by ____ hours.": "two",
+
+        "There are _____ many people on this bus!": "too",
+        "The bag is ____ full and now it won't close properly.": "too",
+        "You worry ____ much about what other people think. ": "too",
+        "I'm ___ short to reach the shelf": "too",
+        "The children get ____ excited after eating sweets in the evenings.":
+          "too",
+        "Many soda drinks have _______ much sugar. ": "too",
+        "You are walking _______ fast; I need to stop for a moment. ": "too",
+        "It's not just July; August is very hot _____. ": "too",
+        "You should eat healthily and exercise ______. ": "too",
+        "He might not get the job because he is _____ inexperienced. ": "too",
+        "That is ____ much! You didn't have to get me a big gift.": "too",
+        "Are you staying at home this summer ____?": "too",
+      };
+
+     var options;
+
+// Unique questions each time
+      var totalqs = Object.keys(options_easy).length;
+      var questionsDoneEasy = [];
+      var questionsDoneMedium = [];
+      var questionsDoneHard = [];
+      var questionsDone;
+      var qAdded;
+      // end of unique questions each time
+
+ $(".rollbtn").click(function () {
+     // Difficulty code start
+        if(difficulty == "0"){
+          options = options_easy;
+          questionsDone = questionsDoneEasy;
+          totalqs = Object.keys(options_easy).length;
+        }
+        else if(difficulty == "1"){
+          options = options_medium;
+          questionsDone = questionsDoneMedium;
+          totalqs = Object.keys(options_medium).length;
+        }
+        else if(difficulty == "2"){
+          options = options_hard;
+          questionsDone = questionsDoneHard;
+          totalqs = Object.keys(options_hard).length;
+        }
+        // Difficulty code end
+
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+
+        // Unique questions each time
+        qAdded = false;
+        while(!qAdded){
+            if(!questionsDone.includes(thiskey)){
+            $(".qblock h1").text(thiskey.substring(thiskey.indexOf ("~") + 1));
+            getname();
+            $(".name1 h1").text("");
+            $(".name2 h1").text("");
+            $(".qblock2 h1").text("");
+            questionsDone.push(thiskey);
+            qAdded = true;
+            console.log(questionsDone.length);
+          }
+          else{
+            if(questionsDone.length == totalqs){
+              questionsDone.length = 0;
+            }
+            var num = Math.floor(Math.random() * keys.length);
+            thiskey = keys[num];
+          }
+        }
+        // End of unique questions each time
+      });
+
+      $(".checkbtn").click(function () {
+        $(".qblock2 h1").text(options[thiskey]);
+      });
+
+      $("#teachbtn").click(function(){
+        $("#clistmodal").modal("show");
+      });
+      
+      $(function(){
+        // spin the top questionbar
+        $("#roll-btn").on('click',function () {
+          $('.top-block').addClass('topbar__spin');
+          setTimeout(function(){
+            $('.top-block').removeClass('topbar__spin');
+          },300)
+        });
+
+        // spin the names button
+        $(".namesbtn").on('click',function () {
+          $('.names ').addClass('name__speen');
+          setTimeout(function(){
+            $('.names ').removeClass('name__speen');
+          },300)
+        });
+      })
+    </script>
+    <script>
+      document.getElementById("startGame").onclick = function () {
+        const gameScreen = document.getElementById("gameScreen");
+        gameScreen.style.display = "block";
+        setTimeout(() => {
+          gameScreen.style.transform = "translateY(0)";
+        }, 5);
+      };
+      document.querySelectorAll(".chooseGameTimeBtn").forEach((gameTimeBtn) => {
+        gameTimeBtn.onclick = function (e) {
+          const time = e.target.dataset.gametime;
+          e.target.parentElement.style.display = "none";
+          switch (time) {
+            case "0":
+              loadFirstToTen();
+              break;
+            default:
+              loadGameWithTimer(time);
+              break;
+          }
+        };
+      });
+      let scores = [0, 0, 0]; // Player 1, 2 and 3
+      var loadNextQuestion;
+      var countdown;
+      let firstToTen = false;
+      function resetScores() {
+        scores = [0, 0, 0];
+      }
+      function setTimerToNextQuestion() {
+        loadNextQuestion = setTimeout(() => {
+          loadNextQuestionInHTML();
+        }, 10000);
+      }
+      function clearQuestionTimerManually() {
+        clearTimeout(loadNextQuestion);
+      }
+      function startTheGame() {
+        document.getElementById("gameDisplay").style.display = "block";
+        document.getElementById("chooseEnd").style.display = "none";
+      }
+      function restartGame() {
+        if (countdown) clearInterval(countdown);
+        clearQuestionTimerManually();
+        document.querySelectorAll("#resultsBar .bar").forEach((bar) => {
+          bar.style.height = "0px";
+          bar.style.transform = "translateY(0px)";
+          bar.querySelector("p").innerText = "Score: 0";
+        });
+        firstToTen = false;
+        document.getElementById("gameDisplay").style.display = "none";
+        document.getElementById("chooseEnd").style.display = "flex";
+      }
+      document.getElementById("restart").onclick = restartGame;
+
+      function endGame() {
+        restartGame();
+        const gameScreen = document.getElementById("gameScreen");
+        gameScreen.style.transform = "translateY(100vh)";
+        setTimeout(() => {
+          gameScreen.style.display = "none";
+        }, 300);
+      }
+      document.getElementById("endGame").onclick = endGame;
+
+      function loadFirstToTen() {
+        firstToTen = true;
+        document.querySelector("#timer").style.display = "none";
+        resetScores();
+        startTheGame();
+        loadNextQuestionInHTML();
+      }
+      function startTimer(time) {
+        let relativeMinutes = Number(time);
+        if (!Number(relativeMinutes) || Number(relativeMinutes) < 0) return;
+        else {
+          relativeMinutes = Date.now() + relativeMinutes * 60 * 1000;
+          countdown = setInterval(() => {
+            let difference = relativeMinutes - Date.now();
+            // let hours = Math.floor(
+            //   (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            // );
+            let minutes = Math.floor(
+              (difference % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            let timerString = `${minutes} mins : ${seconds} secs`;
+            document.querySelector("#timer p").innerText = timerString;
+
+            // Checking end of timer
+            if (difference < 0) {
+              document.querySelector("#timer p").innerText = "Time up!";
+              clearInterval(countdown);
+              finishGameAndShowResults(true);
+            }
+          }, 1000);
+        }
+      }
+      function loadGameWithTimer(timer) {
+        document.querySelector("#timer").style.display = "flex";
+        resetScores();
+        startTheGame();
+        loadNextQuestionInHTML();
+        startTimer(timer);
+      }
+
+      function checkScores() {
+        return scores.indexOf(10);
+      }
+      function finishGameAndShowResults(finish = false) {
+        // It can be called if first to ten or when timer finishes
+        if (finish) {
+          clearQuestionTimerManually();
+          document
+            .querySelectorAll("#answers .optionblock")
+            .forEach((option) => {
+              option.onclick = () => {};
+            });
+        }
+        // Show the results now
+        const allScoresBars = document.querySelectorAll("#resultsBar .bar");
+        for (let i = 0; i < allScoresBars.length; i++) {
+          const currentScore = scores[i];
+          if (currentScore > 0) {
+            allScoresBars[i].style.height = `${currentScore * 10}px`;
+            allScoresBars[i].style.transform = `translateY(${
+              currentScore * 10 * -1
+            }px)`;
+          } else {
+            allScoresBars[i].style.height = `${currentScore * 10 * -1}px`;
+          }
+          allScoresBars[i].querySelector(
+            "p"
+          ).innerText = `Score: ${currentScore}`;
+        }
+      }
+      function loadNextQuestionInHTML() {
+        // Check scores before loading next question if firstToTen mode active
+        if (firstToTen) {
+          let result = checkScores();
+          if (result >= 0) {
+            finishGameAndShowResults(true);
+            return;
+          }
+        }
+        // Randomize
+        // difficulty = Math.floor(Math.random() * 3);
+        // load question
+        document.querySelectorAll("#answers .optionblock").forEach((answer) => {
+          answer.className = "nameblk1 qblock optionblock";
+        });
+        // document.querySelector(".rollbtn").click();
+        // Loading next question
+        if (difficulty == "0") {
+          options = options_easy;
+        } else if (difficulty == "1") {
+          options = options_medium;
+        } else if (difficulty == "2") {
+          options = options_hard;
+        }
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+        $(".qblock h1").text(thiskey.substring(thiskey.indexOf("~") + 1));
+        // Next question loaded
+        enableAnswering();
+        setTimerToNextQuestion();
+      }
+      function enableAnswering() {
+        // Enable clicking of answers buttons
+        document.querySelectorAll("#answers .optionblock").forEach((answer) => {
+          answer.onclick = (e) => {
+            const answerButton = answer;
+            const playerAnswer = answer.dataset.answer;
+            const playerNumber = Number(answerButton.dataset.player);
+            const correctAnswer = options[thiskey];
+
+            if (playerAnswer.toLowerCase() == correctAnswer.toLowerCase()) {
+              answerButton.classList.add("correctAnswer");
+              scores[playerNumber]++;
+              clearQuestionTimerManually();
+              setTimeout(() => {
+                loadNextQuestionInHTML();
+              }, 300);
+            } else {
+              answerButton.classList.add("wrongAnswer");
+              scores[playerNumber]--;
+            }
+            finishGameAndShowResults();
+            answer.onclick = () => {};
+          };
+        });
+      }
+    </script>
+
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

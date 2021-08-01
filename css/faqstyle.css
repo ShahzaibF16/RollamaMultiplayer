@@ -1,0 +1,140 @@
+/*
+ CSS for the main interaction
+*/
+.accordion > input[name="collapse"] {
+  display: none;
+
+  /*position: absolute;
+  left: -100vw;*/
+}
+
+.accordion label,
+.accordion .content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordionbuttons label,
+.accordionbuttons .content {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.accordionscience label,
+.accordionscience .content {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-right: 0px;
+}
+
+.accordion .content {
+  background: #ffce2f;
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+  color: #4a3050;
+}
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  height: 600px;
+  transition: height 0.5s;
+}
+
+.accordionscience > input[name="collapse"]:checked ~ .content {
+  height: 1000px;
+  transition: height 0.5s;
+}
+
+
+.accordion label {
+  display: block;
+}
+
+/* For Desktop */
+@media only screen and (min-width: 620px) {
+  .accordion > input[name="collapse"]:checked ~ .content {
+    height: 250px;
+  }
+}
+
+.accordion {
+  margin-bottom: 1em;
+}
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  border-top: 0;
+  transition: 0.3s;
+}
+
+.accordion .handle {
+  margin: 0;
+  font-size: 16px;
+}
+
+.accordion label {
+  color: #733381;
+  cursor: pointer;
+  font-weight: normal;
+  font-family: sans-serif;
+  padding: 10px;
+  background-color: #f58024;
+  user-select: none;
+  text-align: center;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: #f6b93b;
+}
+
+.accordion .handle label:before {
+  font-family: sans-serif;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1em;
+  line-height: 1.556em;
+  vertical-align: middle;
+  transition: 0.4s;
+}
+
+.accordion > input[name="collapse"]:checked ~ .handle label:before {
+  transform: rotate(180deg);
+  transform-origin: center;
+  transition: 0.4s;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(65, 65, 65);
+  padding: 10px;
+}
+
+a {
+  color: #06c;
+}
+
+p {
+  margin: 0 0 1em;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0 0 1.5em;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
+}
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+}

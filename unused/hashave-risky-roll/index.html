@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PNPTEPE4LC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>has / have risky roll</title>
+    <link rel="icon" href="../img/Baby_Logo.png" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--new css file added-->
+    <link rel="stylesheet" href="../css/fa/css/all.css" />
+    <link rel="stylesheet" href="../css/layout_2021-7.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+  </head>
+  <body>
+    <div class="start-overlay" id="start-overlay">
+      <h2 class="start-overlay__title"></h2>
+      <img
+        src="../img/Low_Level_Yellow_Btn_.png"
+        usemap="#diffmap"
+        height="100px"
+        class="levelbutton diff-img"
+      />
+      <map name="diffmap">
+        <area
+          target=""
+          alt="1"
+          title="1"
+          href="#easy"
+          coords="20,60,40,85"
+          shape="rect"
+          class="easy-diff-game"
+        />
+        <area
+          target=""
+          alt="2"
+          title="2"
+          href="#mid"
+          coords="51,45,74,89"
+          shape="rect"
+          class="mid-diff-game"
+        />
+        <area
+          target=""
+          alt="3"
+          title="3"
+          href="#max"
+          coords="84,26,105,89"
+          shape="rect"
+          class="max-diff-game"
+        />
+      </map>
+      <button class="button" data-timemode="1">
+        <img src="../img/Startgamebtn_.png" alt="btn" height="110px" />
+      </button>
+      <img
+        src="../img/riskyrollrules.png"
+        alt="btn"
+        height="400px"
+        style="
+          margin-top: 15px;
+          border-radius: 25px;
+          box-shadow: 5px 10px #733381;
+        "
+      />
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col">
+          <div class="nameblk1 name1 names">
+            <h1></h1>
+          </div>
+        </div> -->
+        <div class="col">
+          <div class="row">
+            <div class="status">
+              Time: <br /><span data-time></span>&nbsp;seconds
+            </div>
+          </div>
+        </div>
+        <div class="col" style="text-align: center">
+          <img src="../img/illama low res grey.gif" alt="btn" height="110px" />
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="status">
+              Unbanked Points:&nbsp;<br /><span data-points>0</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="status" id="points">
+              Banked points:&nbsp;<br /><span data-banked-points>0</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="nameblk1 name2 names">
+            <h1></h1>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="row" style="margin-top: 25px">
+        <div class="nameblk1 qblock top-block">
+          <h1></h1>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 25px; margin-left: 175px">
+        <div class="col">
+          <div class="row">
+            <img src="../img/num1.png" alt="number1" class="numberhands" />
+            <div class="nameblk1 qblock button optionblock" data-answer="has">
+              <h2>has</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <img src="../img/num2.png" alt="number2" class="numberhands" />
+            <div class="nameblk1 qblock button optionblock" data-answer="have">
+              <h2>have</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row" style="margin-top: 25px">
+        <div class="nameblk1 qblock2"><h1></h1></div>
+      </div> -->
+
+      <div class="row" style="margin-top: 35px">
+        <div class="col">
+          <a href="../" id="homebtn">
+            <img
+              src="../img/homebtn.png"
+              alt="homebtn"
+              height="100px"
+              class="homebutton"
+            />
+          </a>
+        </div>
+
+        <!-- <div class="col">
+          <img src="../img/low_diff.png" usemap="#diffmap" height="100px" class="levelbutton diff-img">
+
+          <map name="diffmap">
+              <area target="" alt="1" title="1" href="#easy" coords="20,60,40,85" shape="rect" class="easy-diff">
+            <area target="" alt="2" title="2" href="#mid" coords="51,45,74,89" shape="rect" class="mid-diff">
+            <area target="" alt="3" title="3" href="#max" coords="84,26,105,89" shape="rect" class="max-diff">
+          </map>
+        </div> -->
+        <div class="col">
+          <div class="button custom-button disabled" id="bankingBtn">
+            <a href="javascript:void(0);" id="rollbtn"></a>
+            <img src="../img/Bankbtn.png" alt="rollbtn" height="100px" />
+            <!-- </a> -->
+          </div>
+        </div>
+        <div class="col">
+          <div class="rollbtn button custom-button disabled" id="rollbtn">
+            <a href="javascript:void(0);" id="rollbtn"></a>
+            <img src="../img/Next_btn.png" alt="rollbtn" height="100px" />
+
+            <!-- </a> -->
+          </div>
+          <div class="button custom-button" id="restartBtn">
+            <!-- <a href="javascript:void(0);" id="rollbtn"></a> -->
+            <img src="../img/Restartbtn.png" alt="restart" height="100px" />
+            <!-- </a> -->
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="namesbtn button">
+            <a href="javascript:void(0);" id="namesbtn"></a>
+              <img src="../img/namesbtn.png" alt="namesbtn" height="100px"/>
+            </a>
+          </div>
+        </div> -->
+      </div>
+
+      <div
+        class="modal fade"
+        id="clistmodal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="img-center">
+            <img
+              src="../teacher_tips/Have_Has.png"
+              alt="teachboard"
+              style="max-height: 650px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+    <script
+      src="https://cdpn.io/cp/internal/boomboom/pen.js?key=pen.js-6efa810b-f4c4-6a26-1959-2ef3bfbadada"
+      crossorigin=""
+    ></script>
+
+    <script>
+      var names;
+      var difficulty = "0";
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = "";
+      if (!Cookies.get("llama_teacher_idx")) {
+        $.post("../js/process.php", {
+          add_teacher_idx: "1",
+          course_data: "{}",
+        }).done(function (data) {
+          Cookies.set("llama_teacher_idx", data);
+        });
+      } else {
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", {
+          get_course_data: "1",
+          teacher_idx: teacherIdx,
+        }).done(function (data) {
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if (Object.keys(courseData).length && currentList == "") {
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          } else if (currentList != "") {
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if (names) {
+          var num = Math.floor(Math.random() * names.length);
+          name1 = names[num];
+
+          name2 = name1;
+          while (name2 == name1) {
+            num = Math.floor(Math.random() * names.length);
+            name2 = names[num];
+          }
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1);
+        $(".name2 h1").text(name2);
+      });
+
+      var thiskey;
+      var options_easy = {
+        "I _______ some nice shoes.": "have",
+        "We _______ the biggest ball.": "have",
+        "They _______ all the cake!": "have",
+        "The tests _______ many questions.": "have",
+        "Children _______ lots of toys.": "have",
+        "It _______ the loudest roar!": "has",
+        "She _______ long hair.": "has",
+        "He _______ a hole in his t-shirt!": "has",
+        "The cup _______ beads inside.": "has",
+        "The boy _______ many pets.": "has",
+        "Joyce _______ fantastic musical talent.": "has",
+        "You _______ the biggest smile.": "have",
+        "My teacher _________ lots of great ideas.": "has",
+        "Our teachers ______ many papers to mark.": "have",
+        "Your parents ______ some great recipes.": "have",
+        "His dad ________ a small car.": "has",
+        "My mum ______ a great imagination.": "has",
+        "____ you been to Germany?": "have",
+        "_________ she seen the new classroom?": "has",
+        "________ they left the house yet?": "have",
+        "____ the boys had their food?": "have",
+        "_______ you had a nice day?": "have",
+        "What did you ____ to eat?": "have",
+        "Which teachers did you ___ for PE last year?": "have",
+        "Which class did you ____ on Friday afternoon?": "have",
+        "Where ______ she eaten before?": "has",
+        "Who _____ seen the new superhero movie?": "has",
+        "What ____ been the best thing about your new school?": "has",
+        "They ____ a dog.": "have",
+        "I _____ a new bag. ": "have",
+        "It _____ many sizes. ": "has",
+        "She _____ brown hair.": "has",
+        "He _____ two dogs.": "has",
+        "The tiger _____  lots of stripes.": "has",
+        "The boy _____ a hat on.": "has",
+        "Bethany _____ green eyes.": "has",
+        "We _____ two minutes left.": "have",
+        "They _____ten people in their group.": "have",
+        "The chairs _____ cushions on.": "have",
+        "Children _____ten minutes at break time.": "have",
+        "My teacher _____ my book.": "has",
+        "Our teachers _____ our homework.": "have",
+        "Your parents _____ a nice house.": "have",
+        "His dad _____ many hobbies.": "has",
+        "My mum _____ curly hair.": "has",
+        "The table _____ flowers on top.": "has",
+        "His eyes _____ lots of eyelashes.": "have",
+        "The people _____ coats on.": "have",
+        "The person _____ something to say.": "has",
+        "Your friend _____your reading book.": "has",
+        "I _____ strong legs.": "have",
+        "It _____ a handle and a lid.": "has",
+        "She _____ a nice smile.": "has",
+        "He _____ freckles.": "has",
+        "The picture _____  a frame around it.": "has",
+        "The boy _____ many friends.": "has",
+        "Ivan _____ a new toy.": "has",
+        "We _____ our favourite lesson next.": "have",
+        "They _____ some good ideas.": "have",
+        "The cars ______ soft chairs inside.": "have",
+        "Children _____ a lot of holidays.": "have",
+        "I ________ a fun game to play.": "have",
+        "I ________ many toys.": "have",
+        "I ________ three cats.": "have",
+        "I ________ a good science score.": "have",
+        "I ________ lots of hobbies.": "have",
+        "I ________ a messy bedroom.": "have",
+        "I ________ nothing to say.": "have",
+        "I ________ the nicest brother.": "have",
+        "I ________ a loud voice.": "have",
+        "I ________eggs each morning.": "have",
+        "I ________ a new shirt to wear.": "have",
+        "I ________ a joke to tell.": "have",
+        "I ________ some advice for you.": "have",
+        "I ________ a present for my friend.": "have",
+        "I ________ a healthy lunch ready.": "have",
+      };
+
+      var options_medium = {
+        "Do you _____ my bag?": "have",
+        "Does she _____ my pencil case?": "have",
+        "Do you _____  the new timetable?": "have",
+        "Does your teacher _____ your homework?": "have",
+        "My teacher _____ called my parents": "has",
+        "Our teachers _____ written our reports.": "have",
+        "Your parents _____ prepared a party for you.": "have",
+        "His dad _____ built him a tree house. ": "has",
+        "My mum _____ cooked my dinner for me.": "has",
+        "The box _____ something interesting inside.": "has",
+        "His belt _____ a buckle. ": "has",
+        "The people _____ made their decision.": "have",
+        "She _____ copied my homework. ": "has",
+        "Your friend _____ taken my pencil.": "has",
+        "She _____  forgotten her house key.": "has",
+        "He _____ been to Greece before.": "has",
+        "The bag _____ lots of pockets. ": "has",
+        "The planet _____ many habitats": "has",
+        "This month, I ________ studied every day!": "have",
+        "Tomorrow, I ________ a lot of different classes.": "have",
+        " I ______ eaten pizza so I am not hungry. ": "have",
+        "I _______ tried every cake in the shop.": "have",
+        "After school, I ________ lots of fun activities planned. ": "have",
+        "How ____ you improved your grades so much?": "have",
+        "The new girl _______ started this morning.": "has",
+        "The answer _________ already been given. ": "has",
+        "_____ the boy returned the library book?": "has",
+        "Daniel ________ already seen the end to this movie.": "has",
+        "The robot _________ been switched on. ": "has",
+        "When _____ she eaten?": "has",
+        "August _______ the most national holidays.": "has",
+        "She ________ visited many cities in her life. ": "has",
+        "Elephants _______ destroyed the crops. ": "have",
+        "The tests _______ become more difficult each year. ": "have",
+        "Schools _______ many kinds of classrooms.": "have",
+        "New movies ____ the most exciting trailers.": "have",
+        "Where ______ the children gone?": "have",
+        "How ______ you been?": "have",
+        "Who ______ the best shoes?": "has",
+        "Lorries _____ transported our furniture to our new house. ": "have",
+        "Llamas _____ invaded my garden!": "have",
+        "There ______ been many differed leaders over the years.": "have",
+
+        "My mum ______ a great imagination.": "has",
+        "_____ you been to Germany?": "have",
+        "_________ she seen the new classroom?": "has",
+        "________ they left the house yet?": "have",
+        "____ the boys had their food?": "have",
+        "_______ you had a nice day?": "have",
+        "What did you ____ to eat?": "have",
+        "Which teachers did you ___ for PE last year?": "have",
+        "Which class did you ____ on Friday afternoon?": "have",
+        "Where ______ she eaten before?": "has",
+        "Who _____ seen the new superhero movie?": "has",
+        "What ____ been the best thing about your new school?": "has",
+        "They ____ a dog.": "have",
+      };
+
+      var options_hard = {
+        "Jane and Bob _____ been friends for years.": "have",
+        "The cat and dog _____ been playing for hours.": "have",
+        "Their house _____ been thoroughly cleaned. ": "has",
+        "His brothers _____ never forgotten his birthday. ": "have",
+        "My sister and I _____ studied French together.": "have",
+        "Everyone ______ their own favourite subject.": "has",
+        "Someone ______ left their hat here. ": "has",
+        "Anyone ____ multiple opportunities to be kind.": "has",
+        "Everybody ______ a responsibility to care for the planet.": "has",
+        "Somebody _____ broken the door handle.": "has",
+        "Water ________ leaked all over the floor. ": "has",
+        "Sand ________ scratched my sunglasses. ": "has",
+        "Glass _______ been used for the windows.": "has",
+        "Hair ______ tangled in sink. ": "has",
+        "Trousers _____ become more popular.": "have",
+        "Sharp and heeled shoes ______ damaged the floors.": "have",
+        "Scissors _______ been sharpened recently. ": "have",
+        "Mice _______ been seen in the kitchen.": "have",
+        "Chess _______ made me think more carefully in other areas of my life. ":
+          "has",
+        "Listening _________ a vital role in decision making as a team.": "has",
+        "Balance _____ been a weakness of mine. ": "has",
+        "Studying _______ taken a lot of my time recently.": "has",
+        "Reading _________ taught me so many good words.": "has",
+        "My band _______ been invited to tour.": "has",
+        "Ben and Jenny ______ been talking for hours.": "have",
+        "Both the teachers and the students ____ reasons to be happy today.":
+          "have",
+        "The monkey and the panda both ____ fur on their bodies.": "have",
+        "The men ______ helped with the bags.": "have",
+        "The women ______ fought for equality.": "have",
+        "How ____ she been feeling?": "has",
+        "What ____ he been telling you?": "has",
+        "How ____ the baby been sleeping?": "has",
+        "How ____ she been improving so much?": "has",
+        "What ____ the children been doing?": "have",
+        "What ____ the teachers been saying?": "have",
+        "What ____ your parents been preparing?": "have",
+        "How ____ the cake been kept fresh?": "has",
+        "How ____ the new puppies been doing?": "have",
+        "What time of day ____ you been exercising?": "have",
+        "How long ____ you been in Italy?": "have",
+        "How long ____ you been studying English?": "have",
+        "How long ____ he been waiting?": "has",
+        "The geese ____  been disturbing the chickens.": "have",
+        "The box of cakes ________ been opened.": "has",
+        "The bag of sweets ____ attracted all the flies.": "has",
+        "The bars of chocolate _______ been left on the table.": "have",
+        "The basket of fruit ____ gone bad. ": "has",
+        "The box of chocolates _____ a nice picture on the front. ": "has",
+        "The pot of pens ____ fallen off the table. ": "has",
+        "The packet of popcorn_______ been dropped in the corridor.": "has",
+        "The boxes of cakes ________ colourful ribbons.": "have",
+        "The bags of sweets ____ spilled into my bag.": "have",
+        "The bar of chocolate _______ melted in the sun. ": "has",
+        "The baskets of fruit ____ handles so you can carry them easily. ":
+          "have",
+        "The boxes of chocolates _____ been squashed on the journey.": "have",
+        "The pots of pens ____  been put away for now.": "have",
+        "The packets of popcorn_______ been left in the car. ": "have",
+        "Those _______ been taken. ": "have",
+        "These _______ helped me greatly. ": "have",
+        "This ___________ a huge effect on your grades.": "has",
+        "That _______ been troubling me since I found out.": "has",
+        "______ those books been taken? ": "have",
+        "_______ these notes helped you? ": "have",
+        "_______ this book had a huge effect on your grades?": "has",
+        "___________ that problem been dealt with?": "has",
+        "_____ Jane and Bob been friends for long?": "have",
+        "_______ the cat and dog been playing long?": "have",
+        "_______ their house been thoroughly cleaned? ": "has",
+        "__________his brothers ever forgotten his birthday? ": "have",
+        "________ my sister and I studied enough for the test?": "have",
+        "________ everyone been to the bathroom?": "has",
+        "________ someone left their bag? ": "has",
+        "_________ anyone seen my dog?": "has",
+        "________ the water arrived?": "has",
+        "________ the fruit been put in the fridge? ": "has",
+        "_________ the box of chocolates been sent yet?": "has",
+        "_________ the boxes of clothes been sent yet?": "have",
+        "Your mum and dad ___ a big collection of instruments.": "have",
+        "Kate _____ a nice pencil case.": "has",
+        "Dolphins _______ large families.": "have",
+        "The shop _______ so much choice!": "has",
+        "Flies ______ great eyesight.": "have",
+        "Chocolate _______ a bitter taste.": "has",
+        "Water _____ many uses.": "has",
+        "The pizza slices ____ lots of toppings.": "have",
+        "Computers _____ large screens.": "have",
+        "Their dogs _____ different coloured collars.": "have",
+        "Our classroom ____ many tables.": "has",
+        "The city ___ a metro system.": "has",
+        "The trousers _____ two pockets.": "have",
+        "Scissors _____ sharp blades.": "have",
+        "My feet _____ blisters on them.": "have",
+        "Our schools ____ many similarities.": "have",
+        "The flower ___ a bee on it.": "has",
+        "The glass ____ a crack through it.": "has",
+        "Grass ____ weeds.": "has",
+        "Stone ____ lots of properties.": "has",
+        "The cake ____ icing on top.": "has",
+        "The dishes ____ beautiful patterns.": "have",
+        "My sister and I ____ our own clothes.": "have",
+        "The two friends ___ lots in common.": "have",
+      };
+      let answered = true;
+      let points = 0;
+      let bankedPoints = 0;
+      let nextQuestionTimeout;
+      let streak = 0;
+
+      $("#restartBtn").hide();
+      $(".rollbtn").click(function () {
+        if (difficulty == "0") {
+          options = options_easy;
+        } else if (difficulty == "1") {
+          options = options_medium;
+        } else if (difficulty == "2") {
+          options = options_hard;
+        }
+        if (!answered) return;
+
+        if (nextQuestionTimeout) {
+          clearTimeout(nextQuestionTimeout);
+          nextQuestionTimeout = null;
+        }
+
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+        $(".qblock h1").text(thiskey.substring(thiskey.indexOf("~") + 1));
+        getname();
+        $(".name1 h1").text("");
+        $(".name2 h1").text("");
+        $(".qblock2 h1").text("");
+
+        // reset classes
+        $("[data-answer]").each((index, element) => {
+          element.classList.remove("correct");
+          element.classList.remove("wrong");
+        });
+        answered = false;
+        $(".rollbtn").addClass("disabled");
+      });
+
+      $("[data-answer]").click(function () {
+        if (answered || countDownTime == 0) return;
+        answered = true;
+
+        const userAnswer = $(this).data("answer");
+        const correctAnswer = options[thiskey];
+        $(".qblock2 h1").text(userAnswer);
+
+        if (userAnswer == correctAnswer) {
+          streak++;
+
+          $(this).addClass("correct");
+          points += streak;
+          $("[data-points]").text(points);
+
+          nextQuestionTimeout = setTimeout(() => {
+            $(".rollbtn").click();
+          }, 1000);
+
+          $("#bankingBtn").removeClass("disabled");
+        } else {
+          $(this).addClass("wrong");
+          $("[data-answer]").each(function (index, element) {
+            if (correctAnswer == element.dataset.answer)
+              $(this).addClass("correct");
+          });
+          points = 0;
+          streak = 0;
+          $("[data-points]").text(points);
+
+          nextQuestionTimeout = setTimeout(() => {
+            $(".rollbtn").click();
+          }, 2000);
+        }
+
+        $(".rollbtn").removeClass("disabled");
+      });
+
+      $(".checkbtn").click(function () {
+        answered = true;
+        $(".qblock2 h1").text(options[thiskey]);
+        $(".rollbtn").removeClass("disabled");
+      });
+
+      $("#teachbtn").click(function () {
+        $("#clistmodal").modal("show");
+      });
+
+      let countDownTime, countDownInterval;
+
+      $("[data-timemode]").click(function () {
+        $("#start-overlay").hide();
+        countDownTime = $(this).data("timemode") * 60 + 1;
+
+        countDownInterval = setInterval(() => {
+          $("[data-time]").text(--countDownTime);
+          if (countDownTime == 0) {
+            clearInterval(countDownInterval);
+            answered = true;
+            $(".rollbtn").hide();
+            $("#bankingBtn").hide();
+
+            bankedPoints += points;
+            points = 0;
+            $("[data-banked-points]").text(bankedPoints);
+            $("[data-points]").text(points);
+
+            $("#points").addClass("shake");
+            $("#restartBtn").show();
+          }
+        }, 1000);
+      });
+
+      $("#bankingBtn").click(() => {
+        bankedPoints += points;
+        streak = 0;
+        $("[data-banked-points]").text(bankedPoints);
+
+        points = 0;
+        $("[data-points]").text(points);
+
+        $("#bankingBtn").addClass("disabled");
+      });
+      $("#restartBtn").click(() => {
+        location.reload();
+      });
+    </script>
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

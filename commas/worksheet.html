@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commas  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: _____________________ <br><br>
+            <label for="diffselect">Difficulty: </label>
+            <select class="form-select" aria-label="Default select example" id="diffselect">
+              <option value="0" selected>Level 1</option>
+              <option value="1">Level 2</option>
+              <option value="2">Level 3</option>
+            </select>   
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: commas<br><br>Task: check whether the comma is correct or incorrect<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br>We usually use commas before coordinating conjunctions (FANBOYS) <br> independent clauses should be separated by a full stop or linked with a semi-colon or coordinating conjunction
+        
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: commas</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+   var options_easy = {
+        "The snow needs to be shovelled, get going on it right away.":
+          "Incorrect",
+        "It is snowing, we should make a snowman later.": "Incorrect",
+        "The dog barked, she looked angry.": "Incorrect",
+        "The tiger chased the deer, it is an apex predator.": "Incorrect",
+        "Vishal's favourite food is pizza, he ate some with his friend yesterday.":
+          "Incorrect",
+        "Vishal ate pizza with his friend yesterday, it is his favourite food.":
+          "Incorrect",
+        "I would like my pencil back, have you finished with it?": "Incorrect",
+        "My friend lives in Australia, I wrote her an email.": "Incorrect",
+        "I won't go near that house, the dog which lives there is very loud.":
+          "Incorrect",
+        "I am hungry, but I do not have any food.": "Correct",
+        "I went to the store, and I bought a banana. ": "Correct",
+        "I went to the store, but it was closed.": "Correct",
+        "You can take the bus, or you can walk with me.": "Correct",
+        "The movie was boring, yet I watched all of it.": "Correct",
+        "She did not sleep last night, so she was tired.": "Correct",
+        "I opened the front door, and the dog quickly ran outside.": "Correct",
+        "It was raining, but we still had fun.": "Correct",
+        "I could not go into the store, for it was closed.": "Correct",
+        " I like blueberries, I don't like bananas.": "Incorrect",
+        "Cleopatra was a queen in Ancient Egypt, she was very powerful.":
+          "Incorrect",
+        "Cleopatra was very powerful, she ruled as a queen in Ancient Egypt.":
+          "Incorrect",
+        "She was quite sleepy, yet she continued to study.": "Correct",
+        "Tina didn't want to exercise, nor did she want to study.": "Correct",
+        "My sister rode her bike, it is red.": "Incorrect",
+        "I wrote a message to my friend, she lives in Australia.": "Incorrect",
+        "I lost my coat, I should have taken more care of it.": "Incorrect",
+        "I gave my pencil to you, can I have it back now?": "Incorrect",
+        "Vishal visits his grandma on Saturdays, Vishal's favourite food is pizza.":
+          "Incorrect",
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

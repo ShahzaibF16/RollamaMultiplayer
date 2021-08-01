@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head> 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PNPTEPE4LC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I / me subject / object</title>
+<link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--new css file added-->
+    <link rel="stylesheet" href="../css/fa/css/all.css">
+    <link rel="stylesheet" href="../css/layout_2021-7.css" />
+  </head>
+  <body>
+    <div class="container">
+<div class="nameblk1 qblock top-block" style="margin-bottom: 25px;">
+          <h1></h1>
+        </div>
+      <div class="row">
+        <div class="col">
+                <div class="nameblk1 name1 names">
+            <h1></h1>
+          </div>
+        </div>
+        <div class="col" style="text-align: center">
+          <img src="../img/illama low res grey.gif" alt="btn" height="110px" />
+        </div>
+        <div class="col">
+          <div class="nameblk1 name2 names">
+            <h1></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 25px; margin-left: 100px">
+        <div class="col">
+          <div class="row">
+            <img src="../img/num1.png" alt="number1" class="numberhands" />
+            <div class="nameblk1 qblock optionblock numberoneoption">
+              <h2></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <img src="../img/num2.png" alt="number2" class="numberhands" />
+            <div class="nameblk1 qblock optionblock numbertwooption">
+              <h2></h2>
+            </div>
+          </div>
+        </div>
+      
+
+      <div class="row">
+        
+          <h1></h1>
+        </div>
+      </div>
+      
+      
+         <div class="row" style="margin-top: 25px">
+        <div class="nameblk1 qblock2"><h1></h1></div>
+      </div>
+      <!--new class added-->
+      <div class="row btnrow" style="margin-top: 35px">
+        <div class="col">
+          <a href="../" id="homebtn">
+            <img src="../img/homebtn.png" alt="homebtn" height="100px" class="homebutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <a href="javascript:void(0);" id="teachbtn">
+            <img src="../img/teach.png" alt="Teacher Tip" height="100px" class="teacherbutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./worksheet.html" target="_blank"  id="paper">
+            <img src="../img/paper.png" alt="Levelled Worksheet" height="100px" class="teacherbutton"/>
+          </a>
+        </div>
+        <!--Points table button-->
+        <div class="col">
+          <a href="#" id="pointstablebtn" data-bs-toggle="modal" data-bs-target="#pointstable" class="pointsbtn2">
+            <img src="../img/Leaderboardbtn.png" alt="paperbtn" height="100px" class="teacherbutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <img src="../img/low_diff.png" usemap="#diffmap" height="100px" class="levelbutton diff-img">
+
+          <map name="diffmap">
+              <area target="" alt="1" title="1" href="#easy" coords="20,60,40,85" shape="rect" class="easy-diff">
+            <area target="" alt="2" title="2" href="#mid" coords="51,45,74,89" shape="rect" class="mid-diff">
+            <area target="" alt="3" title="3" href="#max" coords="84,26,105,89" shape="rect" class="max-diff">
+          </map>
+        </div>
+        <div class="col">
+          <div class="rollbtn button">
+            <a href="javascript:void(0);" id="rollbtn"></a>
+               <img src="../img/rollbtn.png" alt="rollbtn" height="100px" id="roll-btn"/>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="namesbtn button">
+            <a href="javascript:void(0);" id="namesbtn"></a>
+              <img src="../img/namesbtn.png" alt="namesbtn" height="100px"/>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="checkbtn button">
+            <a href="javascript:void(0);" id="checkbtn"></a>
+              <img src="../img/checkbtn.png" alt="checkbtn" height="100px" />
+            </a>
+          </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="clistmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="img-center">
+            <img src="../teacher_tips/Subjects_And_Objects.png" alt="teachboard" style="max-height: 650px"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Points table modal-->
+    <div
+      class="modal fade"
+      id="pointstable"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Points</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-content">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Points</th>
+                  <th scope="col">Add/Remove Points</th>
+                </tr>
+              </thead>
+              <tbody class="ptstable">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>0</td>
+                  <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>0</td>
+                  <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>*Failure to load php*</td>
+                  <td>0</td>
+                  <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger resetpts">Reset Points</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>    <script>
+      var names;
+      var difficulty = "0";
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = '';
+      if(!Cookies.get("llama_teacher_idx")){
+        $.post("../js/process.php", {"add_teacher_idx": "1", "course_data": "{}"}).done(function(data){
+          Cookies.set("llama_teacher_idx", data);
+        });
+      }
+      else{
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", {"get_course_data": "1", "teacher_idx": teacherIdx}).done(function(data){
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if(Object.keys(courseData).length && currentList == ''){
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          }
+          else if(currentList != ''){
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if(names){
+          var num = Math.floor(Math.random() * names.length);
+          name1 = names[num];
+  
+          name2 = name1;
+          while (name2 == name1) {
+            num = Math.floor(Math.random() * names.length);
+            name2 = names[num];
+          }
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1);
+        $(".name2 h1").text(name2);
+      });
+
+      var thiskey;
+      var options_easy = {
+
+        "__ don't know.": { 0: "I", 1: "me", 2: "I" },
+        "__ am too busy.": { 0: "I", 1: "me", 2: "I" },
+        "Wait for __!": { 0: "I", 1: "me", 2: "me" },
+        "My friend likes __.": { 0: "I", 1: "me", 2: "me" },
+        "__ will be here soon.": { 0: "he", 1: "him", 2: "he" },
+        "__ is a good singer.": { 0: "he", 1: "him", 2: "he" },
+        "Sit with __.": { 0: "he", 1: "him", 2: "him" },
+        "Let __ have a turn.": { 0: "he", 1: "him", 2: "him" },
+        "__ is a good runner!": { 0: "she", 1: "her", 2: "she" },
+        "___ is playing with the toy?": { 0: "she", 1: "her", 2: "she" },
+        "She went with ____ Mum.": { 0: "she", 1: "her", 2: "her" },
+        "___ can have pizza.": { 0: "we", 1: "us", 2: "we" },
+        "I hope ___ arrive soon.": { 0: "we", 1: "us", 2: "we" },
+        "The bus takes ____ to school.": { 0: "we", 1: "us", 2: "us" },
+        "I want ___ to have fun!": { 0: "we", 1: "us", 2: "us" },
+        "____ have nice food": { 0: "they", 1: "them", 2: "they" },
+        "____ are ok.": { 0: "they", 1: "them", 2: "they" },
+        "What shall I buy for ____.": { 0: "they", 1: "them", 2: "them" },
+        "Give _____ the toy.": { 0: "they", 1: "them", 2: "them" },
+        "__ am going to the cinema.": { 0: "I", 1: "me", 2: "I" },
+        "Lucas and ___ like painting.": { 0: "I", 1: "me", 2: "I" },
+        "The secret is just for you and __.": { 0: "I", 1: "me", 2: "me" },
+        "Come with Billy and ___": { 0: "I", 1: "me", 2: "me" },
+        "Give it to ___": { 0: "I", 1: "me", 2: "me" },
+        "Annie likes ___ drawing.": { 0: "she", 1: "her", 2: "her" },
+        "Do you want ___ to help?": { 0: "I", 1: "me", 2: "me" },
+        "How can ___ get better?": { 0: "I", 1: "me", 2: "I" },
+        "Give ___ your book. ": { 0: "I", 1: "me", 2: "me" },
+        "The work belongs to ____.": { 0: "he", 1: "him", 2: "him" },
+        "Will ___ come with me?": { 0: "he", 1: "him", 2: "he" },
+        "I want to talk to ____.": { 0: "he", 1: "him", 2: "him" },
+        "Jake isn't really friends with _____. ": { 0: "he", 1: "him", 2: "him" },
+        "____ is funny. ": { 0: "she", 1: "her", 2: "she" },
+        "What does ____ want?": { 0: "she", 1: "her", 2: "she" },
+        "That is ____ dog. ": { 0: "she", 1: "her", 2: "her" },
+        "What are ____ doing?": { 0: "we", 1: "us", 2: "we" },  
+        "___ can work together.": { 0: "we", 1: "us", 2: "we" },
+        "Please look after _____.": { 0: "we", 1: "us", 2: "us" },
+        "____ know what to do.": { 0: "they", 1: "them", 2: "they" },
+        "I don't like ____. ": { 0: "they", 1: "them", 2: "them" },
+
+      };
+
+var options_medium = {
+
+        "__ don't know where we are!": { 0: "I", 1: "me", 2: "I" },
+        "__ am too busy right now.": { 0: "I", 1: "me", 2: "I" },
+        "Please wait for __!": { 0: "I", 1: "me", 2: "me" },
+        "My friend knows __ very well.": { 0: "I", 1: "me", 2: "me" },
+        "__ should be here soon.": { 0: "he", 1: "him", 2: "he" },
+        "Is __ a good singer?": { 0: "he", 1: "him", 2: "he" },
+        "Pass the ball to __.": { 0: "he", 1: "him", 2: "him" },
+        "Let __ have a turn with the toy.": { 0: "he", 1: "him", 2: "him" },
+        "__ is great at spelling!": { 0: "she", 1: "her", 2: "she" },
+        "Where did ___ put the toy?": { 0: "she", 1: "her", 2: "she" },
+        "What should I say to _____?": { 0: "she", 1: "her", 2: "her" },
+        "I need to buy ____ some new shoes.": { 0: "she", 1: "her", 2: "her" },
+        "Can ___ have pizza?": { 0: "we", 1: "us", 2: "we" },
+        "I hope ___ get there soon.": { 0: "we", 1: "us", 2: "we" },
+        "The plane will get __ there faster.": { 0: "we", 1: "us", 2: "us" },
+        "I want ___ to have a great time!": { 0: "we", 1: "us", 2: "us" },
+        "What sort of food do ____ serve?": { 0: "they", 1: "them", 2: "they" },
+        "I hope ____ are ok.": { 0: "they", 1: "them", 2: "they" },
+        "What shall we get ____ for their birthday?": { 0: "they", 1: "them", 2: "them" },
+        "I want to send _____ a thank you card.": { 0: "they", 1: "them", 2: "them" },
+        "My friend and __ are going to the cinema.": { 0: "I", 1: "me", 2: "I" },
+        "Sandy and __ went fishing.": { 0: "I", 1: "me", 2: "I" },
+        "This is a secret between you and __.": { 0: "I", 1: "me", 2: "me" },
+        "Do you want Billy and __ to help you?": { 0: "I", 1: "me", 2: "me" },
+        "Can you send some money to __?": { 0: "I", 1: "me", 2: "me" },
+        "Annie knows ___ very well.": { 0: "she", 1: "her", 2: "her" },
+        "Do you want ___ to   help you?": { 0: "I", 1: "me", 2: "me" },
+        "How can ___ get better at grammar?": { 0: "I", 1: "me", 2: "I" },
+        "What do you think of ____?": { 0: "I", 1: "me", 2: "me" },
+        "Give your books to ____. ": { 0: "I", 1: "me", 2: "me" },
+        "The work belongs to ____.": { 0: "he", 1: "him", 2: "him" },
+        "Will ___ be coming later?": { 0: "he", 1: "him", 2: "he" },
+        "I want to talk to ____.": { 0: "he", 1: "him", 2: "him" },
+        "Jake isn't really friends with _____. ": { 0: "he", 1: "him", 2: "him" },
+        "____ is the funniest person I  know. ": { 0: "she", 1: "her", 2: "she" },
+        "What does ____ want for her birthday?": { 0: "she", 1: "her", 2: "she" },
+        "The dog belongs to  ____. ": { 0: "she", 1: "her", 2: "her" },
+        "Do you know ____?": { 0: "she", 1: "her", 2: "her" },
+        "What are ____ doing here?": { 0: "we", 1: "us", 2: "we" },  
+        "I hope ___ can work together.": { 0: "we", 1: "us", 2: "we" },
+        "Our parents look after _____.": { 0: "we", 1: "us", 2: "us" },
+        "Our parents will meet ___ outside. ": { 0: "we", 1: "us", 2: "us" },
+        "I hope ____ know what they're doing.": { 0: "they", 1: "them", 2: "they" },
+        "What  will ____ think of the food?": { 0: "they", 1: "them", 2: "they" },
+        "I don't like ____. ": { 0: "they", 1: "them", 2: "them" },
+        "Give the books out to ____. ": { 0: "they", 1: "them", 2: "them" },
+        "My friend and ___ always talk together.": { 0: "I", 1: "me", 2: "I" },
+        "My brother and ___ share clothes sometimes. ": { 0: "I", 1: "me", 2: "I" },
+        "Get ____ out of here!": { 0: "I", 1: "me", 2: "me" },
+        "Don't tell ___ ; I want a surprise.": { 0: "I", 1: "me", 2: "me" },
+        "The boy who sits in front always annoys ____. ": { 0: "I", 1: "me", 2: "me" },
+        "The cat scratched ____. ": { 0: "she", 1: "her", 2: "her" },
+
+};
+
+var options_hard = { 
+        "Right now, __ don't know where we are!": { 0: "I", 1: "me", 2: "I" },
+        "Hold your questions; __ am too busy right now.": { 0: "I", 1: "me", 2: "I" },
+        "Please can you wait for __ before leaving!": { 0: "I", 1: "me", 2: "me" },
+        "We've known each other for years, so my friend knows __ very well.": { 0: "I", 1: "me", 2: "me" },
+        "I think __ should be here soon.": { 0: "he", 1: "him", 2: "he" },
+        "Do you know if __ is a good singer?": { 0: "he", 1: "him", 2: "he" },
+        "Pass the ball to __ so we can score!": { 0: "he", 1: "him", 2: "him" },
+        "After you've finished you should let __ have a turn with the toy.": { 0: "he", 1: "him", 2: "him" },
+        "I told you that __ is great at spelling!": { 0: "she", 1: "her", 2: "she" },
+        "Where did ___ try to hide that toy?": { 0: "she", 1: "her", 2: "she" },
+        "What should I try to say to ___?": { 0: "she", 1: "her", 2: "her" },
+        "Let me know ____ favourite type of shoes.": { 0: "she", 1: "her", 2: "her" },
+        "I hope ___ can have pizza.": { 0: "we", 1: "us", 2: "we" },
+        "If you help me find the way, ___ can get there sooner.": { 0: "we", 1: "us", 2: "we" },
+        "All being well, the plane will get __ there faster.": { 0: "we", 1: "us", 2: "us" },
+        "I'm sure you want all of ___ to have a great time!": { 0: "we", 1: "us", 2: "us" },
+        "What sort of food do you think ____ normally serve?": { 0: "they", 1: "them", 2: "they" },
+        "We sincerely hope ____ will be ok to attend the event.": { 0: "they", 1: "them", 2: "they" },
+        "Do you have any thoughts about what we should get ____ for their birthday?": { 0: "they", 1: "them", 2: "them" },
+        "Do you agree that we should send _____ a thank you card?": { 0: "they", 1: "them", 2: "them" },
+        "If you want to join, my friend and __ are going to the cinema.": { 0: "I", 1: "me", 2: "I" },
+        "Sandy, Abdul and __ went fishing.": { 0: "I", 1: "me", 2: "I" },
+        "Keep this secret to yourself - only you and __ will know.": { 0: "I", 1: "me", 2: "me" },
+        "Do you want Billy and __ to help you with the boxes?": { 0: "I", 1: "me", 2: "me" },
+        "Can you send ___ some money too?": { 0: "I", 1: "me", 2: "me" },
+        "I'm sure you know that Annie knows ___ very well too.": { 0: "she", 1: "her", 2: "her" },
+        "Do you want ___ to help you with the project?": { 0: "I", 1: "me", 2: "me" },
+        "Can you help me understand how ___ can get better at grammar?": { 0: "I", 1: "me", 2: "I" },
+        "I don't really care what you think of ____.": { 0: "I", 1: "me", 2: "me" },
+        "Give your books to ____ and Ally. ": { 0: "I", 1: "me", 2: "me" },
+        "We should give ____ credit for this work.": { 0: "he", 1: "him", 2: "him" },
+        "Will ___ and his friends be coming later?": { 0: "he", 1: "him", 2: "he" },
+        "I want to talk to ____.": { 0: "he", 1: "him", 2: "him" },
+        "Jake isn't really friends with _____, is he?": { 0: "he", 1: "him", 2: "him" },
+        "I love her sense of humour - ____ is the funniest person I know. ": { 0: "she", 1: "her", 2: "her" },
+        "Do you know what ____ wants for her birthday?": { 0: "she", 1: "her", 2: "she" },
+        "Do you know what she wants for ____ birthday?": { 0: "she", 1: "her", 2: "her" },
+        "Do you know ____ very well?": { 0: "she", 1: "her", 2: "her" },
+        "Can you help us understand what are ____ doing here?": { 0: "we", 1: "us", 2: "we" },  
+        "I hope ___ can work together to help us out of this mess.": { 0: "we", 1: "us", 2: "we" },
+        "We are gratefully that our parents look after _____.": { 0: "we", 1: "us", 2: "us" },
+        "I hope our parents will meet ___ outside.": { 0: "we", 1: "us", 2: "us" },
+        "I hope ____ know what they're doing because I don't!": { 0: "they", 1: "them", 2: "they" },
+        "Do you think ____ will like the food we've made for them?": { 0: "they", 1: "them", 2: "they" },
+        "I don't like ____ but I must admit they are good team workers. ": { 0: "they", 1: "them", 2: "them" },
+        "Please give the books out to ____ while they are waiting. ": { 0: "they", 1: "them", 2: "them" },
+        "My friend and ___ always talk together when I'm feeling down.": { 0: "I", 1: "me", 2: "I" },
+        "My brother and ___ share clothes sometimes and he gives me fashion advice. ": { 0: "I", 1: "me", 2: "I" },
+        "Get ____ out of here, I can't take it any more!": { 0: "I", 1: "me", 2: "me" },
+        "Don't tell ___; I want it to be a surprise.": { 0: "I", 1: "me", 2: "me" },
+        "The boy who sits in front always annoys ____ and my friend. ": { 0: "I", 1: "me", 2: "me" },
+        "The cat licked ____ paws. ": { 0: "she", 1: "her", 2: "her" },
+
+
+
+      };
+
+
+      // part of difficulty code
+      var options;
+
+      // Unique questions each time
+      var totalqs = Object.keys(options_easy).length;
+      var questionsDoneEasy = [];
+      var questionsDoneMedium = [];
+      var questionsDoneHard = [];
+      var questionsDone;
+      var qAdded;
+      // end of unique questions each time
+
+      $(".rollbtn").click(function () {
+
+        // Difficulty code start
+        if(difficulty == "0"){
+          options = options_easy;
+          questionsDone = questionsDoneEasy;
+          totalqs = Object.keys(options_easy).length;
+        }
+        else if(difficulty == "1"){
+          options = options_medium;
+          questionsDone = questionsDoneMedium;
+          totalqs = Object.keys(options_medium).length;
+        }
+        else if(difficulty == "2"){
+          options = options_hard;
+          questionsDone = questionsDoneHard;
+          totalqs = Object.keys(options_hard).length;
+        }
+        // Difficulty code end
+
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+
+        // Unique questions each time
+        qAdded = false;
+        while(!qAdded){
+            if(!questionsDone.includes(thiskey)){
+            $(".qblock h1").text(thiskey.substring(thiskey.indexOf ("~") + 1));
+            getname();
+            $(".name1 h1").text("");
+            $(".name2 h1").text("");
+            $(".qblock2 h1").text("");
+            questionsDone.push(thiskey);
+            qAdded = true;
+            console.log(questionsDone.length);
+          }
+          else{
+            if(questionsDone.length == totalqs){
+              questionsDone.length = 0;
+            }
+            var num = Math.floor(Math.random() * keys.length);
+            thiskey = keys[num];
+          }
+        }
+        // End of unique questions each time
+        $(".numberoneoption h2").html(options[thiskey][0]);
+        $(".numbertwooption h2").html(options[thiskey][1]);
+        $(".qblock h1").text(thiskey);
+        getname();
+        $(".name1 h1").text("");
+        $(".name2 h1").text("");
+        $(".qblock2 h1").text("");
+      });
+
+     
+
+      $(".checkbtn").click(function () {
+        $(".qblock2 h1").text(options[thiskey][2]);
+      });
+
+      $("#teachbtn").click(function(){
+        $("#clistmodal").modal("show");
+      });
+      
+      $(function(){
+        // spin the top questionbar
+        $("#roll-btn").on('click',function () {
+          $('.top-block').addClass('topbar__spin');
+          setTimeout(function(){
+            $('.top-block').removeClass('topbar__spin');
+          },300)
+        });
+
+        // spin the names button
+        $(".namesbtn").on('click',function () {
+          $('.names ').addClass('name__speen');
+          setTimeout(function(){
+            $('.names ').removeClass('name__speen');
+          },300)
+        });
+      })
+    </script>
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

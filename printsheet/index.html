@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Sheet</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: _____________________ Noun / Verb
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: <br><br>Task: fill the gap<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>singular = was &nbsp; | &nbsp; plural = were
+          &nbsp; | &nbsp; (exception: you = were)
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: Noun / Verb</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+   var options_easy = {
+        "I went for a *run*.": "noun",
+        "I *run* to school.": "verb",
+        "The *dance* was fun.": "noun",
+        "I like to *dance*.": "verb",
+        "Will you *walk* the dog?": "verb",
+        "Did you enjoy the *walk*?": "noun",
+        "Good *catch*!": "noun",
+        "I *catch* this bus every day.": "verb",
+        "This is a great *book*!": "noun",
+        "We *book* tickets on a website.": "verb",
+        "What is your *point*?": "noun",
+        "Signs *point* the way to the metro station.": "verb",
+        "I have a good *plan*.": "noun",
+        "Did you *plan* this party?": "verb",
+        "What does the *writing* say?": "noun",
+        "He is *writing* in his book.": "verb",
+        "I need to *present* my work.": "verb",
+        "Did you like my *present*?": "noun",
+        "My teacher likes to *reward* us. ": "verb",
+        "Lost dog. Big *reward*.": "noun",
+        "Can you *correct* your mistake?": "verb",
+        "What is the *answer*?": "noun",
+        "My parents often *question* me when I am late.": "verb",
+        "I got a good *time* for my latest swim.": "noun",
+        "I always *time* myself when I swim.": "verb",
+        "What's your fastest *record*?": "noun",
+        "I like to *record* myself playing the piano.": "verb",
+        "Did you enjoy your *swim*?": "noun",
+        "Don't *swim* in the water. ": "verb",
+        "The children *plant* an apple tree.": "verb",
+        "I heard a loud *cry* from the basement.": "noun",
+        "There was a *whisper* from the back of the room.": "noun",
+        "Don't *waste* paper.": "verb",
+        "Ordering deliveries creates a lot of *waste*.": "noun",
+        "I need some *exercise*.": "noun",
+        "The dogs *exercise* every day.": "verb",
+        "Please *hand* me a pen.": "verb",
+        "Let's *slice* the cake!": "verb",
+        "I would like a *slice* of pizza.": "noun",
+        "My teachers *report* on my grades.": "verb",
+        "I want to see my end of term *report*.": "noun",
+        "Your *push* was really strong.": "noun",
+        "Can I *light* the candle?": "verb",
+        "I enjoy seeing *plays*.": "noun",
+        "That is a really clever chess *move*.": "noun",
+        "I want a *cover* for my phone.": "noun",
+        "The quilt *covers* the bed nicely.": "verb",
+        "I love your *drawing*.": "noun",
+        "What is your *painting* about?": "noun",
+        "You need to *project* your voice if you want people to hear you.":
+          "verb",
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head> 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PNPTEPE4LC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bought / brought quiz</title>
+<link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--new css file added-->
+    <link rel="stylesheet" href="../css/fa/css/all.css">
+    <link rel="stylesheet" href="../css/layout_2021-7.css" />
+    <link rel="stylesheet" href="../css/custom.css">
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+<div class="start-overlay" id="start-overlay">
+      <h2 class="start-overlay__title"></h2>
+      <!--<img src="../img/Low_Level_Yellow_Btn_.png" usemap="#diffmap" height="100px" class="levelbutton diff-img">
+          <map name="diffmap">
+            <area
+                          target=""
+                          alt="1"
+                          title="1"
+                          href="#easy"
+                          coords="20,60,40,85"
+                          shape="rect"
+                          class="easy-diff-game"
+                        />
+                        <area
+                          target=""
+                          alt="2"
+                          title="2"
+                          href="#mid"
+                          coords="51,45,74,89"
+                          shape="rect"
+                          class="mid-diff-game"
+                        />
+                        <area
+                          target=""
+                          alt="3"
+                          title="3"
+                          href="#max"
+                          coords="84,26,105,89"
+                          shape="rect"
+                          class="max-diff-game"
+             />         </map> -->
+      <button class="button" data-timemode="1"><img src="../img/Startgamebtn_.png" alt="btn" height="110px" ></button>
+      <img
+      src="../img/standardquizrules.png"
+      alt="btn"
+      height="400px"
+      style="
+        margin-top: 15px;
+        border-radius: 25px;
+        box-shadow: 5px 10px #733381;
+      "
+    />
+    </div>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col">
+          <div class="nameblk1 name1 names">
+            <h1></h1>
+          </div>
+        </div> -->
+        <div class="col">
+          <div class="row">
+            <div class="status" style="padding: 0px">
+              <div class="custom-container">
+                <p class="status__title"></p>
+              <div class="countdown countdown--wide countdown--ended" id="countdown" style="touch-action: pan-x pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: #ff5c33;">
+                <div class="countdown__fill" id="ticker" style="height: 0%;"></div>
+                <div class="countdown__digit" id="seconds"></div>
+                <!--.countdown__buttons-->
+                <!--	.countdown__button +-->
+                <!--	.countdown__button --->
+              </div>
+            </div>
+          </div>
+
+            
+          </div>
+        </div>
+        <div class="col" style="text-align: center">
+           <img src="../img/illama low res grey.gif"  alt="btn" height="110px" />
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="status" id="points">Points:&nbsp;<br><span data-points>0</span></div>
+          </div>
+          </div>
+        <!-- <div class="col">
+          <div class="nameblk1 name2 names">
+            <h1></h1>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="row" style="margin-top: 25px">
+        <div class="nameblk1 qblock top-block">
+          <h1></h1>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 25px; margin-left: 175px">
+        <div class="col">
+          <div class="row">
+            <img src="../img/num1.png" alt="number1" class="numberhands" />
+            <div class="nameblk1 qblock button optionblock" data-answer="bought">
+              <h2>bought</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <img src="../img/num2.png" alt="number2" class="numberhands" />
+            <div class="nameblk1 qblock button optionblock" data-answer="brought">
+              <h2>brought</h2>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+         <!-- <div class="row" style="margin-top: 25px">
+        <div class="nameblk1 qblock2"><h1></h1></div>
+      </div> -->
+
+      <div class="row" style="margin-top: 35px">
+        <div class="col">
+          <a href="../" id="homebtn">
+            <img src="../img/homebtn.png" alt="homebtn" height="100px" class="homebutton"/>
+          </a>
+        </div>
+
+        <!-- <div class="col">
+          <img src="../img/low_diff.png" usemap="#diffmap" height="100px" class="levelbutton diff-img">
+
+          <map name="diffmap">
+              <area target="" alt="1" title="1" href="#easy" coords="20,60,40,85" shape="rect" class="easy-diff">
+            <area target="" alt="2" title="2" href="#mid" coords="51,45,74,89" shape="rect" class="mid-diff">
+            <area target="" alt="3" title="3" href="#max" coords="84,26,105,89" shape="rect" class="max-diff">
+          </map>
+        </div> -->
+        <div class="col">
+          <div class="rollbtn button custom-button disabled"  id="rollbtn">
+            <a href="javascript:void(0);" id="rollbtn"></a>
+            <img src="../img/Next_btn.png" alt="rollbtn" height="100px" />
+            
+          </a>
+            <!-- </a> -->
+        </div>
+        <div class="button custom-button"  id="restartBtn">
+          <!-- <a href="javascript:void(0);" id="rollbtn"></a> -->
+            <img src="../img/Restartbtn.png" alt="restart" height="100px" />
+            
+          <!-- </a> -->
+        </div>
+      </div>
+           
+        <!-- <div class="col">
+          <div class="namesbtn button">
+            <a href="javascript:void(0);" id="namesbtn"></a>
+              <img src="../img/namesbtn.png" alt="namesbtn" height="100px"/>
+            </a>
+          </div>
+        </div> -->
+        
+      </div>
+
+  
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+    <script src="https://cdpn.io/cp/internal/boomboom/pen.js?key=pen.js-6efa810b-f4c4-6a26-1959-2ef3bfbadada" crossorigin=""></script>
+
+    
+    <script>
+      var names;
+      var difficulty = "0";
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = '';
+      if(!Cookies.get("llama_teacher_idx")){
+        $.post("../js/process.php", {"add_teacher_idx": "1", "course_data": "{}"}).done(function(data){
+          Cookies.set("llama_teacher_idx", data);
+        });
+      }
+      else{
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", {"get_course_data": "1", "teacher_idx": teacherIdx}).done(function(data){
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if(Object.keys(courseData).length && currentList == ''){
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          }
+          else if(currentList != ''){
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if(names){
+          var num = Math.floor(Math.random() * names.length);
+          name1 = names[num];
+  
+          name2 = name1;
+          while (name2 == name1) {
+            num = Math.floor(Math.random() * names.length);
+            name2 = names[num];
+          }
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1);
+        $(".name2 h1").text(name2);
+      });
+
+      var thiskey;
+      var options_easy = {
+        "I _____ some apples at the shop.": "bought",
+        "Have you ever _____ the wrong type of milk?": "bought",
+        "We _____ our TV two years ago.": "bought",
+        "My parents _____ a new house.": "bought",
+        "Have you _____ yourself a new hat?": "bought",
+        "I _____ a cake to the party.": "brought",
+        "Have you _____ your swimming bag?": "brought",
+        "He _____ his dog to the park.": "brought",
+        "The haunted book ______ bad luck to anyone who read it.": "brought",
+        "She _____ a positive outlook to every situation. ": "brought",
+        "I _______ a tent for my camping trip. ": "brought",
+        "The child _______ all their equipment to school. ": "brought",
+        "He ______ everything he needed to his swimming lesson ": "brought",
+        "The pirate _____ the crew to the deck of his boat.": "brought",
+        "The children ______ their water bottles outside for break time.":
+          "brought",
+        "The holiday _____ joy to the family. ": "brought",
+        "James ______ his pet to school!": "brought",
+        "Hannah _____ the sports equipment to the field for the teacher ":
+          "brought",
+        " The dogs _______ mud into the house after their walk!": "brought",
+        "I was able to take notes because I _______ a pen and paper with me.":
+          "brought",
+        "She _____ all the dumplings until there weren't any more! ": "bought",
+        "He _____ everybody ice creams as a treat. ": "bought",
+        "My mother ______ me some shoes for school. ": "bought",
+        "The child _____ a new pen with their own pocket money. ": "bought",
+        "When it started raining during my walk, I quicky ____ an umbrella. ":
+          "bought",
+        "When my bag broke, I quicky ____ a new one. ": "bought",
+        "When my pen ran out of ink, I ____ another one. ": "bought",
+        "He ______ some dog food at the supermarket. ": "bought",
+        "I _____ some tickets online. ": "bought",
+        " The people _______ all the pizza so now there isn't any more! ":
+          "bought",
+        "Mrs. Brown _______ herself a new hat for the summer. ": "bought",
+        " He _____ the latest phone soon after it went on sale. ": "bought",
+        " The dog _____ back the ball after I threw it. ": "brought",
+        " You should have ____ your library book to your English class. ":
+          "brought",
+      };
+
+
+      let answered = true;
+      let points = 0;
+      let nextQuestionTimeout;
+      $('#restartBtn').hide();
+      $(".rollbtn").click(function () {
+         
+        if(difficulty == "0"){
+          options = options_easy;
+        }
+        else if(difficulty == "1"){
+          options = options_medium;
+        }
+        else if(difficulty == "2"){
+          options = options_hard;
+        }
+        if(!answered) return;
+
+        if(nextQuestionTimeout) { 
+          clearTimeout(nextQuestionTimeout);
+          nextQuestionTimeout = null;
+        }
+
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+        $(".qblock h1").text(thiskey.substring(thiskey.indexOf("~") + 1));
+        getname();
+        $(".name1 h1").text("");
+        $(".name2 h1").text("");
+        $(".qblock2 h1").text("");
+
+        // reset classes 
+        $('[data-answer]').each((index, element) =>{
+          element.classList.remove('correct');
+          element.classList.remove('wrong');
+        })
+        answered = false;
+        $(".rollbtn").addClass('disabled')
+      });
+
+      
+      $('[data-answer]').click(function() {
+        if(answered || countDownTime == 0) return;
+        answered = true;
+
+        const userAnswer = $(this).data('answer');
+        const correctAnswer = options[thiskey];
+        $(".qblock2 h1").text(userAnswer);
+        
+        if(userAnswer == correctAnswer){
+          $(this).addClass('correct');
+          $('[data-points]').text(++points);
+
+          nextQuestionTimeout = setTimeout(() => {
+            $(".rollbtn").click();
+          }, 1000);
+        } 
+        else {
+          $(this).addClass('wrong');
+          $('[data-points]').text(--points);
+          $('[data-answer]').each(function(index, element) {
+            if(correctAnswer == element.dataset.answer)
+            $(this).addClass('correct');
+          })
+
+          nextQuestionTimeout = setTimeout(() => {
+            $(".rollbtn").click();
+          }, 2000);
+        }
+        
+        $(".rollbtn").removeClass('disabled')
+      })   
+      
+      $(".checkbtn").click(function () {
+        answered = true;
+        $(".qblock2 h1").text(options[thiskey]);
+        $(".rollbtn").removeClass('disabled')
+      });
+      
+      $("#teachbtn").click(function () {
+        $("#clistmodal").modal("show");
+      });
+      
+      let countDownTime, countDownInterval;
+
+      $('[data-timemode]').click(function(){
+        $('#start-overlay').hide();
+        countDownTime = $(this).data('timemode') * 60 + 1;
+
+        countDownInterval = setInterval(() => {
+          $('[data-time]').text(--countDownTime)
+          if(countDownTime == 0){
+            clearInterval(countDownInterval);
+            answered = true;
+            $(".rollbtn").hide();
+            $('#points').addClass('shake');
+            $('#restartBtn').show();          
+          }
+        }, 1000) 
+        timer.start();
+
+      })
+      $('#restartBtn').click(() => {
+        location.reload();
+      })
+      
+
+  function Timer(duration, element) {
+	var self = this;
+	this.duration = duration;
+	this.element = element;
+	this.running = false;
+	
+	this.els = {
+		ticker: document.getElementById('ticker'),
+		seconds: document.getElementById('seconds'),
+	};
+	
+	// document.getElementById('toggle').addEventListener('click', function() {
+	// 	var cl = 'countdown--wide';
+	// 	if (self.element.classList.contains(cl)) {
+	// 		self.element.classList.remove(cl);
+	// 	} else {
+	// 		self.element.classList.add(cl);
+	// 	}
+	// });
+	
+	var hammerHandler = new Hammer(this.element);
+	hammerHandler.get('pan').set({ direction: Hammer.DIRECTION_VERTICAL });
+	hammerHandler.on('panup pandown', function(ev) {
+		if (!self.running) {
+			if (ev.direction === Hammer.DIRECTION_UP && self.duration < 999000) {
+				self.setDuration(self.duration + 1000);
+			} else if (ev.direction === Hammer.DIRECTION_DOWN && self.duration > 0) {
+				self.setDuration(self.duration - 1000);
+			}
+		}
+	});
+	
+	hammerHandler.on('tap', function() {
+		if (self.running) {
+			self.reset();
+		} else {
+			// self.start();
+		}
+	})
+}
+
+Timer.prototype.start = function() {
+	var self = this;
+	var start = null;
+	this.running = true;
+	var remainingSeconds = this.els.seconds.textContent = this.duration / 1000;
+	
+	function draw(now) {
+		if (!start) start = now;
+		var diff = now - start;
+		var newSeconds = Math.ceil((self.duration - diff)/1000);
+
+		if (diff <= self.duration) {
+			self.els.ticker.style.height = 100 - (diff/self.duration*100) + '%';
+			
+			if (newSeconds != remainingSeconds) {
+				self.els.seconds.textContent = newSeconds;
+				remainingSeconds = newSeconds;
+			}
+			
+			self.frameReq = window.requestAnimationFrame(draw);
+		} else {
+			//self.running = false;
+			self.els.seconds.textContent = "Time up!";
+			self.els.ticker.style.height = '0%';
+			self.element.classList.add('countdown--ended');
+      answered = true;
+      $(".rollbtn").hide();
+      $('#points').addClass('shake');
+      $('#restartBtn').show(); 
+		}
+	};
+	
+	self.frameReq = window.requestAnimationFrame(draw);
+}
+
+Timer.prototype.stop = function() {
+	this.running = false;
+	window.cancelAnimationFrame(this.frameReq);
+	this.els.seconds.textContent = this.duration / 1000;
+	this.els.ticker.style.height = null;
+	this.element.classList.remove('countdown--ended');
+}
+
+Timer.prototype.setDuration = function(duration) {
+	this.duration = duration;
+	this.els.seconds.textContent = this.duration / 1000;
+}
+
+var timer = new Timer(60000, document.getElementById('countdown'));
+timer.start();
+timer.stop();
+
+    </script>
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

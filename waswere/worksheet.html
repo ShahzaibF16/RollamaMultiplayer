@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Was / Were  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+        <th>Focus: was / were<br><br>Task: fill the gap
+          <br>          
+          </th>
+  
+  
+  
+        <th style="text-align: center">
+          Teacher Tip: <br><br>singular = was &nbsp; | &nbsp; plural = were
+          &nbsp; | &nbsp; (exception: you = were)
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody">
+
+      </tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: was / were</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+       var options_easy = {
+        "I _______ going to the shop.": "was",
+        "It _______ too big to carry.": "was",
+        "She _______ in the classroom.": "was",
+        "He _______ playing outside.": "was",
+        "The cup _______ blue.": "was",
+        "The boy _______ having a bad day.": "was",
+        "Bethany _______ on her bike.": "was",
+        "We _______ together. ": "were",
+        "They _______ the loudest group.": "were",
+        "The chairs _______ made from wood.": "were",
+        "Children _______ pushing and shoving.": "were",
+        "My teacher _______ full of energy.": "was",
+        "Our teachers ______ eating lunch.": "were",
+        "Your parents ______ very caring.": "were",
+        "His dad ________ good at drawing.": "was",
+        "My mum ______ reading in the kitchen.": "was",
+        "The table ______ large.": "was",
+        "His eyes ______ bright green.": "were",
+        "The people _____ in the airport.": "were",
+        "The person _____ holding their phone.": "was",
+        "Your friend _____ very nice.": "was",
+
+        "I _____ going to the shop.": "was",
+        "It _____ too big to carry.": "was",
+        "She _____ in the classroom.": "was",
+        "He _____ playing outside.": "was",
+        "The cup _____ blue.": "was",
+        "The boy _____ having a bad day.": "was",
+        "Bethany _____ on her bike.": "was",
+        "We _____ together. ": "were",
+        "They _____ the loudest group.": "were",
+        "The chairs _____ made from wood.": "were",
+        "Children _____ pushing and shoving.": "were",
+        "My teacher _____ full of energy.": "was",
+        "Our teachers _____ eating lunch.": "were",
+        "Your parents _____ very caring.": "were",
+        "His dad _____ good at drawing.": "was",
+        "My mum _____ reading in the kitchen.": "was",
+        "The table _____ large.": "was",
+        "His eyes _____ bright green.": "were",
+        "The people _____ in the airport.": "were",
+        "The person _____ holding their phone.": "was",
+        "Your friend _____ very nice.": "was",
+        "I _____ with my dog.": "was",
+        "It _____ the best day ever.": "was",
+        "She _____ taller than him.": "was",
+        "He _____ studying inside.": "was",
+        "The cup _____ full of milk.": "was",
+        "The boy _____ busy with his homework.": "was",
+        "Ivan _____ afraid of the dark.": "was",
+        "We _____ working well as a team.": "were",
+        "They _____ talking about the news.": "were",
+        "The chairs _____ all over the place.": "were",
+        "Children _____ behaving well.": "were",
+        "I ________ finding my key. ": "was",
+        "I ________ happy today.": "was",
+        "I ________ always on time.": "was",
+        "I ________ full of joy. ": "was",
+        "I ________ a girl.": "was",
+        "I ________ seven years old.": "was",
+        "I ________ from a large country.": "was",
+        "I ________ excited to see the movie.": "was",
+        "I ________ interested in fossils.": "was",
+        "I ________ the tallest in my class.": "was",
+        "I ________ the fastest runner. ": "was",
+        "I ________ excited to make friends.": "was",
+        "I ________ never too full for cake.": "was",
+        "I ________ watching my little brother play. ": "was",
+        "I ________ often playing games with my siblings. ": "was",
+      };
+
+      var options_medium = {
+        "My teacher _____ marking my work.": "was",
+        "Our teachers _____ walking with us.": "were",
+        "Your parents _____ waiting for you.": "were",
+        "His dad _____ building a time machine.": "was",
+        "My mum _____ always excited to see me.": "was",
+        "The table _____ in the hallway.": "was",
+        "His eyes _____ round and glistening.": "were",
+        "The people _____ lining up.": "were",
+        "She _____ not looking at you.": "was",
+        "Your friend _____ not at your party.": "was",
+        "She _____ happiest with her sister.": "was",
+        "He _____ caring and kind.": "was",
+        "The bag _____ on the table.": "was",
+        "The planet _____ orbiting the Sun.": "was",
+        "This month, I ________ working on my spellings. ": "was",
+        "Tomorrow, I ________ going to play tennis.": "was",
+        "Whenever someone is speaking, I ______ always listening.": "was",
+        "I _______ the youngest player on the basketball team.": "was",
+        "After school, I ________ going out for dinner.": "was",
+        "In the mornings, I ____ always organised. ": "was",
+        "How ____ I going to make friends at my new school?": "was",
+        "The new girl _______ very kind to everyone. ": "was",
+        "The answer _________ a mystery to me.": "was",
+        "Where _______ the new classroom?": "was",
+        "Daniel ________ a good artist. ": "was",
+        "The robot _________ fully charged and ready to be used!": "was",
+        "When _____ break time?": "was",
+        "August _______ the hottest month here. ": "was",
+        "In December, she ________  having her birthday party. ": "was",
+        "Elephants _______ quite dangerous.": "were",
+        "The tests _______ all in the same month.": "were",
+        "Schools _______ often open during the day. ": "were",
+        "New movies ____ often shown in cinemas. ": "were",
+        "Where ______ the children?": "were",
+        "How ______ you doing?": "were",
+        "What ______ the best shoes to buy?": "were",
+        "Cars _____ a great invention.": "were",
+        "Llamas _____ similar to camels. ": "were",
+        "There ______ many colours in the rainbow. ": "were",
+        "Why _______ parents often worried about us?": "were",
+
+        "I _______ with my dog.": "was",
+        "It _______ the best day ever.": "was",
+        "She _______ taller than him.": "was",
+        "He _______ studying inside.": "was",
+        "The cup _______ full of milk.": "was",
+        "The boy _______ busy with his homework.": "was",
+        "Bethany _______ afraid of the dark.": "was",
+        "We _______ working well as a team.": "were",
+        "They _______ talking about the news.": "were",
+        "The chairs _______ all over the place.": "were",
+        "Children _______ behaving well.": "were",
+        "My teacher _______ marking my work.": "was",
+        "Our teachers ______ bringing us in.": "were",
+        "Your parents ______ in the reception.": "were",
+        "His dad ________ building a time machine.": "was",
+        "My mum ______ always excited to see me.": "was",
+        "The table ______ in the hallway.": "was",
+        "His eyes ______ round and glistening.": "were",
+      };
+
+      var options_hard = {
+        "The people _____ lining up.": "were",
+        "The person _____ not looking at you.": "was",
+        "Your friend _____ not at your party.": "was",
+        "She _______ happiest with her sister.": "was",
+        "He _______ caring and kind.": "was",
+        "The bag _______ on the table.": "was",
+        "The planet ________ cold and unwelcoming.": "was",
+        "Jane and Bob _________ in the garden.": "were",
+        "Th cat and dog ________ good friends.": "were",
+        "Their house ______ enormous. ": "was",
+        "His brothers ________ kind to him. ": "were",
+        "The fruit _______ in the bowl. ": "was",
+        "Jane and Bob _____ in the garden.": "were",
+        "The cat and dog _____ good friends.": "were",
+        "Their house _____ enormous. ": "was",
+        "His brothers _____ kind to him. ": "were",
+        "The fruit _____ in the bowl. ": "was",
+        "My sister and I _____ traveling to China.": "were",
+        "Everyone ______ at the party. ": "was",
+        "Someone ______ speaking to loudly. ": "was",
+        "Anyone ____ welcome to the dinner.": "was",
+        "Everybody ______ looking forward to the new year. ": "was",
+        "Somebody _____ going to bring the boardgames. ": "was",
+        "Water ________ good for you. ": "was",
+        "Sand ________ all over the car!": "was",
+        "Glass _______ delicate. ": "was",
+        "Hair ______ a great way to warm your head.": "was",
+        "Trousers _____ comfortable to wear. ": "were",
+        "Shoes ___ kept in the hall. ": "were",
+        "Scissors _______ used for cutting.": "were",
+        "Mice _______ living in our basement. ": "were",
+        "Chess _______ a great game.": "was",
+        "Listening _________ an important skill.": "was",
+        "Balance _____ great to prevent injury. ": "was",
+        "Studying _______ vital for good grades. ": "was",
+        "Reading _________ fun to do when you have spare time. ": "was",
+        "My band _______ always practising.": "was",
+        "Ben and Jenny ______ trying to find a nice house for themselves. ":
+          "were",
+        "Both the teachers and the students ____ paying attention.": "were",
+        "The monkey and the panda ____ good friends. ": "were",
+        "The men ______ meeting later. ": "were",
+        "The women ______ taller than the girls. ": "were",
+        "The geese ____ so loud today.": "were",
+        "The box of cakes ________ on the table.": "was",
+        "The bag of sweets ____ in my room.": "was",
+        "The bars of chocolate _______ melting.": "were",
+        "The basket of fruit ____ in the market. ": "was",
+        "The box of chocolates _____ being shared by everyone.": "was",
+        "The pot of pens ____ for the children. ": "was",
+        "The packet of popcorn ______ still hot. ": "was",
+      };
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

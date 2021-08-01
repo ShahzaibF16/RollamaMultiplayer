@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PNPTEPE4LC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>phrasal verbs (up / down / in / out) multiplayer</title>
+    <link rel="icon" href="../img/Baby_Logo.png" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--new css file added-->
+    <link rel="stylesheet" href="../css/fa/css/all.css">
+    <link rel="stylesheet" href="../css/layout_2021-7.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div style="text-align: left" class="row">
+        <div>
+          <a href="../" id="homebtn">
+            <img
+              src="../img/homebtn.png"
+              alt="homebtn"
+              height="100px"
+              class="homebutton"
+            />
+          </a>
+
+          <div style="text-align: right">
+            <img src="../img/Exitbtn_.png" alt="checkbtn" height="100px" />
+          </div>
+          <div><p>Timer</p></div>
+        </div>
+
+        <span class="bar"><p>Player 1</p></span>
+        <span class="bar"><p>Player 2</p></span>
+        <span class="bar"><p>Player 3</p></span>
+        <span class="bar"><p>Player 4</p></span>
+      </div>
+      <div class="row" id="answers">
+        <div class="col">
+          <div class="row">
+            <div
+              class="nameblk1 qblock optionblock tall"
+              data-player="0"
+              data-answer="were"
+            >
+              <h2>Player 1:<br>up</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div
+              class="nameblk1 qblock optionblock tall"
+              data-player="1"
+              data-answer="where"
+            >
+              <h2>Player 2:<br>down</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div
+              class="nameblk1 qblock optionblock tall"
+              data-player="2"
+              data-answer="wear"
+            >
+              <h2>Player 3:<br>in</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div
+              class="nameblk1 qblock optionblock tall"
+              data-player="3"
+              data-answer="we're"
+            >
+              <h2>Player 4:<br>out</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="start-overlay" id="start-overlay">
+      <h2 class="start-overlay__title"></h2>
+      <button class="button" data-timemode="1">
+        <a href="javascript:void(0);" id="startGame">
+          <img src="../img/Gamesettingsbtn.png" alt="btn" height="110px" ></button>
+       <img
+      src="../img/ROLFrules.png"
+      alt="btn"
+      height="300px"
+      style="
+        margin-top: 15px;
+        margin-bottom: 150px;
+        border-radius: 25px;
+        box-shadow: 5px 10px #733381;"
+    />
+    </div>
+
+    <div id="gameScreen">
+      <div id="chooseEnd">
+        <div style="margin-right: 15px">
+          <a href="../" id="homebtn">
+            <img
+              src="../img/homebtn.png"
+              alt="homebtn"
+              height="90px"
+              class="homebutton"
+            />
+          </a>
+        </div>
+        <!--  <button
+          style="
+            margin: 0%;
+            background: url('../img/Exitbtn_.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 100px;
+            width: 150px;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="endGame"
+        ></button> -->
+
+        <div style="margin-left: 15px">
+          <img
+            src="../img/Low_Level_Yellow_Btn_.png"
+            usemap="#diffmap"
+            height="90px"
+            class="levelbutton diff-img"
+          />
+
+          <map name="diffmap">
+            <area
+              target=""
+              alt="1"
+              title="1"
+              href="#easy"
+              coords="20,60,40,85"
+              shape="rect"
+              class="easy-diff-game"
+            />
+            <area
+              target=""
+              alt="2"
+              title="2"
+              href="#mid"
+              coords="51,45,74,89"
+              shape="rect"
+              class="mid-diff-game"
+            />
+            <area
+              target=""
+              alt="3"
+              title="3"
+              href="#max"
+              coords="84,26,105,89"
+              shape="rect"
+              class="max-diff-game"
+            />
+          </map>
+        </div>
+
+        <button
+          style="
+            margin-left: 15px;
+            background: url('../img/Firsttotenbtn_.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="firstToTen"
+          data-gameTime="0"
+        ></button>
+        <button
+          style="
+            background: url('../img/1minracebtn_.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="oneMinute"
+          data-gameTime="1"
+        ></button>
+        <!-- <button
+          style="
+            background: url('../img/2minracebtn.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="twoMinute"
+          data-gameTime="2"
+        ></button>
+        <button
+          style="
+            background: url('../img/3minracebtn.png') no-repeat;
+            background-position: center;
+            background-size: contain;
+          "
+          class="gameButton chooseGameTimeBtn"
+          id="threeMinute"
+          data-gameTime="3"
+        ></button> !-->
+      </div>
+      <div id="gameDisplay">
+        <div id="gameButtons">
+          <div>
+            <a href="../" id="homebtn">
+              <img
+                src="../img/homebtn.png"
+                alt="homebtn"
+                height="100px"
+                class="homebutton"
+              />
+            </a>
+          </div>
+          <div id="restart">
+            <img src="../img/Exitbtn_.png" alt="checkbtn" height="100px" />
+          </div>
+          <div id="timer"><p>Timer</p></div>
+        </div>
+        <div id="questionBlock" class="row" style="margin-top: 25px">
+          <div class="nameblk1 qblock top-block">
+            <h1></h1>
+          </div>
+        </div>
+        <div id="resultsBar">
+          <span class="bar"><p>Player 1</p></span>
+          <span class="bar"><p>Player 2</p></span>
+          <span class="bar"><p>Player 3</p></span>
+          <span class="bar"><p>Player 4</p></span>
+        </div>
+        <div class="row" id="answers">
+          <div class="col">
+            <div class="row">
+              <div
+                class="nameblk1 qblock optionblock"
+                data-player="0"
+                data-answer="up"
+              >
+                <h2>up</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div
+                class="nameblk1 qblock optionblock"
+                data-player="1"
+                data-answer="down"
+              >
+                <h2>down</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div
+                class="nameblk1 qblock optionblock"
+                data-player="2"
+                data-answer="in"
+              >
+                <h2>in</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div
+                class="nameblk1 qblock optionblock"
+                data-player="3"
+                data-answer="out"
+              >
+                <h2>out</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="game.js"></script> -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    <script>
+      var names;
+      var difficulty = "0";
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = '';
+      if(!Cookies.get("llama_teacher_idx")){
+        $.post("../js/process.php", {"add_teacher_idx": "1", "course_data": "{}"}).done(function(data){
+          Cookies.set("llama_teacher_idx", data);
+        });
+      }
+      else{
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", {"get_course_data": "1", "teacher_idx": teacherIdx}).done(function(data){
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if(Object.keys(courseData).length && currentList == ''){
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          }
+          else if(currentList != ''){
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if (!names || !names.length || names.length <= 0) return;
+        var num = Math.floor(Math.random() * names.length);
+        name1 = names[num];
+
+        name2 = name1;
+        while (name2 == name1) {
+          num = Math.floor(Math.random() * names.length);
+          name2 = names[num];
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1);
+        $(".name2 h1").text(name2);
+      });
+
+      var thiskey;
+      var options_easy = {
+        "break ___ (stop functioning (vehicle, machine) )": "down",
+        "break ___ (get upset)": "down",
+        "calm ___ (relax after being angry)": "down",
+        "fall ___ (fall to the ground)": "down",
+        "break ___ (force entry to a building)": "in",
+        "break ___ (interrupt)": "in",
+        "check ___ (arrive and register at a hotel or airport)": "in",
+        "chip ___ (help or pay towards)": "in",
+        "cut ___ (interrupt)": "in",
+        "give ___ (reluctantly stop fighting or arguing)": "in",
+        "break ___ (escape)": "out",
+        "check ___ (leave a hotel)": "out",
+        "check ___ (investigate something)": "out",
+        "drop ___ (quit a class, school etc)": "out",
+        "eat ___ (eat at a restaurant)": "out",
+        "fall ___ (separate from an interior)": "out",
+        "fall ___ ((of hair, teeth) become loose and unattached": "out",
+        "find ___ (discover)": "out",
+        "go ___ (leave home to go on a social event)": "out",
+        "hang ___ (spend time relaxing (informal))": "out",
+        "look ___ (be careful, vigilant, and take notice)": "out",
+        "pass ___ (faint)": "out",
+        "run ___ (have none left)": "out",
+        "work ___ (exercise)": "out",
+        "work ___ (be successful)": "out",
+        "break ___ (develop a skin condition)": "out",
+        "blow ___ (explode)": "up",
+        "break ___ (end a relationship)": "up",
+        "catch ___ (get to the same point as somebody else)": "up",
+        "cheer ___ (become happier)": "up",
+        "dress ___ (wear nice clothing)": "up",
+        "end ___ (eventually reach/do/decide)": "up",
+        "get ___ (get out of bed)": "up",
+        "get ___ (stand)": "up",
+        "give ___ (stop trying)": "up",
+        "grow ___ (become an adult)": "up",
+        "hang ___ (end a phone call)": "up",
+        "make ___ (forgive each other)": "up",
+        "turn ___ (appear suddenly)": "up",
+        "wake ___ (stop sleeping)": "up",
+        "warm ___ (prepare body for exercise)": "up",
+        "bring ___ (make unhappy)": "down",
+        "let ___ (fail to support or help, disappoint)": "down",
+        "put ___ (insult, make somebody feel stupid)": "down",
+        "break ___ (divide into smaller parts)": "down",
+        "cut ___ (make something fall to the ground)": "down",
+        "hand ___ (give something used to somebody else)": "down",
+        "turn ___ (decrease the volume or strength (heat, light etc) )": "down",
+        "turn ___ (refuse)": "down",
+        "break ___ (gain illegal entry)": "in",
+        "let ___ (allow to enter)": "in",
+        "break ___ (wear something a few times so that it doesn't look/feel new)":
+          "in",
+        "fill ___ (to write information in blanks, as on a form)": "in",
+        "hand ___ (submit)": "in",
+        "cross ___ (draw a line through)": "out",
+      };
+
+      var options;
+
+// Unique questions each time
+      var totalqs = Object.keys(options_easy).length;
+      var questionsDoneEasy = [];
+      var questionsDoneMedium = [];
+      var questionsDoneHard = [];
+      var questionsDone;
+      var qAdded;
+      // end of unique questions each time
+
+ $(".rollbtn").click(function () {
+     // Difficulty code start
+        if(difficulty == "0"){
+          options = options_easy;
+          questionsDone = questionsDoneEasy;
+          totalqs = Object.keys(options_easy).length;
+        }
+        else if(difficulty == "1"){
+          options = options_medium;
+          questionsDone = questionsDoneMedium;
+          totalqs = Object.keys(options_medium).length;
+        }
+        else if(difficulty == "2"){
+          options = options_hard;
+          questionsDone = questionsDoneHard;
+          totalqs = Object.keys(options_hard).length;
+        }
+        // Difficulty code end
+
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+
+        // Unique questions each time
+        qAdded = false;
+        while(!qAdded){
+            if(!questionsDone.includes(thiskey)){
+            $(".qblock h1").text(thiskey.substring(thiskey.indexOf ("~") + 1));
+            getname();
+            $(".name1 h1").text("");
+            $(".name2 h1").text("");
+            $(".qblock2 h1").text("");
+            questionsDone.push(thiskey);
+            qAdded = true;
+            console.log(questionsDone.length);
+          }
+          else{
+            if(questionsDone.length == totalqs){
+              questionsDone.length = 0;
+            }
+            var num = Math.floor(Math.random() * keys.length);
+            thiskey = keys[num];
+          }
+        }
+        // End of unique questions each time
+      });
+
+      $(".checkbtn").click(function () {
+        $(".qblock2 h1").text(options[thiskey]);
+      });
+
+      $("#teachbtn").click(function(){
+        $("#clistmodal").modal("show");
+      });
+      
+      $(function(){
+        // spin the top questionbar
+        $("#roll-btn").on('click',function () {
+          $('.top-block').addClass('topbar__spin');
+          setTimeout(function(){
+            $('.top-block').removeClass('topbar__spin');
+          },300)
+        });
+
+        // spin the names button
+        $(".namesbtn").on('click',function () {
+          $('.names ').addClass('name__speen');
+          setTimeout(function(){
+            $('.names ').removeClass('name__speen');
+          },300)
+        });
+      })
+    </script>
+    <script>
+      document.getElementById("startGame").onclick = function () {
+        const gameScreen = document.getElementById("gameScreen");
+        gameScreen.style.display = "block";
+        setTimeout(() => {
+          gameScreen.style.transform = "translateY(0)";
+        }, 5);
+      };
+      document.querySelectorAll(".chooseGameTimeBtn").forEach((gameTimeBtn) => {
+        gameTimeBtn.onclick = function (e) {
+          const time = e.target.dataset.gametime;
+          e.target.parentElement.style.display = "none";
+          switch (time) {
+            case "0":
+              loadFirstToTen();
+              break;
+            default:
+              loadGameWithTimer(time);
+              break;
+          }
+        };
+      });
+      let scores = [0, 0, 0]; // Player 1, 2 and 3
+      var loadNextQuestion;
+      var countdown;
+      let firstToTen = false;
+      function resetScores() {
+        scores = [0, 0, 0, 0];
+      }
+      function setTimerToNextQuestion() {
+        loadNextQuestion = setTimeout(() => {
+          loadNextQuestionInHTML();
+        }, 10000);
+      }
+      function clearQuestionTimerManually() {
+        clearTimeout(loadNextQuestion);
+      }
+      function startTheGame() {
+        document.getElementById("gameDisplay").style.display = "block";
+        document.getElementById("chooseEnd").style.display = "none";
+      }
+      function restartGame() {
+        if (countdown) clearInterval(countdown);
+        clearQuestionTimerManually();
+        document.querySelectorAll("#resultsBar .bar").forEach((bar) => {
+          bar.style.height = "0px";
+          bar.style.transform = "translateY(0px)";
+          bar.querySelector("p").innerText = "Score: 0";
+        });
+        firstToTen = false;
+        document.getElementById("gameDisplay").style.display = "none";
+        document.getElementById("chooseEnd").style.display = "flex";
+      }
+      document.getElementById("restart").onclick = restartGame;
+
+      function endGame() {
+        restartGame();
+        const gameScreen = document.getElementById("gameScreen");
+        gameScreen.style.transform = "translateY(100vh)";
+        setTimeout(() => {
+          gameScreen.style.display = "none";
+        }, 300);
+      }
+      document.getElementById("endGame").onclick = endGame;
+
+      function loadFirstToTen() {
+        firstToTen = true;
+        document.querySelector("#timer").style.display = "none";
+        resetScores();
+        startTheGame();
+        loadNextQuestionInHTML();
+      }
+      function startTimer(time) {
+        let relativeMinutes = Number(time);
+        if (!Number(relativeMinutes) || Number(relativeMinutes) < 0) return;
+        else {
+          relativeMinutes = Date.now() + relativeMinutes * 60 * 1000;
+          countdown = setInterval(() => {
+            let difference = relativeMinutes - Date.now();
+            // let hours = Math.floor(
+            //   (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            // );
+            let minutes = Math.floor(
+              (difference % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            let timerString = `${minutes} mins : ${seconds} secs`;
+            document.querySelector("#timer p").innerText = timerString;
+
+            // Checking end of timer
+            if (difference < 0) {
+              document.querySelector("#timer p").innerText = "Time up!";
+              clearInterval(countdown);
+              finishGameAndShowResults(true);
+            }
+          }, 1000);
+        }
+      }
+      function loadGameWithTimer(timer) {
+        document.querySelector("#timer").style.display = "flex";
+        resetScores();
+        startTheGame();
+        loadNextQuestionInHTML();
+        startTimer(timer);
+      }
+
+      function checkScores() {
+        return scores.indexOf(10);
+      }
+      function finishGameAndShowResults(finish = false) {
+        // It can be called if first to ten or when timer finishes
+        if (finish) {
+          clearQuestionTimerManually();
+          document
+            .querySelectorAll("#answers .optionblock")
+            .forEach((option) => {
+              option.onclick = () => {};
+            });
+        }
+        // Show the results now
+        const allScoresBars = document.querySelectorAll("#resultsBar .bar");
+        for (let i = 0; i < allScoresBars.length; i++) {
+          const currentScore = scores[i];
+          if (currentScore > 0) {
+            allScoresBars[i].style.height = `${currentScore * 10}px`;
+            allScoresBars[i].style.transform = `translateY(${
+              currentScore * 10 * -1
+            }px)`;
+          } else {
+            allScoresBars[i].style.height = `${currentScore * 10 * -1}px`;
+          }
+          allScoresBars[i].querySelector(
+            "p"
+          ).innerText = `Score: ${currentScore}`;
+        }
+      }
+      function loadNextQuestionInHTML() {
+        // Check scores before loading next question if firstToTen mode active
+        if (firstToTen) {
+          let result = checkScores();
+          if (result >= 0) {
+            finishGameAndShowResults(true);
+            return;
+          }
+        }
+        // Randomize
+        // difficulty = Math.floor(Math.random() * 3);
+        // load question
+        document.querySelectorAll("#answers .optionblock").forEach((answer) => {
+          answer.className = "nameblk1 qblock optionblock";
+        });
+        // document.querySelector(".rollbtn").click();
+        // Loading next question
+        if (difficulty == "0") {
+          options = options_easy;
+        } else if (difficulty == "1") {
+          options = options_medium;
+        } else if (difficulty == "2") {
+          options = options_hard;
+        }
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+        $(".qblock h1").text(thiskey.substring(thiskey.indexOf("~") + 1));
+        // Next question loaded
+        enableAnswering();
+        setTimerToNextQuestion();
+      }
+      function enableAnswering() {
+        // Enable clicking of answers buttons
+        document.querySelectorAll("#answers .optionblock").forEach((answer) => {
+          answer.onclick = (e) => {
+            const answerButton = answer;
+            const playerAnswer = answer.dataset.answer;
+            const playerNumber = Number(answerButton.dataset.player);
+            const correctAnswer = options[thiskey];
+
+            if (playerAnswer.toLowerCase() == correctAnswer.toLowerCase()) {
+              answerButton.classList.add("correctAnswer");
+              scores[playerNumber]++;
+              clearQuestionTimerManually();
+              setTimeout(() => {
+                loadNextQuestionInHTML();
+              }, 300);
+            } else {
+              answerButton.classList.add("wrongAnswer");
+              scores[playerNumber]--;
+            }
+            finishGameAndShowResults();
+            answer.onclick = () => {};
+          };
+        });
+      }
+    </script>
+
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

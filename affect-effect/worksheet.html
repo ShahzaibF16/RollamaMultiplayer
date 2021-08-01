@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Affect / Effect Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>
+            Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th> 
+          
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: affect / effect
+  <br><br>Task: underline or highlight the correct word<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>affect = verb &emsp; &emsp; effect = noun
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: affect / effect</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+   var options_easy = {
+
+        
+        "The weather __________ the trip. (affects/effects)": "affects",
+        "The teacher __________ the grades of the students. (affects/effects)": "affects",
+        "The food __________ your hunger. (affects/effects)": "affects",
+        "The rain __________ your tennis match. (affects/effects)": "affects",
+        "The snow __________ your breaktime. (affects/effects)": "affects",
+        "The cost __________ your holiday. (affects/effects)": "affects",
+        "The sugar __________ your mood. (affects/effects)": "affects",
+        "The revision __________ your test score. (affects/effects)": "affects",
+        "The result ___ your report. (affects/effects)": "affects",
+        "Your stength __________ your performance. (affects/effects)": "affects",
+        "My bed ____________ my sleep. (affects/effects)": "affects",
+        "The __________ are great.  (affects/effects)": "effects",
+        "I love to see great __________ in movies.  (affects/effects)": "effects",
+        "There are many __________ depending on the weather.  (affects/effects)": "effects",
+        "There are many ___________ from eating sugar.  (affects/effects)": "effects",
+        "The __________ are interesting.  (affects/effects)": "effects",
+        "The __________ are superb.  (affects/effects)": "effects",
+        "The __________ of the strong winds are terrible.  (affects/effects)": "effects",
+        "The __________ are the best thing about the movie.  (affects/effects)": "effects",
+        "The __________ of studying can be enormous.  (affects/effects)": "effects",
+        "The noises __________ my hearing. (affect/effect)": "affect",
+        "The activities __________ the children.  (affect/effect)": "affect",
+        "The snow can ____________ the event. (affect/effect)": "affect",
+        "The cake has a big __________ on how good the party is. (affect/effect)": "affect",
+        "Saying mean things can have a horrible ___________.  (affect/effect)": "effect",
+        "Hot water will ___________ the taste of the tea. (affect/effect)": "affect",
+        "What will ____________ the score? (affect/effect)": "affect",
+   }
+   var options_medium = {
+
+        "Will this __________ your mood? (affect/effect)": "affect",
+        "Will the rain __________ your journey? (affect/effect)": "affect",
+        "Don't let his words __________ your concentration. (affect/effect)": "affect",
+        "I tried to __________ the game but it was too hard. (affect/effect)": "affect",
+        "I wish I could __________ the weather but I can't. (affect/effect)": "affect",
+        "Did the rain have any __________ on your journey? (affect/effect)": "effect",
+        "A magical __________ was created by the speech. (affect/effect)": "effect",
+        "The medicine has had no ________________. (affect/effect)": "effect",
+        "The __________ of her encouragement was instant. (affect/effect)": "effect",
+        "I noticed an __________ on his handwriting when he changed his grip. (affect/effect)": "effect",       
+        "The noises __________ how much I can concentrate. (affect/effect)": "affect",
+        "You __________ my grades when you teach me well. (affect/effect)": "affect",
+        "He can __________ my mood if he's very annoying. (affect/effect)": "affect",
+        "What __________ does this word have on the reader? (affect/effect)": "affect",       
+        "Dropping litter will __________ the environment. (affect/effect)": "affect",
+        "I like the __________ you have created with your paints. (affect/effect)": "effect",
+        "What is the __________ of not having enough sleep? (affect/effect)": "effect",
+        "I love the __________ of the sun on the clouds. (affect/effect)": "effect",
+        "You can create an interesting __________ with smoke and magic. (affect/effect)": "effect",
+        "The flood ___________ all of the villagers. (affects/effects)": "affects",
+   }
+   var options_hard = {
+        "The __________ of my nightmare was huge; I couldn't sleep afterwards. (affect/effect)": "effect",        "He can __________ me positively. (affect/effect)": "affect",
+        "The dog's behaviour can __________ the cat's behaviour. (affect/effect)": "affect",
+        "My concentration can __________ my learning.  (affect/effect)": "affect",
+        "What __________ your learning more, your teacher or your friends? (affects/effects)": "affects",
+        "This traffic __________ when I will get home. (affects/effects)": "affects",
+        "There are many special __________ in this movie.  (affects/effects)": "effects",
+        "You can create many __________ with computers and cameras. (affects/effects)": "effects",
+        "Practice has positive __________ on your skills. (affects/effects)": "effects",
+        "There are many environmental ____________ created by plane travel.(affects/effects)": "effects",
+        "The energy from the sun __________ the solar power generated. (affects/effects)": "affects",
+        "The skill of the player __________ the score of the match. (affects/effects)": "affects",
+        "The cow's milk __________ the health of the calf. (affects/effects)": "affects",
+        "The advert __________ the customer. (affects/effects)": "affects",
+        "The light __________ the visibility of the road.  (affects/effects)": "affects",
+        "The temperature __________ the ice.  (affects/effects)": "affects",
+        "James' behaviour ______________ the concentration of the class.  (affects/effects)": "affects",
+        "Wasting paper __________ the rainforest.  (affects/effects)": "affects",
+        "Bad weather ____________ what time the school bos arrives.  (affects/effects)": "affects",
+        "One late train ___________ when I get to work.  (affects/effects)": "affects",
+        "Having breakfast ___________ my mood.  (affects/effects)": "affects",
+        "Eating fruit ____________ my health. (affects/effects)": "affects",
+        "Exercising ___________ my fitness.  (affects/effects)": "affects",
+        "Eating fruit has many health __________.  (affects/effects)": "effects",
+        "Listening to music has many beneficial  __________.  (affects/effects)": "effects",
+        "Special __________ can make movies incredible expensive to produce.  (affects/effects)": "effects",
+        "Advertisements have many persuasive _______________.  (affects/effects)": "effects",
+        "The _____________ of stress are well researched.  (affects/effects)": "effects",
+        "Global warming ____________ people across the world. (affects/effects)": "affects",
+        "Careful revision should positively __________ your score. (affect/effect)": "affect",
+        "Your painting has a profound __________ on me. (affect/effect)": "effect",
+        "The music has a relaxing ____________ on my children. (affect/effect)": "effect",
+        "Playing instruments will ______________ the respect you have for musicians. (affect/effect)": "affect",
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

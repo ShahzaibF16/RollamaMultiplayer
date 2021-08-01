@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Were / Where / Wear / We're Worksheet - Rollama</title>
+    <link rel="icon" href="../img/Baby_Logo.png" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>
+            Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th>
+          <th>
+            <img src="../img/Newrollamalogo.png" alt="banner" height="80px" />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+        <th>
+          Focus: were / where / wear / we're <br /><br />Task: fill the gap
+        </th>
+        <th style="text-align: center">
+          Teacher Tip: <br /><br />were = past tense of are &nbsp; | &nbsp;
+          where = place &nbsp; | &nbsp; wear = put on clothes &nbsp; | &nbsp;
+          we're = we are
+        </th>
+
+        <th style="font-size: xx-large">✏</th>
+      </thead>
+
+      <tbody class="printbody">
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: were / where / wear / we're</th>
+          <th>
+            <img src="../img/Newrollamalogo.png" alt="banner" height="80px" />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+      var options_easy = {
+        "What are you going to ____?": "wear",
+        "I like to ____ shiny shoes.": "wear",
+        "What ____ you doing yesterday?": "were",
+        "Why ____ you out so late?": "were",
+        "Where ____ you yesterday?": "were",
+        "We ____ having a great time.": "were",
+        "My dogs ____ acting strangely.": "were",
+        "_______ are you having the party?": "Where",
+        "_______ having a party!": "We're",
+        "_______ your smart shoes": "Wear",
+        "_______ you listening?": "Were",
+        "_______ shall we go?": "Where",
+        "_______ a warm jumper today!": "Wear",
+        "_______ are your shoes?": "Where",
+
+        "They ____ shoes every day. ": "wear",
+        "You ____ your uniform. ": "wear",
+        "We ____  the same clothes. ": "wear",
+        "They ____ sun cream. ": "wear",
+        "You always ____ the nicest dresses. ": "wear",
+        "We ____ sunglasses. ": "wear",
+        "The dogs ____ collars. ": "wear",
+        "People ____ watches. ": "wear",
+
+        "They show the new students ______ to eat.": "where",
+        "We know ____ the drinks are kept.": "where",
+        "This building is ____ we play sports. ": "where",
+        "The kitchen was ____ my parents cooked. ": "where",
+        "The map shows ____ the school is. ": "where",
+        "The children play ____ the toys are. ": "where",
+        "Hannah can tell us ____ to go. ": "where",
+        "Barry found ____ his keys were. ": "where",
+
+        "They ____ learning every day. ": "were",
+        "We ____ eating together. ": "were",
+        "The birds ____ chirping loudly. ": "were",
+        "The buildings ____ close together. ": "were",
+        "The teachers ____ talking about the students. ": "were",
+        "Children ____ playing outside. ": "were",
+        "Trees ____ cut down to make paper. ": "were",
+        "We ____ talking on the train. ": "were",
+
+        "_______ studying together. ": "we're",
+        "The teacher can see _____ working hard. ": "we're",
+        "_____ talking together. ": "we're",
+        "____ sharing a room. ": "we're",
+        "____ holding hands. ": "we're",
+        "Our parents know ____ hungry. ": "we're",
+        "____ walking to school. ": "we're",
+        "____ smiling in the photograph. ": "we're",
+      };
+
+      var options_medium = {
+        "______we invited?": "Were",
+        "______ going to pick up pizza for dinner.": "We're",
+        "I should have brought something else to ____.": "wear",
+        "What _____ you doing when I called last night?": "were",
+        "Yes, ______ going to pick you up tomorrow.": "we're",
+        "That's ______ you're wrong!": "where",
+        "I can't believe ______ having this argument again!": "we're",
+        "______ are your manners?!": "Where",
+        "It's quite cold; I wouldn't ______ that, if I were you!": "wear",
+        "Just ______ do you think you're going?": "where",
+        "They ____ each other out. ": "wear",
+        "You and your friend ____ your uniform to school. ": "wear",
+        "We always ____ shorts in the summer. ": "wear",
+        "They often ____ their kit to the football matches. ": "wear",
+        "You ____ out the dogs when you take them for a walk. ": "wear",
+        "My sister and I _____ the same pyjamas.": "wear",
+        "The new kittens _____ me out with all their care. ": "wear",
+        "People ____ down the pavement when they walk. ": "wear",
+
+        "They show the new teachers ______ the principal works.": "where",
+        "We understand ____ our food comes from.": "where",
+        "This hospital is ____ the doctors work. ": "where",
+        "The library is ____ I can get new books. ": "where",
+        "The mobile phone shows ____ the nearest train station is. ": "where",
+        "The team rush to ____ the ball landed. ": "where",
+        "Pete can tell us ____ the nearest shop is. ": "where",
+        "Jude just found ____ the presents were kept. ": "where",
+        "_____ are the house keys kept?": "where",
+        "______ do you come from?": "where",
+
+        "Dinosaurs ____ alive a long time ago. ": "were",
+        "John and Kate ____ best friends. ": "were",
+        "The places ____ both beautiful and difficult to find. ": "were",
+        "The bus stops _____ scattered through the city. ": "were",
+        "The cities ____ busy and full of people. ": "were",
+        "Countries ____ at war for many years. ": "were",
+        "My friend and I ____ close before I moved away. ": "were",
+        "At each station, we ____ listening carefully to the announcement. ":
+          "were",
+
+        "_______ happy when we go on holiday. ": "we're",
+        "The teacher can see _____ always trying our best. ": "we're",
+        "_____ looking for the nearest bus stop. ": "we're",
+        "I want to know how _____ doing in this competition. ": "we're",
+        "____ wearing our best clothes to the wedding. ": "we're",
+        "Our teacher tells us when ____ too loud. ": "we're",
+        "George knows where _______ staying. ": "we're",
+        "The place ____ going to is really fun. ": "we're",
+      };
+
+      var options_hard = {
+        "You should _____ a hat.": "wear",
+        "_____ going to the cinema tomorrow.": "we're",
+        "____ upset we missed our flight. ": "we're",
+        "____ did you see my pen?": "where",
+        "There ______ no ice creams left in the shop.": "were",
+        "I can't imagine ______ you got that idea!": "where",
+        "I'll eventually ______ you down until you agree": "wear",
+        "The grip on my trainer is starting to ______ away": "wear",
+        "Do you think ______ alone in the universe?": "we're",
+        "_______ only given one lifetime. Use it wisely.": "We're",
+        "_______ your knowledge lightly": "Wear",
+        "_______ must we go next?": "Where",
+        "There ______ three people at the bus stop.": "were",
+        "______ should I put this?": "where",
+        "Brushing too hard can ______ away your tooth enamel": "wear",
+        "I want to _____ matching t-shirts.": "wear",
+        "Do you know if _____ going the right way?": "we're",
+        "These arguments really ____ me out. ": "wear",
+        "James and Claire ____ matching colours. ": "wear",
+        "These erasers ____ down the paper when we use them. ": "wear",
+        "The building shows a lot of ______ and tear. ": "wear",
+        "You ____ out the students with lots of homework. ": "wear",
+        "My sister and I _____ our hair in the same way.": "wear",
+        "The loud noises _____ me out when I am trying to sleep. ": "wear",
+        "People ____ down the grass when they camp. ": "wear",
+
+        "The capital city is _______ most of the population live. ": "where",
+        "______ is the best restaurant to try local food?": "where",
+        "It is vital to better understand ______ our waste is recycled. ":
+          "where",
+        "The paramedics hurry to _____ the accident occurred. ": "where",
+        "How could I find out _____ the party is happening? ": "where",
+        "Alex just found ____ you might buy a new car from. ": "where",
+        "How does he know _____ the cake is? ": "where",
+        "Mr. Brown found ____ we kept our secret snacks. ": "where",
+
+        " ____ ancient Egyptians always buried in pyramids? ": "were",
+        "John and Kate ____ in the same location. ": "were",
+        "The places ____ difficult to find on the map. ": "were",
+        "______ the chocolates all eaten at once?": "were",
+        "____ the people at the concert?": "were",
+        "_____ the places on the poster clearly labelled?": "were",
+        "My friend and I ____ always lost on our way home.": "were",
+        "At each station, we ____ listening carefully to the announcement. ":
+          "were",
+
+        "The school _______ attending is really challenging. ": "we're",
+        "I don't know how _____ going to get home! ": "we're",
+        "_____ trying on our outfits for the party. ": "we're",
+        "______ never recognised for our achievements.": "we're",
+        "We know ____ always going to be good friends. ": "we're",
+        "We cheer when ____ watching our team win. ": "we're",
+        "The GPS tells us where _______ going. ": "we're",
+        "The place ____ visiting used to be where the royal family lived.":
+          "we're",
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if (diff) {
+          if (diff == "0") {
+            options = options_easy;
+          } else if (diff == "1") {
+            options = options_medium;
+          } else if (diff == "2") {
+            options = options_hard;
+          }
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+    <script src="../js/worksheet.js"></script>
+  </body>
+</html>

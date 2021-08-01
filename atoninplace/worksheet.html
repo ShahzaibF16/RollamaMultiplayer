@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>At / On / In (Place)  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>
+            Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th> 
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: at / on / in (place)<br><br>Task: fill the gap<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>more specific (addresses, locations) = at &nbsp; | &nbsp; more general (countries, towns)= in
+          &nbsp; | &nbsp; (exception: closed spaces like rooms, seated transport = in; standing transport = on)
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: at / on / in (place)</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+ 
+ var options_easy = {
+
+"I left my bottle ___ home": "at",
+"My Mum is ___ work": "at",
+"We are ___ school.": "at",
+"There are three people ___ the bus stop.": "at",
+"The car stopped ___ the traffic lights.": "at",
+"I am ___ the hospital.": "at",
+"Show your ticket ___ the entrance.": "at",
+"Return your 3D glasses ___ the exit.": "at",
+
+
+"I'm ___ a train.": "on",
+"I traveled ___ a plane.": "on",
+"We will travel ___ a ship.": "on",
+"I want to go ___ a motorbike.": "on",
+"You fell asleep ___ the bus.": "on",
+"I saw a cat ___ my way home.": "on",
+"my drawing is ___ the fridge.": "on",
+"The ball went ___ the roof.": "on",     
+"I'm ___ my way home.": "on",
+
+"I left my hat ___ the van.": "in",
+"We came here ___ our car.": "in",
+"I once flew ___ a helicopter.": "in",
+"He goes fishing ___ a boat": "in",
+"You can travel up ___ the lift (elevator).": "in",
+"I left my phone ___ a taxi.": "in",
+"I'm stuck ___ a traffic jam.": "in",
+"I am ___ bed.": "in",
+"My clothes are ___ the bedroom.": "in",
+
+};
+
+var options_medium = {
+
+"Let's start ___ the beginning.": "at",
+"There's a surprise ___ the end.": "at",
+"We are currently ___ school.": "at",
+"There are three people waiting ___ the bus stop.": "at",
+"The car should have stopped ___ the traffic lights.": "at",
+"It's just a short visit so I left my dog ___ home.": "at",
+"I'll call you back later because we're ___ the hospital.": "at",
+"Get ready to show your ticket ___ the entrance.": "at",
+"Return your 3D glasses ___ the exit.": "at",
+"I had a great time ___ the cinema.": "at",
+
+"I'm just getting ___ the train now.": "on",
+"My sister is due to be ___ the plane from 3pm.": "on",
+"We will travel to Australia ___ a ship.": "on",
+"The rider is ___ a motorbike.": "on",
+"You fell asleep ___ the bus.": "on",
+"I saw a big cat___ the way home.": "on",
+"There is a painting ___ the ceiling.": "on",
+"The ball got stuck ___ the roof.": "on",
+"My apartment is ___ the second floor.": "on",
+"I put my painting ___ a wall.": "on",
+
+"There's a UFO ___ the sky.": "in",
+"My brother is still ___ bed.": "in",
+"My brother's toys are ___ his bedroom.": "in",
+"I once flew ___ a helicopter.": "in",
+"He goes fishing ___ a boat": "in",
+"You can travel up ___ the lift (elevator).": "in",
+"I left my phone ___ a taxi.": "in",
+"Did you like the adjectives ___ my story?": "in",
+"We're on holiday ___ France.": "in",
+
+};
+
+var options_hard = { 
+"___ the time of its grand opening , there were only three classes in the school.": "at",
+"For full context, be sure to start ___ the beginning.": "at",
+"You can probably guess there will be a surprise right ___ the very end.": "at",
+"We stay ___ secondary school until age 16.": "at",
+"Have you ever seen such a collection of characters as there are waiting _____ this bus stop?": "at",
+"They barely paused ___ the red light before speeding round the corner.": "at",
+"It's just a short visit so I left my dog ___ home.": "at",
+"I'll call you back later because we're ___ the hospital.": "at",
+"Get ready to show your ticket ___ the entrance.": "at",
+"Return your 3D glasses ___ the exit.": "at",
+"I had a great time ___ the cinema.": "at",
+
+"Someone left their coat ___ the ground.": "on",
+"I rode here ___ a bicycle.": "on",
+"Put my name down ___ the list.": "on",
+"The restaurant is ___ Nanjing Road.": "on",
+"I saw a funny show ___ TV.": "on",
+"I found it ___ the internet.": "on",
+"I saw a funny video ___ YouTube.": "on",
+"My grandparents worked ___ a farm.": "on",
+
+"I liked the adjectives ___ your story.": "in",
+"Big Ben is ___ London.": "in",  
+"Everything worked out ___ the end.": "in",
+"I'm ___ a submarine.": "in",
+"We can barely fit any more people ___ this boat.": "in",
+"Quick - hide ___ this box so she can't see you.": "in",
+"I just want to be left alone ____ peace.": "in",
+"We'd better keep this disastous story strictly ___ the family.": "in",
+};
+ 
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

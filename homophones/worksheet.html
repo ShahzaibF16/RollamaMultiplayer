@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homophones  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: _____________________ <br><br>
+            <label for="diffselect">Difficulty: </label>
+            <select class="form-select" aria-label="Default select example" id="diffselect">
+              <option value="0" selected>Level 1</option>
+              <option value="1">Level 2</option>
+              <option value="2">Level 3</option>
+            </select>   
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: homophones<br><br>Task: choose the right word<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: homophones</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+  
+var options_easy = {
+"What is this tool used ____? (for / four)" : "for",
+"I can ___ the bell. (hear / here)" : "hear",
+"We can play for one ____. (hour / our)" : "hour",
+"My dancing skills are ____! (poor / pour)" : "poor",
+"The sky is _____. (blue / blew)" : "blue",
+"I ____ up the balloon! (blue / blew)" : "blew",
+"Turn ____ at the supermarket. (right / write)" : "right",
+"The ___ is beautiful. (sea / see)" : "sea",
+"My dog chases his ____. (tail / tale)" : "tail",
+"I have ____ books in my bag. (for / four)" : "four",
+"Everyone is ____ on the playground. (hear / here)" : "here",
+"When can we have ___ snack? (hour / our)" : "our",
+"Can I ____ a drink for you? (poor / pour)" : "pour",
+"Will you ____ this number down, please? (right / write)" : "write",
+"I can ___ my house from here. (sea / see)" : "see",
+"Tell me a ______. (tail / tale)" : "tale",
+"Can you ____ some juice? (poor / pour)" : "pour",
+"Can you ____ down this sentence? (right / write)" : "write",
+"You can ___ my dog in the park. (sea / see)" : "see",
+"This is a very old folk ______. (tail / tale)" : "tale",
+"Squeeze the ____ to slow down your bicycle. (brake / break)" : "brake",
+"The prisoner is in a ____ (cell / sell)" : "cell",
+"My battery will ___ soon! (die / dye)" : "die",
+
+};
+
+var options_medium = {
+"Squeeze the ____ to slow down your bicycle. (brake / break)" : "brake",
+"The prisoner is in a ____ (cell / sell)" : "cell",
+"My battery will ___ soon! (die / dye)" : "die",
+"Bread is made with _____. (flour / flower)" : "flour",
+"Time will ____ your injury. (heal / heel)" : "heal",
+"I can tie a ___ in my laces. (knot / not)" : "knot",
+"Her ___ is 10 years old. (son / sun)" : "son",
+"I will ____ that word to use in my sentence. (steal / steel)" : "steal",
+"Don't _____ my pencil! (brake / break)" : "break",
+"I want to ____ my t-shirt. (die / dye)" : "dye",
+"I hurt my ____ at playtime. (heal / heel)" : "heel",
+"That player is her ____. (idle / idol)" : "idol",
+"It is so quiet at ____. (knight / night)" : "night",
+"I do ____ want to hear any moaning. (knot / not)" : "not",
+"The ____ is peeking through the clouds. (son / sun)" : "sun",
+"The factory makes _____, (steal / steel)" : "steel",
+"Owls hunt at ____. (knight / night)" : "night",
+"I do ____ want to hear any moaning. (knot / not)" : "not",
+"The ____ is peeking through the clouds. (son / sun)" : "sun",
+"The factory makes _____, (steal / steel)" : "steel",
+"At midnight, some new _______ came on duty (knights / nights)" : "knights",
+"The price was one ____ off. (cent / scent)" : "cent",
+"I feel so ___ right now. (idle / idol)" : "idle",
+"A _____ lived in a castle. (knight / night)" : "knight",
+
+};
+
+var options_hard = { 
+
+
+"The price was one ____ off. (cent / scent)" : "cent",
+"I feel so ___ right now. (idle / idol)" : "idle",
+"A _____ lived in a castle. (knight / night)" : "knight",
+"My shoe needs a new ____ (sole / soul)" : "sole",
+"The _____ looks good today. (weather / whether)" : "weather",
+"I want to ____ my old toys. (cell / sell)" : "sell",
+"The ____ is very sweet. (cent / scent)" : "scent",
+"That ____ is unusual. (flour / flower)" : "flower",
+"This music has such _____. (sole / soul)" : "soul",
+"Let's decide _____ to have pizza or noodles. (weather / whether)" : "whether",
+"My cat is so ____. (idle / idol)" : "idle",
+"A _____ lived in a castle. (knight / night)" : "knight",
+"This is my ____ request (sole / soul)" : "sole",
+"The archaeologist found a precious ____. (idle / idol)" : "idol",
+"I feel this song in my ____ (sole / soul)" : "soul",
+"I'm not sure _______ to stay or go. (weather / whether)" : "whether",
+"Each box in a spreadsheet is called a ____. (cell / sell)" : "cell",
+"The price is one ____ below $10. (cent / scent)" : "cent",
+"The secret to the taste is the high quality _____. (flour / flower)" : "flour",
+"She is a ____ and jazz singer. (sole / soul)" : "soul",
+"Owls hunt at ____. (knight / night)" : "night",
+"I do ____ want to hear any moaning. (knot / not)" : "not",
+"The ____ is peeking through the clouds. (son / sun)" : "sun",
+"The factory makes _____, (steal / steel)" : "steel",
+"At midnight, some new _______ came on duty (knights / nights)" : "knights",
+
+
+}; 
+   // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

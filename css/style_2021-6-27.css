@@ -1,0 +1,360 @@
+.cont {
+  width: 100%;
+  padding: 10px;
+  background-color: #414141;
+}
+
+body {
+  background-color: rgb(65, 65, 65);
+  font-family: "Trebuchet MS", Trebuchet MS, sans-serif;
+}
+
+.page1,
+.page2 {
+  margin: 0 auto;
+  padding: 0px;
+  max-width: 1320px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.names .card-header {
+  background-color: #589c48;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.list-group-item,
+.card-header {
+  text-align: center;
+}
+.columntitle {
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  height: 50px;
+  padding: 5px;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.names .list-group-item {
+  background-color: #7bb662;
+}
+
+.card-header {
+  background-color: #f58024;
+}
+
+.superset {
+  background-color: #f8a96d;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px dashed grey;
+}
+
+.lastsuperset {
+  background-color: #f8a96d;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.superset:hover {
+  background-color: #733381;
+  color: white;
+}
+.lastsuperset:hover {
+  background-color: #733381;
+  color: white;
+}
+.list-group-item {
+  background-color: #fbb149;
+}
+
+.list-group-item:hover {
+  background-color: #ffd849;
+  transition-delay: 0.2s;
+}
+
+.vocab .card-header {
+  background-color: #f58024;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+span {
+  border-bottom: 1px dashed transparent;
+}
+li[data-new="true"] {
+  color: #777;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+li input {
+  display: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+li.edit span {
+  display: none;
+}
+
+li.edit input {
+  display: initial;
+  border-bottom: 1px dashed #000;
+}
+
+.imghead {
+  margin: 10px auto;
+  display: block;
+  height: 20vh;
+}
+
+.col,
+.card {
+  margin-bottom: 10px;
+  border-radius: 25px;
+}
+
+.page2 {
+  background-color: #404040;
+}
+
+.nameblk {
+  padding: 10px;
+  background-color: #b1a0c7;
+  text-align: center;
+  display: inline-block;
+}
+
+.wasblk {
+  text-align: center;
+  padding: 10px;
+}
+
+.infoblk {
+  background-color: #404040;
+  color: white;
+}
+
+.nameblk h1 {
+  display: inline;
+  margin: 50px;
+}
+
+.btnprimary {
+  width: 150px;
+  background: #ffd849;
+  margin-top: 25px;
+  margin-left: 50px !important;
+  box-shadow: 0 5px #733381;
+  border-radius: 10px;
+  outline: none;
+}
+.btnprimary:hover {
+  background: #f58024;
+  box-shadow: 0 5px #733381;
+}
+
+@media screen and (max-width: 600px) {
+  .blk {
+    width: 20rem !important;
+  }
+}
+
+.btn {
+  margin-top: 13px;
+}
+
+.blank {
+  display: inline-block;
+}
+
+.blank h1 {
+  display: inline;
+  margin: 20px;
+}
+
+.unicode {
+  font-size: 6em;
+  vertical-align: middle;
+}
+
+.list-bold a {
+  margin: 0px;
+  color: white;
+}
+
+.imgblk img {
+  display: inline;
+}
+
+.imgblk {
+  text-align: center;
+}
+
+@media screen and (min-width: 1700px) {
+  .namelistfixed {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 270px;
+  }
+
+  #list {
+    max-height: 800px;
+    overflow-y: scroll;
+  }
+
+  .colgrammar {
+    margin-left: 100px;
+  }
+}
+
+a {
+  background-color: none;
+  color: #733381;
+  padding: 0em;
+  text-decoration: none;
+}
+:root {
+  --color-link: #844492;
+}
+
+a {
+  color: rgb(var(--color-highlight));
+}
+.card {
+  border: none;
+  background-color: #733381;
+  box-shadow: 5px 5px #733381;
+  border-radius: 25px;
+}
+.namelistfixed-card {
+  box-shadow: 5px 5px #733381;
+  border-radius: 0px;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: darken;
+  color: #844492;
+}
+
+a:hover {
+  text-decoration: none;
+
+  background-color: none;
+  color: black;
+}
+a:active {
+  text-decoration: none;
+}
+.listbutton {
+  color: #494949 !important;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  transition: all 0.4s ease 0s;
+}
+.listbutton:hover {
+  color: #ffffff !important;
+  background: #f6b93b;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
+}
+.full-screen-width {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: #733381;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.verticalhorizontal {
+  display: table-cell;
+  height: 300px;
+  text-align: center;
+  width: 300px;
+  vertical-align: middle;
+}
+.marginauto {
+  margin: 10px auto 20px;
+  display: block;
+}
+.aligncenter {
+  text-align: center;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.removeclasslist {
+  cursor: pointer;
+}
+
+.removeclasslist:hover {
+  color: #ff5c33;
+}
+
+.editclasslist {
+  cursor: pointer;
+}
+
+.editclasslist:hover {
+  color: #589c48;
+}

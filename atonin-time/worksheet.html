@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>At / On / In (Time)  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>
+            Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+        <th>Focus: at / on / in (time)<br><br>Task: fill the gap <br>
+          
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>more specific = at &nbsp; | &nbsp; more general = in
+          &nbsp; | &nbsp; (there are some exceptions)
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: at / on / in (time)</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+      var options_easy = {
+        "I will arrive ____ 8pm.": "at",
+        "Let's meet ____ 9am.": "at",
+        "I want to play with you ____ break time.": "at",
+        "I always read a book ____ breakfast.": "at",
+        "____ Christmas, we open presents.": "at",
+        "____ lunchtime, we can go outside.": "at",
+        "I will see you ____ 3.30pm.": "at",
+        "We will stop ____ sunset.": "at",
+        "Owls come out ____ night.": "at",
+        "I want to leave ____ midday.": "at",
+       
+
+        "It's my birthday ____ Monday.": "on",
+        "There is a festival ____ Sunday.": "on",
+        "I will see my friends ____ the first day of school.": "on",
+        "I usually have a party ____ my birthday.": "on",
+        "It's my birthday ____ the 3rd of March .": "on",
+        "____ the 20th of June, I will move house.": "on",
+        "She is right ____ time.": "on",
+        "We can play a game ____ the last day.": "on",
+        "The train is running _____ time.": "on",
+
+        "____ the morning, I have breakfast.": "in",
+        "I walk home ____ the afternoon.": "in",
+        "The teacher takes the register ____ the morning.": "in",
+        "I need to go ____ five minutes.": "in",
+        "I wrote so much ____ this lesson.": "in",
+        "Let's meet up ____ the afternoon.": "in",
+        "Come back ____ one hour.": "in",
+        "We arrived just ____ time.": "in",
+        "Stop writing ____ one minute.": "in",
+      };
+
+      var options_medium = {
+        "____ midnight, Cinderella had to go home.": "at",
+        "I don't like being out ____ night.": "at",
+        "I like to wake up ____ sunrise.": "at",
+        "It is so beautiful here ____ sunset.": "at",
+        "I copy down the homework ____ the end of the lesson.": "at",
+        "Who would like to meet ____ the weekend?": "at",
+        "I like to get together with my family ____ Chinese New Year.": "at",
+        "____ the end of the day, we won the game.": "at",
+        "Not much happens ____ this time of day.": "at",
+        "Come here ____ once!": "at",
+
+        "I moved here ____ 2016.": "in",
+        "____ December, it is really cold.": "in",
+        "____ the 1990s, only a few people had mobile phones.": "in",
+        "Technology developed quickly ____ the 20th Century.": "in",
+        "She eats with her family ____ the evening.": "in",
+        "____the morning, I always brush my teeth.": "in",
+        "____ The Middle Ages, people didn't know very much about medicine.": "in",
+        "There was a lot of fighting ____ the Second World War.": "in",
+        "____ winter, you can skate on the ice!": "in",
+
+        "I wake up early ____ Christmas Day.": "on",
+        "I want to finish all my homework ____ Friday night.": "on",
+        "I have a test ____ Tuesday morning.": "on",
+        "____ which day do we have PE?": "on",
+        "There are 16 hours of sunlight ____ the longest day of the year.": "on",
+        "The clock chimes ____ the hour, every hour.": "on",
+        "The event is coming up ____ Friday afternoon.": "on",
+        "The cinema has a discount ____ the first Friday of the month.": "on",
+        "They will have pizza ____ Wednesday evening.": "on",
+        "I have a test ____ the following Friday.": "on",
+      };
+
+      var options_hard = {
+        "Let's try again ____ the weekend.": "at",
+        "I can't wait to see you ____ last!": "at",
+        "Were you at the Grand Opening ____ Saturday?": "at",
+        "We arrived at the restaurant ____ 7pm.": "at",
+        "We can finally have a proper chat - ____ last!": "at",
+        "I arrived ____ the last minute.": "at",
+        "It remains to be seen if we'll be ready ____ opening time.": "at",
+        "You'll have no energy left ____ the end of the game.": "at",
+        "You've got to pass ____ the right time.": "at",
+        "What is happening ____ 2 o'clock?": "at",
+        "I got the final question finished ____ the last moment.": "at",
+
+        "I have three science tests ____ the next two days.": "in",
+        "____ the next hour, there will be a fire drill.": "in",
+        "____ our next lesson, we will watch a video.": "in",
+        "I scored ____ the second half of the game.": "in",
+        "It hasn't happened ____ the last ten years.": "in",
+        "There were lots of good points raised ____ the consultation period.": "in",
+        "We can't lose our nerve ____ the final moments.": "in",
+        "There had been little to celebrate ____ the intervening years.": "in",
+        "There was nothing we could have done about it ____ the end.": "in",
+        "One day, ___ a moment of reflection, you'll realise I was right.": "in",
+        "He said he would be back ___ a flash, but there's no sign of him.": "in",
+
+        "____ the first Saturday of the month, we try a new restaurant.": "on",
+        "We always have a half day ____ the last day of the school year.": "on",
+        "I will buy everyone a cake ____ the day I get my test results.": "on",
+        "____ the 16th of December, we will have our last day of school.": "on",
+        "I can't believe we're doing this ____ the coldest day of the year.": "on",
+        "I try to exercise ____ every second day.": "on",
+        "Please don't ask me to help ___ my one day off!": "on",
+        "I love to do nothing ____ the first day of the holiday.": "on",
+        "It's such good luck that the final match falls ____ my birthday.": "on",
+        "What have you got scheduled ___ the 31st?.": "on",
+        "Technically she only has a birthday every fourth year as it falls ____ February 29th": "on",
+        "____ which day does the book need to be returned?": "on",
+
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

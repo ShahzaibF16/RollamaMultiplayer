@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capital Letters  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: _____________________ <br><br>
+            <label for="diffselect">Difficulty: </label>
+            <select class="form-select" aria-label="Default select example" id="diffselect">
+              <option value="0" selected>Level 1</option>
+              <option value="1">Level 2</option>
+              <option value="2">Level 3</option>
+            </select>   
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: capital letters<br><br>Task: choose the right word to capitalise<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>look for names, titles, days, events, places, new sentences
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: capital letters</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+   var options_easy = {
+        "I have been to australia.": "Australia",
+        "My dog is called momo.": "Momo",
+        "my cat is called Lucky.": "My",
+        "i have been to india.": "I",
+        "I want to attend oxford University.": "Oxford",
+        "My sister goes to Cambridge university.": "University",
+        "We are learning about world War 2.": "World",
+        "I don't have a cca today.": "CCA",
+        "billy and I went to the cinema.": "Billy",
+        "My birthday is in august.": "August",
+        "I live in eastwood.": "Eastwood",
+        "The titanic was a famous ship.": "Titanic",
+        "james always plays outside.": "James",
+        "I speak spanish.": "Spanish",
+        "I love to eat italian food.": "Italian",
+        "I made a new friend; she's canadian.": "Canadian",
+        "Do you speak chinese?": "Chinese",
+        "I study at bridgewood.": "Bridgewood",
+        "I love to eat french cakes.": "French",
+        "I bought this shirt at Centrepoint mall.": "Mall",
+        "I live on Manor road.": "Road",
+        "The sky is clear so I can see mars.": "Mars",
+        "I will meet you on tuesday.": "Tuesday",
+        "It usually begins to get warmer in march.": "March",
+        "I celebrate christmas.": "Christmas",
+        "I never forget to do my english homework.": "English",
+        "I really like staying at the browns' house.": "Browns'",
+        "Let's take the train to central.": "Central",
+        "He doesn't like that i'm taller than him.": "I'm",
+        "My cat, fluffy, always scratches me.": "Fluffy",
+        "I love to play pokemon.": "Pokemon",
+        "I will see my parents on sunday.": "Sunday",
+        "I will speak to mum when I get home.": "Mum",
+        "My favourite shop is doggyden.": "Doggyden",
+        "I love fridays.": "Fridays",
+        "Harry potter is an exciting book.": "Potter",
+        "I love my apple phone.": "Apple",
+        "Let's meet at curry hut.": "Curry Hut",
+        "The coldest month is february. ": "February",
+        "I like mr Turner's lessons.": "Mr",
+        "Professor sharp is a great teacher.": "Sharp",
+        "I come from the uk.": "UK",
+        "I want brazil to win this game.": "Brazil.",
+        "I really like katie's bag.": "Katie's",
+        "He wants to visit athens.": "Athens",
+        "My favourite lunch is on thursday.": "Thursday",
+        "I like studying egyptian tombs. ": "Egyptian",
+        "Have you seen sally?": "Sally",
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

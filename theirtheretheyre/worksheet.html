@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>There / Their / They're  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>
+            Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th> 
+          
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: there / their /
+  they're<br><br>Task: fill the gap<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>there = place / existance &nbsp; | &nbsp; their = belonging to them
+          &nbsp; | &nbsp; they're = they are
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: there / their / they're</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+  var options_easy = {
+        "Why don't you go over _____ ?": "there",
+        "Put your coat down just _____.": "there",
+        "Go over _____.": "there",
+        "______ are 12 months in a year.": "There",
+        "______ are 366 days in a leap year.": "There",
+        "______ are three sheep.": "There",
+        "Sit down ______ on the bean bag.": "there",
+        "The house is over _____.": "there",
+        "The remote is over _____ on the couch.": "there",
+        "What is over _____?": "there",
+
+        "The red one is _____ house.": "their",
+        "____ boat is over here.": "Their",
+        "_____ car goes way faster than yours.": "Their",
+        "_____ dog is always barking.": "Their",
+        "Did you know _____ bike is broken?": "their",
+        "Did you know _____ handwriting was so neat?": "their",
+        "Do not take _____ word at face value.": "their",
+        "Going to the store was _____ idea.": "their",
+        "The beagle is _____ dog.": "their",
+        "I didn't know that it was _____ cat.": "their",
+        "It is _____ turn next.": "their",
+        "Is that _____ car?": "their",
+        
+       
+        "_____ planning to go on holiday soon.": "They're",
+        "Do you think _____ funny?": "they're",
+        "_____ buying new shoes for the party.": "They're",
+        "______ going to play with me at break time.": "They're",
+        "I hope _____ going to invite me to dinner.": "they're",
+        "I hope _____ going to play music at the party.": "they're",
+        "Do you think _____ funny?": "they're",
+        "_____ always running around.": "They're",
+        "_____ my best friend.": "They're",
+        "_____ always on time.": "They're",
+      };
+
+var options_medium = {
+
+      
+        "_____ are so many stores in this little village.": "there",
+        "_____ are two people in the room right now.": "there",
+        "_____ will be another opportunity soon.": "There",
+        "_____ is always a silver lining.": "There",
+        "_____ is supposed to be rain tomorrow.": "There",
+        "I always wondered what was in _____.": "there",
+        "I did not know _____ was milk in the refrigerator.": "there",
+        "I hope _____ is no snow tomorrow.": "there",
+        "The book is right over _____.": "there",
+        "On second thoughts, let's eat _____ tonight.": "there",
+  
+        "Go to  _____ lemonade stand for a drink.": "their",
+        "They always want things _____ way.": "their",
+        "____ boat is over here.": "their",  
+        "The beagle is _____ dog.": "their",
+        "The beagle is _____ dog.": "their",
+        "The beagle is _____ dog.": "their",
+        "They're in over _____ heads.": "their",
+        "Ask them what _____ plans are.": "their",
+        "You should stay out of _____ business.": "their",
+
+        "I think _____ going to score an equaliser.": "they're",
+        "What if ______ late tonight?": "they're",
+        "I hope _____ aware of the risks.": "they're",
+        "_____ calling to find out when you will arrive.": "They're",
+        "_____ going camping in Florida.": "They're",
+        "_____ planning to go on holiday in November.": "They're",
+        "I hope _____ going to invite me to dinner.": "they're",
+        "What if ______ late tonight?": "they're",
+        "I'm not sure if _____ okay.": "they're",
+        "What if ______ plane is delayed?": "they're",
+        "_____ planning to host Sally's birthday party.": "They're",
+      };
+
+var options_hard = { 
+
+        "Sit down in the purple chair right _____.": "there",
+        "Do you hope _____ will be a bouncy castle at the fair?": "there",
+        "That is neither here nor _____.": "there",
+        "I know _____ is truth to what you are saying.": "there",
+        "_____ will be a sequel to the movie.": "There",
+        "They did not know _____ was milk in their refrigerator.": "there",
+        "They're hoping _____ will be no rain tomorrow because it would ruin their sports day.": "there",
+        "Their new book is right over _____ on the table.": "there",
+        "Do want me to add it to the list over ______?": "there",
+        "Is _____ any space for me to join in with you?": "there",
+
+        "_____ new book is right over there on the table.": "Their",
+        "There are spiders in _____ garage": "their",
+        "I don't know if they're going to sell anything at ______ stall.": "their",
+        "I hope they're going to invite me to dinner at ______ house.": "their",
+        "You have to try the ice cream - ______ desserts are superb.": "their",
+        "Can you remember ______ phone number?": "their",
+        "What else is there to do except call and ask for ______ help?": "their",
+        "They're hoping there will be no rain tomorrow because it would ruin ______ sports day.": "their",
+        "You have to admire _____ team spirit when they're under pressure.": "their",
+        "The audience should leave ______ preconceptions at the door": "their",
+
+        "Do you know if _____ going to buy a new house?": "they're",
+        "Do you think _____ going to accept this gift?": "they're",
+        "I don't know if _____ going to sell anything at their stall.": "they're",
+        "I don't know if _____ planning to attend.": "they're",
+        "I hope _____ aware of the risks.": "they're",
+        "I hope _____ going to invite me to dinner at their house.": "they're",
+        "I think _____ going to announce the winner soon over there.": "they're",
+        "_____ going to let me know when the package arrives.": "they're",
+        "I wonder if _____ going to tell my parents.": "they're",
+        "I think _____ going to be there.": "they're",
+      };          // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

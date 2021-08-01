@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head> 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PNPTEPE4LC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spelling Superset</title>
+<link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--new css file added-->
+    <link rel="stylesheet" href="../css/fa/css/all.css">
+    <link rel="stylesheet" href="../css/layout_2021-7.css" />
+    <style>
+      .qblock {
+        width: 95%;
+        height: 200px;
+      }
+
+      .qblock2 {
+        width: 75%;
+      }
+
+      .qrow {
+        margin-left: 20px;
+      }
+
+      .container {
+        padding: 0px;
+      }
+
+      .qblock h1 {
+        font-size: 2rem;
+      }
+
+      .qblock {
+        height: 150px;
+        padding-top: 10px;
+      }
+
+      .container {
+        max-width: 1700px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+                <div class="nameblk1 name1 names">
+            <h1></h1>
+          </div>
+        </div>
+        <div class="col" style="text-align: center">
+          <img src="../img/illama low res grey.gif" alt="btn" height="110px" />
+        </div>
+        <div class="col">
+          <div class="nameblk1 name2 names">
+            <h1></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row qrow">
+        <div class="col">
+          <div class="blk1">
+            <div class="row" style="margin-top: 25px">
+              
+              <div class="nameblk1 qblock top-block">
+                <h2>-s -es -ies -ves plurals</h2>
+                <h1></h1>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 25px">
+              <div class="nameblk1 numblock"><h1>1</h1></div>
+              <div class="nameblk1 qblock2"><h1></h1></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="blk2">
+            <div class="row" style="margin-top: 25px">
+              
+              <div class="nameblk1 qblock top-block">
+                <h2>able / ible?</h2>
+                <h1></h1>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 25px">
+              <div class="nameblk1 numblock"><h1>2</h1></div>
+              <div class="nameblk1 qblock2"><h1></h1></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row qrow">
+        <div class="col">
+          <div class="blk3">
+            <div class="row" style="margin-top: 25px">
+              
+              <div class="nameblk1 qblock top-block">
+                <h3>Add the prefix (in-, dis-, un-, il-, ir-, de-)</h3>
+                <h1></h1>
+                
+              </div>
+            </div>
+            <div class="row" style="margin-top: 25px">
+              <div class="nameblk1 numblock"><h1>3</h1></div>
+              <div class="nameblk1 qblock2"><h1></h1></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="blk4">
+            <div class="row" style="margin-top: 25px">
+             
+              <div class="nameblk1 qblock top-block">
+                <h2>What is the missing vowel?</h2>
+                <h1></h1>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 25px">
+              <div class="nameblk1 numblock"><h1>4</h1></div>
+              <div class="nameblk1 qblock2"><h1></h1></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 35px">
+        <div class="col" style="text-align:center">
+          <a href="../" id="homebtn">
+            <img src="../img/homebtn.png" alt="homebtn" height="100px" class="homebutton"/>
+          </a>
+        </div>
+     
+        <div class="col" style="text-align:center">
+          <div class="rollbtn button">
+            <a href="javascript:void(0);" id="rollbtn"></a>
+               <img src="../img/rollbtn.png" alt="rollbtn" height="100px" id="roll-btn"/>
+            </a>
+          </div>
+        </div>
+        <div class="col" style="text-align:center">
+          <div class="checkbtn button">
+            <a href="javascript:void(0);" id="checkbtn"></a>
+              <img src="../img/checkbtn.png" alt="checkbtn" height="100px" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="clistmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="img-center">
+            <img src="../teacher_tips/Under_construction.PNG" alt="teachboard" style="max-height: 650px"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Points table modal-->
+    <div
+      class="modal fade"
+      id="pointstable"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Points</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-content">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Points</th>
+                  <th scope="col">Add/Remove Points</th>
+                </tr>
+              </thead>
+              <tbody class="ptstable">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>0</td>
+                  <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>0</td>
+                  <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>*Failure to load php*</td>
+                  <td>0</td>
+                  <td><span class="plus_points"><i class="fas fa-plus-square"></i></span><span class="minus_points"><i class="fas fa-minus-square"></i></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger resetpts">Reset Points</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>    <script>
+      var names;
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = '';
+      if(!Cookies.get("llama_teacher_idx")){
+        $.post("../js/process.php", {"add_teacher_idx": "1", "course_data": "{}"}).done(function(data){
+          Cookies.set("llama_teacher_idx", data);
+        });
+      }
+      else{
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", {"get_course_data": "1", "teacher_idx": teacherIdx}).done(function(data){
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if(Object.keys(courseData).length && currentList == ''){
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          }
+          else if(currentList != ''){
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if(names){
+          var num = Math.floor(Math.random() * names.length);
+          name1 = names[num];
+  
+          name2 = name1;
+          while (name2 == name1) {
+            num = Math.floor(Math.random() * names.length);
+            name2 = names[num];
+          }
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1);
+        $(".name2 h1").text(name2);
+      });
+
+      var thiskey;
+      var options = {
+        "0~dog": "dogs",
+        "1~cat": "cats",
+        "2~boat": "boats",
+        "3~box": "boxes",
+        "4~glass": "glasses",
+        "5~match": "matches",
+        "6~wish": "wishes",
+        "7~pen": "pens",
+        "8~ear": "ears",
+        "9~baby": "babies",
+        "10~knife": "knives",
+        "11~loaf": "loaves",
+        "12~lady": "ladies",
+        "13~half": "halves",
+        "14~shelf": "shelves",
+        "15~thief": "thieves",
+        "16~wolf": "wolves",
+        "17~life": "lives",
+        "18~elf": "elves",
+        "19~giraffe": "giraffes (exception)",
+        "20~chef": "chefs (exception)",
+        "21~cliff ": "cliffs (exception)",
+        "22~chief": "chiefs (exception)",
+        "23~roof": "roofs (exception)",
+      };
+
+      var thiskey2;
+      var options2 = {
+        "0~accessible": "access_ble",
+        "1~destructible": "destruct_ble",
+        "2~digestible": "digest_ble",
+        "3~flexible": "flex_ble",
+        "4~admissible": "admiss_ble",
+        "5~audible": "aud_ble",
+        "6~compatible": "compat_ble",
+        "7~comprehensible": "comprehens_ble",
+        "8~credible": "cred_ble",
+        "9~divisible": "divis_ble",
+        "10~edible": "ed_ble",
+        "11~horrible": "horr_ble",
+        "12~illegible": "illeg_ble",
+        "13~implausible": "implaus_ble",
+        "14~inaccessible": "inaccess_ble",
+        "15~incredible": "incred_ble",
+        "16~inedible": "ined_ble",
+        "17~invincible": "invinc_ble",
+        "18~invisible": "invis_ble",
+        "19~irresistible": "irresist_ble",
+        "20~irreversible": "irrevers_ble",
+        "21~possible": "poss_ble",
+        "22~responsible": "respons_ble",
+        "23~reversible": "revers_ble",
+        "24~sensible": "sens_ble",
+        "25~terrible": "terr_ble",
+        "26~visible": "vis_ble",
+        "27~available": "avail_ble",
+        "28~adorable": "ador_ble",
+        "29~comfortable": "comfort_ble",
+        "30~understandable": "understand_ble",
+        "31~acceptable": "accept_ble",
+        "32~reasonable": "reason_ble",
+        "33~unreasonable": "unreason_ble",
+        "34~unbearable": "unbear_ble",
+        "35~believable": "believ_ble",
+        "36~unbelievable": "unbeliev_ble",
+        "37~capable": "cap_ble",
+        "38~incapable": "incap_ble",
+        "39~inflatable": "inflat_ble",
+        "40~flammable": "flamm_ble",
+        "41~considerable": "consider_ble",
+        "42~desirable": "desir_ble",
+        "43~undesirable": "undesir_ble",
+        "44~despicable": "despic_ble",
+        "45~durable": "dur_ble",
+        "46~forgettable": "forgett_ble",
+        "47~unforgettable": "unforgett_ble",
+        "48~forgivable": "forgiv_ble",
+        "49~unforgivable": "unforgiv_ble",
+        "50~inescapable": "inescap_ble",
+        "51~inevitable": "inevit_ble",
+        "52~pleasurable": "pleasur_ble",
+        "53~preferable": "prefer_ble",
+        "54~predictable": "predict_ble",
+        "55~unpredictable": "unpredict_ble",
+        "56~sizeable": "size_ble",
+        "57~suitable": "suit_ble",
+        "58~unsuitable": "unsuit_ble",
+        "59~unmistakeable": "unmistake_ble",
+        "60~unshakeable": "unshake_ble",
+        "61~usable": "us_ble",
+        "62~unusable": "unus_ble",
+        "63~variable": "vari_ble",
+        "64~laughable": "laugh_ble",
+        "65~likeable": "like_ble",
+        "66~unlikeable": "unlike_ble",
+        "67~lovable": "lov_ble",
+      };
+
+      var thiskey3;
+      var options3 = {
+        "0~ decommission": "commission",
+        "1~ deconstruct": "construct",
+        "2~ decontaminate": "contaminate",
+        "3~deactivate": "activate",
+        "4~decode": "code",
+        "5~decompose": "compose",
+        "6~dehydrate": "hydrate",
+        "7~disagree": "agree",
+        "8~dishonour": "honour",
+        "9~dishonourable": "honourable",
+        "10~distasteful": "tasteful",
+        "11~illegal": "legal",
+        "12~illegible": "legible",
+        "13~implausible": "plausible",
+        "14~impossible": "possible",
+        "15~imprecise": "precise",
+        "16~inaccessible": "accessible",
+        "17~inaccessible": "accessible",
+        "18~inadequate": "adequate",
+        "19~inadmissible": "admissible",
+        "20~inaudible": "audible",
+        "21~incapable": "capable",
+        "22~incompatible": "compatible",
+        "23~incomprehensible": "comprehensible",
+        "24~inconsiderate": "considerable",
+        "25~incredible": "credible",
+        "26~incredible": "credible",
+        "27~indestructible": "destructible",
+        "28~indigestible": "digestible",
+        "29~indivisible": "divisible",
+        "30~inedible": "edible",
+        "31~inedible": "edible",
+        "32~inescapable": "escapable",
+        "33~infinite": "finite",
+        "34~inflexible": "flexible",
+        "35~invariable": "variable",
+        "36~invisible": "visible",
+        "37~irresistible": "resistible",
+        "38~irresponsible": "responsible",
+        "39~irreversible": "reversible",
+        "40~unacceptable": "acceptable",
+        "41~unafraid": "afraid",
+        "42~unavailable": "available",
+        "43~unaware": "aware",
+        "44~unbearable": "bearable",
+        "45~unbelievable": "believable",
+        "46~uncertain": "certain",
+        "47~unclear": "clear",
+        "48~uncomfortable": "comfortable",
+        "49~unfocused": "focused",
+        "50~unforgettable": "forgettable",
+        "51~unforgivable": "forgivable",
+        "52~unhelpful": "helpful",
+        "53~unknown": "known",
+        "54~unlikeable": "likeable",
+        "55~unmistakeable": "mistakeable",
+        "56~unnatural": "natural",
+        "57~unpleasureable": "pleasurable",
+        "58~unpredictable": "predictable",
+        "59~unreal": "real",
+        "60~unrealistic": "realistic",
+        "61~unreasonable": "reasonable",
+        "62~unsensible": "sensible",
+        "63~unshakeable": "shakeable",
+        "64~unsuitable": "suitable",
+        "65~unusable": "usable",
+        "66~unwilling": "willing",
+        "67~distrusted": "trusted",
+        "68~misaligned": "aligned",
+        "69~misguide": "guide (correctly)",
+        "70~misdiagnose": "diagnose (correctly)",
+        "71~misspell": "spell (correctly)",
+        "72~misinformed": "informed (correctly)",
+      };
+
+      var thiskey4;
+      var options4 = {
+        "0~sep_rate": "separate",
+        "1~defin_te": "definite",
+        "2~desp_rate": "desperate",
+        "3~temp_rature": "temperature",
+        "4~lit_rature": "literature",
+        "5~gen_ral": "general",
+        "6~rel_vant": "relevant",
+        "7~cat_gory": "category",
+        "8~d_scribe": "describe",
+        "9~d_cline": "decline",
+        "10~d_spite": "despite",
+        "11~d_spute": "dispute",
+        "12~d_screte": "discrete",
+        "13~d_splay": "display",
+        "14~perform_nce": "performance",
+        "15~attend_nce": "attendance",
+        "16~ignor_nce": "ignorance",
+        "17~independ_nce": "independence",
+        "18~sent_nce": "sentence",
+        "19~exist_nce": "existence",
+        "20~opp_rtunity": "opportunity",
+        "21~p_rsue": "pursue",
+        "22~p_rsuade": "persuade",
+        "23~s_rprise": "surprise",
+      };
+
+      $(".rollbtn").click(function () {
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+        var keys2 = Object.keys(options2);
+        var num2 = Math.floor(Math.random() * keys2.length);
+        thiskey2 = keys2[num2];
+        var keys3 = Object.keys(options3);
+        var num3 = Math.floor(Math.random() * keys3.length);
+        thiskey3 = keys3[num3];
+        var keys4 = Object.keys(options4);
+        var num4 = Math.floor(Math.random() * keys4.length);
+        thiskey4 = keys4[num4];
+        $(".blk1 .qblock h1").text(
+          thiskey.substring(thiskey.indexOf("~") + 1) + "  →  ____"
+        );
+        $(".blk2 .qblock h1").text(options2[thiskey2]);
+        $(".blk3 .qblock h1").text(options3[thiskey3]);
+        $(".blk4 .qblock h1").text(
+          thiskey4.substring(thiskey4.indexOf("~") + 1)
+        );
+        getname();
+        $(".name1 h1").text("");
+        $(".name2 h1").text("");
+        $(".qblock2 h1").text("");
+      });
+
+     
+
+      $(".checkbtn").click(function () {
+        $(".blk1 .qblock2 h1").text(options[thiskey]);
+        $(".blk2 .qblock2 h1").text(
+          thiskey2.substring(thiskey2.indexOf("~") + 1)
+        );
+        $(".blk3 .qblock2 h1").text(
+          thiskey3.substring(thiskey3.indexOf("~") + 1)
+        );
+        $(".blk4 .qblock2 h1").text(options4[thiskey4]);
+      });
+
+      $("#teachbtn").click(function () {
+        $("#clistmodal").modal("show");
+      });
+
+      document.querySelector(".row").style.display = "none";
+
+      $(function(){
+        // spin the top questionbar
+        $("#roll-btn").on('click',function () {
+          $('.top-block').addClass('topbar__spin');
+          setTimeout(function(){
+            $('.top-block').removeClass('topbar__spin');
+          },300)
+        });
+
+        // spin the names button
+        $(".namesbtn").on('click',function () {
+          $('.names ').addClass('name__speen');
+          setTimeout(function(){
+            $('.names ').removeClass('name__speen');
+          },300)
+        });
+      })
+
+
+    </script>
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

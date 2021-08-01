@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Its / It's  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: _____________________ <br><br>
+            <label for="diffselect">Difficulty: </label>
+            <select class="form-select" aria-label="Default select example" id="diffselect">
+              <option value="0" selected>Level 1</option>
+              <option value="1">Level 2</option>
+              <option value="2">Level 3</option>
+            </select>   
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: its / it's<br><br>Task: fill the gap<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>its = belonging to it &nbsp; | &nbsp; it's = it is / is has
+          &nbsp; | &nbsp; (no exceptions)
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: its / it's</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+       var options_easy = {
+       
+
+       "I have picked ________ lock.":  "its",
+       "I have opened _____ lid.": "its",
+       "The phone is safe in ______ case.":  "its",
+       "The picture belongs in _____  frame.":  "its",        
+       "The tree has lost _____ leaves.": "its",
+       "_______ teeth are like knives.":  "its",
+       "______ handle is broken off.":  "its",
+       "This book is so old it has lost _____ cover.":  "its",
+       "___ fur is shiny.": "Its",
+       "___ tail is white.": "Its",
+       "___ nose is red.": "Its",
+       "___ trunk is long.": "Its",
+       "I saw ___ tail wagging when I came in.": "its",
+       "Watch how ___ wings move when it lands.": "its",
+       "Hold ___ collar so it can't run away.": "its",
+       "The dog is in ___ bed.": "its",
+       "The computer was doing ___ best to complete the task.": "its",
+       "The dog is ready for ___ food":"its",
+       "___ first song is about 5 minutes long.":"Its",
+       "I had low expectations but ___ plot is amazing!":"its",
+       "_____size is too small for me. ":  "its",
+       "_____ brown hair is all mover my clothes.":  "its",
+       "The dog needs ______ collar.":   "its",
+       "The tiger uses _____  stripes to hide.":  "its",
+       "The bottle doesn't have ______ lid on.":  "its",
+       "The bag doesn't have ______ zip done up.":  "its",
+       "The car doesn't have ______ windows up.":  "its",
+       "The pillow doesn't have ______ case on.":  "its",
+       "The snake blinks _____ green eyes.":   "its",
+ 
+
+       "______ hard to learn English. ": "it's",
+       " She knows _____ fun to play outside.": "it's",
+       "_____ their group which is loudest.": "it's",
+       "_____ break time soon.": "it's",
+       "_____ lunch time in half an hour.": "it's",
+       "I don't know if _______ a good idea.":  "it's",
+       "Every Monday, _______ drama class.": "it's",
+       "________ the best time to study.": "it's",
+       " _______ always fun to play with you. ": "it's",
+       "_________ the best piece of work I have seen!": "it's",
+       "I think _____ delicious.": "it's",
+       "___ getting quite late.":"it's",
+       "___ quite cold in this room.": "It's",
+       "I think ___ amazing!": "it's",
+       "___ nearly 1.30pm.": "It's",       
+       "___ really nice today.": "it's",
+       "___ about 4 o'clock.": "It's",       
+       "___ a lovely day.": "it's",
+       "I think ___ amazing!": "it's",
+       "I think ___ a disgrace!":"it's",
+       "___ simply awful!":"It's",
+       "I think ___ going to be nice today.":"it's",
+       "___ about to get really good.":"it's",
+       "We _____ our favourite lesson next.": "it's",
+       " I feel ______ unfair.": "it's",
+       "It's the biggest building in London.": "it's",
+       "________ never sunny on my birthday.": "it's",
+
+     };
+
+var options_medium = {
+
+       "___ soft fur is shiny.": "Its",
+       "You can't tell from here, but ___ tail is white.": "its",
+       "Notice that ___ nose is red.": "its",
+       "___ trunk provides balance.": "Its",
+       "I saw that ___ tail was wagging when I came in.": "its",
+       "Watch how ___ wings move when it lands.": "its",
+       "Hold on tightly to ___ collar so it can't run away.": "its",
+       "The dog is sleeping soungly in ___ bed.": "its",
+       "The computer was doing ___ best to complete the task.": "its",
+       "The dog is ready for ___ food":"its",
+       "___ first song is about 5 minutes long.":"Its",
+       "I had low expectations but ___ plot is amazing!":"its",
+       "The door is attached by ___ hinges.": "its",
+       "The cat never uses ___ bed.": "its",
+       "The computer was doing ___ best to complete the task.": "its",
+       "The dog is ready for ___ food":"its",
+       "_______ plot is difficult to follow. ":  "its",
+"The chicken has had  _____ eggs taken away.": "its",
+"His belt needs to have _____ buckle changed. ":  "its",       
+"The perfume has _______ own unique smell. ": "its",
+"The shirt had ________ buttons taken off.": "its",
+"The key has come away from _______ ring.": "its",
+"Greece is very famous because of the history of ______ capital city.": "its",
+"The speech was good but I am not sure about ________ message. ": "its",
+"The animal is adapted to _____ many habitats":  "its",
+" The library has _____ rules displayed at the entrance.": "its",
+"The sun is showering us with ________ light and warmth.": "its",
+"August has most of _______ national holidays at the start.": "its",
+"I love Europe because _______ cities are so beautiful. ":  "its",
+"The recipe needs ___ star ingredient.":  "its",
+"Everything has _______ own place in my house.": "its",
+"The internet has _______ benefits.": "its",
+"This room has _____ own charm.":   "its",
+"This artwork has ______ place in history.":  "its",
+"The neatest table is the one with _____ surface cleared.":  "its",
+       
+
+
+       "___ getting quite late.":"it's",
+       "___ quite cold in this room.": "It's",
+       "Have you seen if ___ raining at the moment?": "it's",
+       "I just check and ___ nearly 1.30pm.": "It's",       
+       "Hopefully ___ really nice today.": "it's",
+       "I'll come around when ___ stopped raining.": "It's",       
+       "___ got to be a new record!": "it's",
+       "I think ___ been an amazing day!": "it's",
+       "I think ___ been a disgrace!":"it's",
+       "There's no other way to describe it - ___ simply awful!":"it's",
+       "I think ___ probably going to be nice today.":"it's",
+       "Watch carefully - ___ about to get really good.":"it's",
+       "___ funny how often I forget my keys.": "it's",
+       "Have you seen if ___ raining at the moment?": "it's",
+       "Don't know see  _____ my bag?":   "it's",     
+       "Can't you see  _____ my pencil case?":   "it's",    
+       "Do you see _____  the new timetable?":   "it's",    
+       "Does your teacher realise _____ your homework?":   "it's",            
+       "_______ frustrating to lose to the other team.": "it's",
+       "_______ exciting to see the new movie!":  "it's",
+       " _____ got something interesting inside.": "it's",
+       "_____ sometimes difficult for people to make their decision.": "it's",
+       " ________ my homework which she copied!":  "it's",
+       "Tomorrow, ________ a day with a lot of different classes.":  "it's",
+       " ______ the fruit which is attracting all the flies. ":  "it's",
+       "_______ been many days since I had my last doctor's appointment.": "it's",
+       "Since school finished, ________ become a great opportunity to develop some new interests.": "it's",
+       "How do you know ____ time to take a rest?": "it's",
+       "The school is organised with _____ clear expectations.":  "its",
+       "I know the answer but _________ already been given. ": "it's",
+       "_________ been switched on. ":  "it's",
+       "When _____ all eaten, it usually goes to sleep.": "it's",
+       "_________ had its food already today. ": "it's",
+       "The test is important because _______ key for me to achieve my goals. ":  "it's",
+       "Schools is big with _______ many kinds of classrooms.":  "it's",
+       "I love seeing new movies because ____ always a surprise.":  "it's",
+       "I don't know where ______ gone.": "it's",
+       "Tell me how ______ been.": "it's",
+       "He believes _______ better to start our dinner now than wait for everyone. ": "it's",
+
+
+
+     };
+
+var options_hard = {
+
+  
+
+
+       "I liked the album; ___ opening song is probably my favourite.":"its",
+       "I had low expectations but ___ plot is amazing!":"its",
+       "Try this soup; ___ taste is so salty.":"its",
+       "The film is getting into ___ stride now.":"its",
+       "Notice that ___ fur is shiny.": "Its",
+       "You can't tell from here, but ___ tail is white.": "its",
+       "Notice that ___ nose is red.": "its",
+       "___ trunk provides balance.": "Its",
+       "I saw that ___ tail was wagging when I came in.": "its",
+       "Watch how ___ wings move when it lands.": "its",
+       "Hold on tightly to ___ collar so it can't run away.": "its",
+       "The dog is sleeping soungly in ___ bed.": "its",
+       "The computer was doing ___ best to complete the task.": "its",
+       "The dog is ready for ___ food":"its",
+       "___ first song is about 5 minutes long.":"Its",
+       "I had low expectations but ___ plot is amazing!":"its",
+       "The door is attached by ___ hinges.": "its",
+       "The cat never uses ___ bed.": "its",
+       "The computer was doing ___ best to complete the task.": "its",
+       "The dog is ready for ___ food":"its",
+
+       "Running is so relaxing because _____ rhythm helps me switch off. ":   "its",
+       "Cooking is so fun because _____ skills keep reoccurring in different recipes. ":   "its",
+       "Every story or movie has ______ own characters and plot.":   "its",
+       "Each pet will have _____ individual care needs. ":  "its",
+       "Any animal has had to adapt to ______ habitat.":   "its",
+       "Every living thing owes ______ survival to the balance of the environment.":  "its",
+       "The sand has left ________ scratches on my sunglasses. ":   "its",
+       "The bird has seen _______ reflection in the window.":   "its",
+       "Chess requires  _______ players to have their own sophisticated strategies. " : "its",
+       "Good football needs  _______ players to be fit and experienced. " : "its",
+       "A team works best when  _________ members listen to each other.":   "its",
+       "A class is most productive when  _________ attendees follow the instructions.":   "its",
+       "Balance has _____ own applications in yoga. ":   "its",
+       "The bus is taking _______ time to arrive.":   "its",
+       "The movie is outstanding because _________ special effects are so realistic.":   "its",
+       "You should try the Strawberry Hotel because _____ facilities are really luxurious.":   "its",
+       "The monkey plays with _______ ears.":  "its",
+       "How is  ____ tail after the accident?": "its",
+       "What is ____ genre?": "its",
+       "Where is _______ habitat?": "its",
+       "What are ________ features and benefits?": "its",
+       "How long is __________ fur?": "its",
+       "How fast is __________ sprint?": "its",
+       "How strong is __________ skull?": "its",
+       "How venomous is __________ sting?": "its",
+       "How loud is __________ call?": "its",
+       "What does  __________ prey do to escape?": "its",
+       "What does  __________ footprint look like?": "its",
+       "What does  __________ call sound like?": "its",
+       "What is  __________ biggest benefit?": "its",
+       "What is  __________ biggest advantage?": "its",
+       "What is  __________ most popular product?": "its",
+       "What is  __________ logo like?": "its",
+       "What are  __________ ingredients?": "its",
+
+       "Try this soup; ___ got such a spicy taste.":"it's",
+       "Pardon me but ___ time to go - it's getting quite late.":"it's",
+       "The dog has done ____ business and I need to clean it up.":"its",
+       "Don't you feel ___ quite cold in this room.": "it's",
+       "Have you seen if ___ raining at the moment?": "it's",
+       "I just check and ___ nearly 1.30pm.": "It's",       
+       "Hopefully ___ really nice today.": "it's",
+       "I'll come around when ___ stopped raining.": "It's",       
+       "___ got to be a new record!": "it's",
+       "Thanks to you, ___ been a successful day!": "it's",
+       "I think ___ been an absolute disgrace!":"it's",
+       "There's no other way to describe it - ___ simply awful!":"it's",
+       "I think ___ probably going to be nice today.":"it's",
+       "Watch carefully - ___ about to get really good.":"it's",
+       "___ funny how often I forget my keys.": "it's",
+       "Have you seen if ___ raining at the moment?": "it's",
+       "___ simply awful!":"It's",
+       "Surely ___ got to get better?!":"it's",
+       "Keep watching; ___ about to get really good.":"it's",
+       "Jane and Bob have been friends for ages so ____ great to spend time with them together.":  "it's",
+       "________ the cat and dog which make visiting so fun.":  "it's", 
+       "_____ not only his birthday but also the day he gets his exam results.":   "it's",
+       "In my experience, ______ better to have someone to study with.":  "it's",        
+       "The dog is so angry that _____ broken the door handle.":  "it's",
+       "Water is everywhere and ________ leaked all over the floor. ":   "it's",       
+       "My hair is so annoying because ______ always tangled in sink. ":   "it's",
+       "The tornado is really strong and ________ been destroying everything.":  "it's",
+       "Sharp and heeled shoes shouldn't be worn because ______ damaging for the floors.":  "it's",
+       "Sleep should be prioritised because ________ proven to be beneficial. ":  "it's",
+       "We can't make a mess here because ______ strictly my mum's kitchen.": "it's",       
+       "Ben and Jenny have been on the road for an hour because ______ full of traffic.": "it's",
+       "_____ the perfect moment to celebrate your success.": "it's",        
+       "_________ both running and swimming which really tire me out.":  "it's",
+       "I like that _______ the most watched video on the internet.": "it's",
+       "Do you know if ________ been planned for a while?": "it's",
+       "Do you know if ________ still showing in the cinema?": "it's",
+       "Do you know if ________ the only lesson we have this afternoon?": "it's",
+       "Do you know if ________ going to continue later?": "it's",
+       "Do you think ________ a useful course to take?": "it's",
+       "How ____ the new puppies been doing?": "it's",
+       "What time of day ____ you been exercising?": "it's",
+       "Does she believe ________ the best kind of exercise?": "it's",
+       "Does he really think ________ an entertaining game?": "it's",
+       "Does John realise ________ moved to another location?": "it's",
+
+
+
+
+     };
+
+           // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

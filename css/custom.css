@@ -1,0 +1,152 @@
+.optionblock {
+  cursor: pointer;
+  background-color: #efad56;
+  transition: background-color 0.05s;
+  
+}
+
+.correct {
+  background-color: #589c48;
+  color: white;
+}
+.correct:hover {
+  background-color: #589c48;
+}
+
+.wrong {
+  background-color: #ff5c33;
+  color: white;
+}
+.wrong:hover {
+  background-color: #ff5c33;
+}
+.custom-button {
+  width: 175px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3rem;
+  color:#582954;
+  font-weight: bold;
+  background: #733381;
+  box-shadow: 0 9px #fbb149;
+}
+.custom-button.disabled {
+  background: #733381;
+  box-shadow: 0 9px #fbb149;
+}
+
+.status{
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.45rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #ffd849;
+  border-radius: 15px;
+  box-shadow: 0 9px #733381;
+  -webkit-box-shadow: 0 9px #733381;
+  -moz-box-shadow: 0 9px #733381;
+  font-weight: bold;
+}
+.shake {  
+  animation: heartbeat 2s infinite;
+}
+@keyframes heartbeat
+{
+    80%, 95%
+  {
+    transform: scale( .8 );
+  }
+  75%, 90%
+  {
+    transform: scale( 0.9 );
+  }
+}
+
+
+
+
+.path--background {
+  fill: rgb(34, 213, 201);
+  stroke: #fff;
+  stroke-width: 0px;
+}
+
+.pulse {
+  fill: rgb(255, 74, 74) !important;
+}
+
+.path--foreground {
+  fill: #eee;
+  stroke: #eee;
+  stroke-width: 2px;
+}
+
+.label {
+  font: 90px "Open Sans";
+  font-weight: 900;
+  text-anchor: middle;
+  fill: rgb(34, 213, 201);
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.base-timer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}

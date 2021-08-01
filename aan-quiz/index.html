@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head> 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNPTEPE4LC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PNPTEPE4LC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a / an quiz</title>
+<link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--new css file added-->
+    <link rel="stylesheet" href="../css/fa/css/all.css">
+    <link rel="stylesheet" href="../css/layout_2021-7.css" />
+    <link rel="stylesheet" href="../css/custom.css">
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+<div class="start-overlay" id="start-overlay">
+      <h2 class="start-overlay__title"></h2>
+      <img src="../img/Low_Level_Yellow_Btn_.png" usemap="#diffmap" height="100px" class="levelbutton diff-img">
+          <map name="diffmap">
+            <area
+                          target=""
+                          alt="1"
+                          title="1"
+                          href="#easy"
+                          coords="20,60,40,85"
+                          shape="rect"
+                          class="easy-diff-game"
+                        />
+                        <area
+                          target=""
+                          alt="2"
+                          title="2"
+                          href="#mid"
+                          coords="51,45,74,89"
+                          shape="rect"
+                          class="mid-diff-game"
+                        />
+                        <area
+                          target=""
+                          alt="3"
+                          title="3"
+                          href="#max"
+                          coords="84,26,105,89"
+                          shape="rect"
+                          class="max-diff-game"
+             />         </map>
+      <button class="button" data-timemode="1"><img src="../img/Startgamebtn_.png" alt="btn" height="110px" ></button>
+      <img
+      src="../img/standardquizrules.png"
+      alt="btn"
+      height="400px"
+      style="
+        margin-top: 15px;
+        border-radius: 25px;
+        box-shadow: 5px 10px #733381;
+      "
+    />
+    </div>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col">
+          <div class="nameblk1 name1 names">
+            <h1></h1>
+          </div>
+        </div> -->
+        <div class="col">
+          <div class="row">
+            <div class="status" style="padding: 0px">
+              <div class="custom-container">
+                <p class="status__title"></p>
+              <div class="countdown countdown--wide countdown--ended" id="countdown" style="touch-action: pan-x pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: #ff5c33;">
+                <div class="countdown__fill" id="ticker" style="height: 0%;"></div>
+                <div class="countdown__digit" id="seconds"></div>
+                <!--.countdown__buttons-->
+                <!--	.countdown__button +-->
+                <!--	.countdown__button --->
+              </div>
+            </div>
+          </div>
+
+            
+          </div>
+        </div>
+        <div class="col" style="text-align: center">
+           <img src="../img/illama low res grey.gif"  alt="btn" height="110px" />
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="status" id="points">Points:&nbsp;<br><span data-points>0</span></div>
+          </div>
+          </div>
+        <!-- <div class="col">
+          <div class="nameblk1 name2 names">
+            <h1></h1>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="row" style="margin-top: 25px">
+        <div class="nameblk1 qblock top-block">
+          <h1></h1>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 25px; margin-left: 175px">
+        <div class="col">
+          <div class="row">
+            <img src="../img/num1.png" alt="number1" class="numberhands" />
+            <div class="nameblk1 qblock button optionblock" data-answer="a">
+              <h2>a</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <img src="../img/num2.png" alt="number2" class="numberhands" />
+            <div class="nameblk1 qblock button optionblock" data-answer="an">
+              <h2>an</h2>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+         <!-- <div class="row" style="margin-top: 25px">
+        <div class="nameblk1 qblock2"><h1></h1></div>
+      </div> -->
+
+      <div class="row" style="margin-top: 35px">
+        <div class="col">
+          <a href="../" id="homebtn">
+            <img src="../img/homebtn.png" alt="homebtn" height="100px" class="homebutton"/>
+          </a>
+        </div>
+        <div class="col">
+          <div class="rollbtn button custom-button disabled"  id="rollbtn">
+            <a href="javascript:void(0);" id="rollbtn"></a>
+              <img src="../img/Next_btn.png" alt="rollbtn" height="100px" />
+              
+            </a>
+              <!-- </a> -->
+          </div>
+          <div class="button custom-button"  id="restartBtn">
+            <!-- <a href="javascript:void(0);" id="rollbtn"></a> -->
+              <img src="../img/Restartbtn.png" alt="restart" height="100px" />
+              
+            <!-- </a> -->
+          </div>
+        </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+    <script src="https://cdpn.io/cp/internal/boomboom/pen.js?key=pen.js-6efa810b-f4c4-6a26-1959-2ef3bfbadada" crossorigin=""></script>
+
+    <script>
+      var names;
+      var difficulty = "0";
+      var teacherIdx = 0;
+      var courseData = {};
+      var currentList = '';
+      if(!Cookies.get("llama_teacher_idx")){
+        $.post("../js/process.php", {"add_teacher_idx": "1", "course_data": "{}"}).done(function(data){
+          Cookies.set("llama_teacher_idx", data);
+        });
+      }
+      else{
+        teacherIdx = Cookies.get("llama_teacher_idx");
+        $.post("../js/process.php", {"get_course_data": "1", "teacher_idx": teacherIdx}).done(function(data){
+          courseData = JSON.parse(data);
+          cookieCurrentList();
+          if(Object.keys(courseData).length && currentList == ''){
+            names = Object.keys(courseData[Object.keys(courseData)[0]]);
+          }
+          else if(currentList != ''){
+            names = Object.keys(courseData[currentList]);
+          }
+          $(".rollbtn").click();
+        });
+      }
+
+      var name1, name2;
+      function getname() {
+        if(names){
+          var num = Math.floor(Math.random() * names.length);
+          name1 = names[num];
+  
+          name2 = name1;
+          while (name2 == name1) {
+            num = Math.floor(Math.random() * names.length);
+            name2 = names[num];
+          }
+        }
+      }
+
+      $(".namesbtn").click(function () {
+        $(".name1 h1").text(name1);
+        $(".name2 h1").text(name2);
+      });
+
+      var thiskey;
+      var options_easy = {
+        "There is __ car.": "a",
+        "There is ___ car.": "a",
+        "There is ___ house.": "a",
+        "There is ___ truck.": "a",
+        "There is ___ baby.": "a",
+        "There is ___ wheel.": "a",
+        "There is ___ umbrella.": "an",
+        "There is ___ apple.": "an",
+        "There is ___ llama.": "a",
+        "There is ___ pen.": "a",
+        "There is ___ cup.": "a",
+        "There is ___ spoon.": "a",
+        "There is ___ lion.": "a",
+        "There is ___ cloud.": "a",
+        "There is ___ aunty.": "an",
+        "There is ___ ant.": "an",
+        "There is ___ grape.": "a",
+        "There is ___ drink.": "a",
+        "There is ___ doctor.": "a",
+        "There is ___ fireman.": "a",
+        "There is ___ question.": "a",
+        "There is ___ superhero.": "a",
+        "There is ___ elbow.": "an",
+        "There is ___ eye.": "an",
+        "There is ___ finger.": "a",
+        "There is ___ thumb.": "a",
+        "There is ___ cookie.": "a",
+        "There is ___ flower.": "a",
+        "There is ___ shape.": "a",
+        "There is ___ dress.": "a",
+        "There is ___ ox.": "an",
+        "There is ___ eagle.": "an",
+        "There is ___ cat.": "a",
+        "There is ___ island.": "an",
+        "There is ___ egg.": "an",
+        "There is ___ elephant.": "an",
+        "There is ___ ear.": "an",
+        "There is ___ anteater.": "an",
+        "There is ___ orange.": "an",
+        "There is ___ ankle.": "an",
+        "There is ___ idea.": "an",
+        "There is ___ apron.": "an",
+        "There is ___ axe.": "an",
+      }
+      var options_medium = {
+        "There is ___ hour left.": "an",
+        "There is ___ university.": "a",
+        "There is ___ unicorn.": "a",
+        "There is ___ orchestra.": "an",
+        "There is ___ enormous dog.": "an",
+        "There is ___ big elephant.": "a",
+        "There is ___ school bus.": "a",
+        "There is ___ useful book.": "a",
+        "There is ___ exciting movie. ": "an",
+        "There is ___ honest person.": "an",
+        "There is ___ tasty cake.": "a",
+        "There is ___ open box.": "an",
+        "There is ___ amazing singer. ": "an",
+        "There is ___ happy baby.": "a",
+        "There is ___ annoying fly.": "an",
+        "There is ___ ostrich eating.": "an",
+        "There is ___ boy playing.": "a",
+        "There is ___ teacher speaking.": "a",
+        "There is ___ enormous mountain.": "an",
+        "There is ___ unicycle.": "a",
+        "There is ___ piece of cake.": "a",
+        "There is ___ energetic kitten": "an",
+        "There is ___ envious friend.": "an",
+        "There is ___ fantastic helicopter.": "a",
+        "There is ___ silly poem.": "a",
+        "There is ___ ungrateful child.": "a",
+        "There is ___ evil alien. ": "an",
+        "There is ___ evolving dinosaur.": "an",
+        "There is ___ touch of salt": "a",
+        "There is ___ organized student.": "an",
+        "There is ___ amazing play. ": "an",
+        "There is ___ hopeful contestant.": "a",
+        "There is ___ angry policeman.": "an",
+        "There is ___ orange orangutan.": "an",
+        "There is ___ bouncing ball.": "a",
+        "There is ___ tall oak tree.": "a",
+        "There is ___ ice cube.": "an",
+        "There is ___ boiled egg.": "a",
+        "There is ___ ink pen.": "an",
+        "There is ___ old shoe.": "an",
+        "There is ___ character.": "a",
+        "There is ___ illness.": "a",
+        "There is ___ engine.": "an",
+      }
+      var options_hard = {
+        
+        "There is ___ robotic dog.": "a",
+        "There is ___ interesting painting.": "an",
+        "There is ___ empty room.": "an",
+        "There is ___ eight-legged octopus swimming.": "an",
+        "There is ___ spider's web.": "a",
+        "There is ___ owl in the tree.": "an",
+        "There is ___ ugly pair of socks.": "an",
+        "There is ___ quicker way.": "a",
+        "There is ___ funny joke I know.": "a",
+        "There is ___ even bigger spider.": "an",
+        "There is ___ silly llama.": "a",
+        "There is ___ nice pencil case. ": "a",
+        "There is ___ naughty kitten.": "a",
+        "There is ___ even sillier llama.": "an",
+        "There is ___ extra piece of homework.": "an",
+        "There is ___ new timetable.": "a",
+        "There is ___ evil genius.": "an",
+        "There is ___ angry dog.": "an",
+        "There is ___ lost phone somewhere.": "a",
+        "There is ___ answer you should know.": "an",
+        "There is ___ endangered animal": "an",
+        "There is ___ whole apple": "a",
+        "There is ___ itchy mosquito bite": "an",
+        "There is ___ English teacher": "an",
+        "There is ___ horrible pirate with a missing leg.": "a",
+        "There is ___ slimy frog sitting on a rock": "a",
+        "There is ___ extra lesson after school.": "an",
+        "There is ___ shy fly.": "a",
+        "There is ___ confident speaker on stage. ": "a",
+        "There is ___ courageous player on the field.": "a",
+        "There is ___ interesting movie in the cinema.": "an",
+        "There is ___ able writing with creative ideas.": "an",
+        "There is ___ lost pencil case.": "a",
+        "There is ___ American baseball team.": "an",
+        "There is ___ African recipe": "an",
+        "There is ___ useless pair of glasses": "a",
+        "There is ___ honorable king.": "an",
+        "There is ___ useful invention": "a",
+        "There is ___ unique product": "a",
+        "There is ___ universal belief": "a",
+        "There is ___ untied shoelace": "an",
+        "There is ___ universe of stars and galaxies": "a",
+        "There is ___ utility cupboard": "a",
+       "There is ___ university professor": "a",
+
+      };
+
+      let answered = true;
+      let points = 0;
+      let nextQuestionTimeout;
+      $('#restartBtn').hide();
+
+      $(".rollbtn").click(function () {
+         
+        if(difficulty == "0"){
+          options = options_easy;
+        }
+        else if(difficulty == "1"){
+          options = options_medium;
+        }
+        else if(difficulty == "2"){
+          options = options_hard;
+        }
+        if(!answered) return;
+
+        if(nextQuestionTimeout) { 
+          clearTimeout(nextQuestionTimeout);
+          nextQuestionTimeout = null;
+        }
+
+        var keys = Object.keys(options);
+        var num = Math.floor(Math.random() * keys.length);
+        thiskey = keys[num];
+        $(".qblock h1").text(thiskey.substring(thiskey.indexOf("~") + 1));
+        getname();
+        $(".name1 h1").text("");
+        $(".name2 h1").text("");
+        $(".qblock2 h1").text("");
+
+        // reset classes 
+        $('[data-answer]').each((index, element) =>{
+          element.classList.remove('correct');
+          element.classList.remove('wrong');
+        })
+        answered = false;
+        $(".rollbtn").addClass('disabled')
+      });
+
+      
+      $('[data-answer]').click(function() {
+        if(answered || countDownTime == 0) return;
+        answered = true;
+
+        const userAnswer = $(this).data('answer');
+        const correctAnswer = options[thiskey];
+        $(".qblock2 h1").text(userAnswer);
+        
+        if(userAnswer == correctAnswer){
+          $(this).addClass('correct');
+          $('[data-points]').text(++points);
+
+          nextQuestionTimeout = setTimeout(() => {
+            $(".rollbtn").click();
+          }, 1000);
+        } 
+        else {
+          $(this).addClass('wrong');
+          $('[data-points]').text(--points);
+          $('[data-answer]').each(function(index, element) {
+            if(correctAnswer == element.dataset.answer)
+            $(this).addClass('correct');
+          })
+
+          nextQuestionTimeout = setTimeout(() => {
+            $(".rollbtn").click();
+          }, 2000);
+        }
+        
+        $(".rollbtn").removeClass('disabled')
+      })   
+      
+      $(".checkbtn").click(function () {
+        answered = true;
+        $(".qblock2 h1").text(options[thiskey]);
+        $(".rollbtn").removeClass('disabled')
+      });
+      
+      $("#teachbtn").click(function () {
+        $("#clistmodal").modal("show");
+      });
+      
+      let countDownTime, countDownInterval;
+
+      $('[data-timemode]').click(function(){
+        $('#start-overlay').hide();
+        countDownTime = $(this).data('timemode') * 60 + 1;
+
+        countDownInterval = setInterval(() => {
+          $('[data-time]').text(--countDownTime)
+          if(countDownTime == 0){
+            clearInterval(countDownInterval);
+            answered = true;
+            $(".rollbtn").hide();
+            $('#points').addClass('shake');
+            $('#restartBtn').show();
+          }
+        }, 1000) 
+        timer.start();
+
+      })
+      $('#restartBtn').click(() => {
+        location.reload();
+      })
+
+            
+
+  function Timer(duration, element) {
+	var self = this;
+	this.duration = duration;
+	this.element = element;
+	this.running = false;
+	
+	this.els = {
+		ticker: document.getElementById('ticker'),
+		seconds: document.getElementById('seconds'),
+	};
+	
+	// document.getElementById('toggle').addEventListener('click', function() {
+	// 	var cl = 'countdown--wide';
+	// 	if (self.element.classList.contains(cl)) {
+	// 		self.element.classList.remove(cl);
+	// 	} else {
+	// 		self.element.classList.add(cl);
+	// 	}
+	// });
+	
+	var hammerHandler = new Hammer(this.element);
+	hammerHandler.get('pan').set({ direction: Hammer.DIRECTION_VERTICAL });
+	hammerHandler.on('panup pandown', function(ev) {
+		if (!self.running) {
+			if (ev.direction === Hammer.DIRECTION_UP && self.duration < 999000) {
+				self.setDuration(self.duration + 1000);
+			} else if (ev.direction === Hammer.DIRECTION_DOWN && self.duration > 0) {
+				self.setDuration(self.duration - 1000);
+			}
+		}
+	});
+	
+	hammerHandler.on('tap', function() {
+		if (self.running) {
+			self.reset();
+		} else {
+			// self.start();
+		}
+	})
+}
+
+Timer.prototype.start = function() {
+	var self = this;
+	var start = null;
+	this.running = true;
+	var remainingSeconds = this.els.seconds.textContent = this.duration / 1000;
+	
+	function draw(now) {
+		if (!start) start = now;
+		var diff = now - start;
+		var newSeconds = Math.ceil((self.duration - diff)/1000);
+
+		if (diff <= self.duration) {
+			self.els.ticker.style.height = 100 - (diff/self.duration*100) + '%';
+			
+			if (newSeconds != remainingSeconds) {
+				self.els.seconds.textContent = newSeconds;
+				remainingSeconds = newSeconds;
+			}
+			
+			self.frameReq = window.requestAnimationFrame(draw);
+		} else {
+			//self.running = false;
+			self.els.seconds.textContent = "Time up!";
+			self.els.ticker.style.height = '0%';
+			self.element.classList.add('countdown--ended');
+      answered = true;
+      $(".rollbtn").hide();
+      $('#points').addClass('shake');
+      $('#restartBtn').show(); 
+		}
+	};
+	
+	self.frameReq = window.requestAnimationFrame(draw);
+}
+
+Timer.prototype.stop = function() {
+	this.running = false;
+	window.cancelAnimationFrame(this.frameReq);
+	this.els.seconds.textContent = this.duration / 1000;
+	this.els.ticker.style.height = null;
+	this.element.classList.remove('countdown--ended');
+}
+
+Timer.prototype.setDuration = function(duration) {
+	this.duration = duration;
+	this.els.seconds.textContent = this.duration / 1000;
+}
+
+var timer = new Timer(60000, document.getElementById('countdown'));
+timer.start();
+timer.stop();
+
+
+      $(function(){
+        // spin the top questionbar
+        $("#roll-btn").on('click',function () {
+          $('.top-block').addClass('topbar__spin');
+          setTimeout(function(){
+            $('.top-block').removeClass('topbar__spin');
+          },300)
+        });
+
+        // spin the names button
+        $(".namesbtn").on('click',function () {
+          $('.names ').addClass('name__speen');
+          setTimeout(function(){
+            $('.names ').removeClass('name__speen');
+          },300)
+        });
+      })
+    </script>
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

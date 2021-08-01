@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Am / Is / Are  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: _____________________ <br><br>
+            <label for="diffselect">Difficulty: </label>
+            <select class="form-select" aria-label="Default select example" id="diffselect">
+              <option value="0" selected>Level 1</option>
+              <option value="1">Level 2</option>
+              <option value="2">Level 3</option>
+            </select>   
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: am / is / are<br><br>Task: fill the gap<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>singular = is &nbsp; | &nbsp; plural = are
+          &nbsp; | &nbsp; (exception: you = are; I = am)
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: am / is / are</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+       var options_easy = {
+
+"I _____ going to the shop.": "am",
+"It _____ too big to carry.": "is",
+"She _____ in the classroom.": "is",
+"He _____ playing outside.": "is",
+"The cup _____ blue.": "is",
+"The boy _____ having a bad day.": "is",
+"Bethany _____ on her bike.": "is",
+"We _____ together. ": "are",
+"They _____ the loudest group.": "are",
+"The chairs _____ made from wood.": "are",
+"Children _____ pushing and shoving.": "are",
+"My teacher _____ full of energy.": "is",
+"Our teachers _____ eating lunch.": "are",
+"Your parents _____ very caring.": "are",
+"His dad _____ good at drawing.": "is",
+"My mum _____ reading in the kitchen.": "is",
+"The table _____ large.": "is",
+"His eyes _____ bright green.": "are",
+"The people _____ in the airport.": "are",
+"The person _____ holding their phone.": "is",
+"Your friend _____ very nice.": "is",
+"I _____ with my dog.": "am",
+"It _____ the best day ever.": "is",
+"She _____ taller than him.": "is",
+"He _____ studying inside.": "is",
+"The cup _____ full of milk.": "is",
+"The boy _____ busy with his homework.": "is",
+"Ivan _____ afraid of the dark.": "is",
+"We _____ working well as a team.": "are",
+"They _____ talking about the news.": "are",
+"The chairs _____ all over the place.": "are",
+"Children _____ behaving well.": "are",
+"I ________ finding my key. ":"am",
+"I ________ happy today.":"am",
+"I ________ always on time.":"am",
+"I ________ full of joy. ":"am",
+"I ________ a girl.":"am",
+"I ________ seven years old.":"am",
+"I ________ from a large country.":"am",
+"I ________ excited to see the movie.":"am",
+"I ________ interested in fossils.":"am",
+"I ________ the tallest in my class.":"am",
+"I ________ the fastest runner. ":"am",
+"I ________ excited to make friends.":"am",
+"I ________ never too full for cake.":"am",
+"I ________ watching my little brother play. ":"am",
+"I ________ often playing games with my siblings. ":"am",
+};
+
+var options_medium = {
+
+"My teacher _____ marking my work.": "is",
+"Our teachers _____ walking with us.": "are",
+"Your parents _____ waiting for you.": "are",
+"His dad _____ building a time machine.": "is",
+"My mum _____ always excited to see me.": "is",
+"The table _____ in the hallway.": "is",
+"His eyes _____ round and glistening.": "are",
+"The people _____ lining up.": "are",
+"She _____ not looking at you.": "is",
+"Your friend _____ not at your party.": "is",
+"She _____ happiest with her sister.": "is",
+"He _____ caring and kind.": "is",
+"The bag _____ on the table.": "is",
+"The planet _____ orbiting the Sun.": "is",
+"This month, I ________ working on my spellings. ":"am",
+"Tomorrow, I ________ going to play tennis.":"am",
+"Whenever someone is speaking, I ______ always listening.":"am",
+"I _______ the youngest player on the basketball team.":"am",
+"After school, I ________ going out for dinner.":"am",
+"In the mornings, I ____ always organised. ":"am",
+"How ____ I going to make friends at my new school?":"am",
+"The new girl _______ very kind to everyone. ":"is",
+"The answer _________ a mystery to me.":"is",
+"Where _______ the new classroom?":"is",
+"Daniel ________ a good artist. ":"is",
+"The robot _________ fully charged and ready to be used!":"is",
+"When _____ break time?":"is",
+"August _______ the hottest month here. ":"is",
+"In December, she ________  having her birthday party. ":"is",
+"Elephants _______ quite dangerous.":"are",
+"The tests _______ all in the same month.":"are",
+"Schools _______ often open during the day. ":"are",
+"New movies ____ often shown in cinemas. ":"are",
+"Where ______ the children?":"are",
+"How ______ you doing?":"are",
+"What ______ the best shoes to buy?":"are",
+"Cars _____ a great invention.":"are",
+"Llamas _____ similar to camels. ":"are",
+"There ______ many colours in the rainbow. ":"are",
+"Why _______ parents often worried about us?":"are",
+
+};
+
+var options_hard = {
+"Jane and Bob _____ in the garden.": "are",
+"The cat and dog _____ good friends.": "are",
+"Their house _____ enormous. ": "is",
+"His brothers _____ kind to him. ": "are",
+"The fruit _____ in the bowl. ": "is",
+"My sister and I _____ traveling to China.": "are",
+"Everyone ______ at the party. ":"is",
+"Someone ______ speaking to loudly. ":"is",
+"Anyone ____ welcome to the dinner.":"is",
+"Everybody ______ looking forward to the new year. ":"is",
+"Somebody _____ going to bring the boardgames. ":"is",
+"Water ________ good for you. ":"is",
+"Sand ________ all over the car!":"is",
+"Glass _______ delicate. ":"is",
+"Hair ______ a great way to warm your head.":"is",
+"Trousers _____ comfortable to wear. ":"are",
+"Shoes ___ kept in the hall. ":"are",
+"Scissors _______ used for cutting.":"are",
+"Mice _______ living in our basement. ":"are",
+"Chess _______ a great game.":"is",
+"Listening _________ an important skill.":"is",
+"Balance _____ great to prevent injury. ":"is",
+"Studying _______ vital for good grades. ":"is",
+"Reading _________ fun to do when you have spare time. ":"is",
+"My band _______ always practising.":"is",
+"Ben and Jenny ______ trying to find a nice house for themselves. ":"are",
+"Both the teachers and the students ____ paying attention.":"are",
+"The monkey and the panda ____ good friends. ":"are",
+"The men ______ meeting later. ":"are",
+"The women ______ taller than the girls. ":"are",
+"The geese ____ so loud today.":"are",
+"The box of cakes ________ on the table.":"is",
+"The bag of sweets ____ in my room.":"is",
+"The bars of chocolate _______ melting.":"are",
+"The basket of fruit ____ in the market. ":"is",
+"The box of chocolates _____ being shared by everyone.":"is",
+"The pot of pens ____ for the children. ":"is",
+"The packet of popcorn _____ still hot. ":"is",
+};
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

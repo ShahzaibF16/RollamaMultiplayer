@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Types Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>
+            Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th> 
+          
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: word types<br><br>Task: choose the right word type<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: commonly confused words</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+        var options_easy = {
+          "I don't want to ____ my points. (lose / loose)": "lose",
+"The llama was ________ after walking up the mountain. (tired / tiring / tires)" :"tired",
+"My brother is ___________ me with all his moaning. (tired / tiring / tires)" :"tiring",
+"My swimming lesson always ___________ me out. (tired / tiring / tires)" :"tires",
+"The _________ thing about it is it could happen again. (worried / worrying / worries)" :"worrying",
+"I might be ________ if I am out at night. (worried / worrying / worries)" :"worried",
+"I have a lot of ________ about starting at a new school. (worried / worrying / worries)" :"worries",
+"The house is incredibly _________. (scared / scary / scare)" :"scary",
+"This snake is making me ________. (scared / scary / scare)" :"scared",
+"I like to ________ my brother with ghost stories. (scared / scary / scare)" :"scare",
+"Animals ______ from one another in many ways.  (differ / difference / different)" :"differ",
+"The _____ between a panda and polar bear is obvious.  (differ / difference / different)" :"difference",
+"This movie is very _________ from the one I saw last week.  (differ / difference / different)" :"different",
+"The boy looked _________ at his fallen lolly pop.  (sadly / sadness / sad)" :"sadly",
+"The news caused a lot of _________ for the family.  (sadly / sadness / sad)" :"sadness",
+"The music is very _________.  (sadly / sadness / sad)" :"sad",
+"I _________ waved to my friend.  (happily / happiness / happy)" :"happily",
+"Sunshine give me _________.  (happily / happiness / happy)" :"happiness",
+"The movie has a very _________ ending.  (happily / happiness / happy)" :"happy",
+"Some kinds of plants need a lot of _________.  (care / careful / carefully)" :"care",
+"You should be _________ near the road.  (care / careful / carefully)" :"careful",
+"She _________ stroked the mouse.  (care / careful / carefully)" :"carefully",
+"This school puts _________ on following the rules.  (importance / important / importantly)" :"importance",
+"It is very _________ to read instructions carefully.  (importance / important / importantly)" :"important",
+" _________, we should work together fairly.  (importance / important / importantly)" :"importantly",
+"I have a _______ for cake today.  (hunger / hungry / hungrily)" :"hunger",
+"I am _________ because I didn’t have breakfast.  (hunger / hungry / hungrily)" :"hungry",
+"The dog stared _________ at the meat.  (hunger / hungry / hungrily)" :"hungrily",
+"I would like to _________ every competition I enter..  (win / won / winning)" :"win",
+"Here is the trophy I _________.  (win / won / winning)" :"won",
+"_________ can make you feel proud of your achievement.  (win / won / winning)" :"winning",
+"If I _________, I have to leave the competition.  (lose / lost / losing)" :"lose",
+"I _________ my homework!  (lose / lost / losing)" :"lost",
+"_________ the game might make you sad.  (lose / lost / losing)" :"losing",
+"I have _________ my own robot!  (built / building / builder)" :"built",
+"The _________ is tall and has a lot of wondows.  (built / building / builder)" :"building",
+"The _________ is working with the bricks.  (built / building / builder)" :"builder",
+"We _________ all the time.  (breathe / breath / breathing)" :"breathe",
+"I can see my _________on the window.  (breathe / breath / breathing)" :"breath",
+"She could hear his _________ as he slept.  (breathe / breath / breathing)" :"breathing",
+"The _________ is in the bedroom.  (child / children / childish)" :"child",
+" _________ arrive to school at 8am..  (child / children / childish)" :"children",
+"The _________ game caused a lot of arguments.  (child / children / childish)" :"childish",
+"This room is too _________ for me.  (hot / heat / hotly)" :"hot",
+"You might burn yourself on the _________ for this pan.  (hot / heat / hotly)" :"heat",
+"The fire glowed _________ in the night.  (hot / heat / hotly)" :"hotly",
+"I am sad my cat is _________.  (dead / died / death)" :"dead",
+"My poor cat _________ yesterday.  (dead / died / death)" :"died",
+"The _________ of a pet can be difficult to handle.  (dead / died / death)" :"death",
+"I like to be _________ at weekends.  (active / activity / actor)" :"active",
+"The _________ this morning was quite difficult.  (active / activity / actor)" :"activity",
+"This _________ on stage is so entertaining.  (active / activity / actor)" :"actor",
+"I can _________ my name neatly.  (write / writing / written)" :"write",
+"The _________ in this book is very beautiful.  (write / writing / written)" :"writing",
+"I prefer to receive letters _________ by hand.  (write / writing / written)" :"written",
+"This city is really _________.  (safe / save / safety)" :"safe",
+"I want to _________ enough money for a new bike.  (safe / save / safety)" :"save",
+"You should take care of your _________ when on a skateboard.  (safe / save / safety)" :"safety",
+};
+var options_medium = {
+"The movie is very _________.  (bored / boring / boredom)" :"boring",
+"This journey is making me ________. (bored / boring / boredom)" :"bored",
+"The ________ from this task is really getting to me. (bored / boring / boredom)" :"boredom",
+"I should learn to control my_________.  (angry / anger / angered)" :"anger",
+"This wait time is making me ________ (angry / anger / angered)" :"angry",
+"The cat _______ the dog.  (angry / anger / angered)" :"angered",
+"I enjoy taking part in the _________.  (compete / competition / competitor)" :"competition",
+"When I ________, it makes me nervous. (compete / competition / competitor)" :"compete",
+"Being a ________ is really exciting. (compete / competition / competitor)" :"competitor",
+"There is a lot of _________surrounding the new movie.  (excite / excitable / excitement)" :"excitement",
+"My new kitten is so _________. (excite / excitable / excitement)" :"excitable",
+"I like to ________ my sister with presents when I visit. (excite / excitable / excitement)" :"excite",
+"This is a very _________ stamp.  (collect / collection / collectable)" :"collectable",
+"Your rock ________ is so interesting. (collect / collection / collectable)" :"collection",
+"He likes to _______ magnets when he travels. (collect / collection / collectable)" :"collect",
+" The girl shouldn’t _______ the monkey with food.  (tempt / tempting / temptation)" :"tempt",
+"The desserts in this restaurant are so ________. (tempt / tempting / temptation)" :"tempting",
+"It is difficult to always say no to __________. (tempt / tempting / temptation)" :"temptation",
+"This bed is so uncomfortable that it feels like it is _________ me.  (injure / injury / injuring)" :"injuring",
+"It is common to ________ your boy when playing football. (injure / injury / injuring)" :"injure",
+"I can help with that ________. (injure / injury / injuring)" :"injury",
+"The lesson is very _________.  (interested / interesting / interests)" :"interesting",
+"I am ________ in learning about history. (interested / interesting / interests)" :"interested",
+"My son has many ___________. (interested / interesting / interests)" :"interests",
+"Your behaviour is very _________. (disappointed / disappointing / disappointment)" :"disappointing",
+"The teacher was ________ when he arrived late. (disappointed / disappointing / disapointment)" :"disappointed",
+"It was a __________ to see our train was cancelled. (disappointed / disappointing / disapointment)" :"disappointment",
+"The adjectives can be quite _________. (confused / confusing / confusion)" :"confusing",
+"The cat was ________ with the new toy. (confused / confusing / confusion)" :"confused",
+"The poor instructions caused a lot of __________. (confused / confusing / confusion)" :"confusion",
+"The _________ view from the top of the mountain was worth it. (amazed / amazing / amaze)" :"amazing",
+"The children were ________ with the puppet show. (amazed / amazing / amaze)" :"amazed",
+"The circus performers ___________ every time I go. (amazed / amazing / amaze)" :"amaze",
+"The _________ noise disturbed my concentration. (distracted / distracting / distraction)" :"distracting",
+"The deer was ________ by the noise. (distracted / distracting / distraction)" :"distracted",
+"I crashed my car because there was a __________ while I was driving. (distracted / distracting / distraction)" :"distraction",
+"The _________ thing about it is who did it. (shocked / shocking / shock)" :"shocking",
+"I am ________ with the result. (shocked / shocking / shock)" :"shocked",
+"She never recovered from the ________ of the news. (shocked / shocking / shock)" :"shocked",
+"The baby was ________ in the new room. (frightened / frightening / frighteningly)" :"frightened",
+"This horror show is incredibly _________. (frightened / frightening / frighteningly)" :"frightening",
+"The monster approached ___________. (frightened / frightening / frighteningly)" :"frighteningly",
+"The _________ music calmed me. (pleased / pleasing / please)" :"pleasing",
+"Everyone is ________ now the holidays have begun. (pleased / pleasing / please)" :"pleased",
+"I try my best to _______ my parents. (pleased / pleasing / please)" :"please",
+"His cheeks went red because he was _______. (embarrassed / embarrassing / embarrassment)" :"embarrassed",
+"Sometimes tripping up can be __________. (embarrassed / embarrassing / embarrassment)" :"embarrassing",
+"There’s no need to think to much about the __________. (embarrassed / embarrassing / embarrassment)" :"embarrassment",
+"The family felt ________ when they saw the new house. (delighted / delightful / delight)" :"delighted",
+"I have many _________ friends. (delighted / delightful / delight)" :"delightful",
+"The audience cheered with _______ when the runner reached the finish line. (delighted / delightful / delight)" :"delight",
+"My parents were ________ at the airport. (stressed / stressful / stress)" :"stressed",
+"This test is always _________. (stressed / stressful / stress)" :"stressful",
+"It can cause a lot of _______ when you move schools. (stressed / stressful / stress)" :"stressful",
+"This food is _________. (revolted / revolting / revolts)" :"revolting",
+"James felt ________ by the food. (revolted / revolting / revolts)" :"revolted",
+"A hair in my soup _______ me. (revolted / revolting / revolts)" :"revolts",
+"Hannah felt ________ by Daniel. (ridiculed / ridiculous / ridicule)" :"ridiculed",
+"The _________ clown made everyone laugh. (ridiculed / ridiculous / ridicule)" :"ridiculous",
+"It isn’t nice to _______ others. (ridiculed / ridiculous / ridicule)" :"ridicule",
+"The _________ tiger hid in the grass. (threatened / threatening / threat)" :"threatening",
+"The ________ referee refused to change her decision.  (threatened / threatening / threat)" :"threatened",
+"The _______ of global warming should inspire us to recycle more.  (threatened / threatening / threat)" :"threatened",
+"The boys are ________ because they have been in a classroom all day.  (energetic / energising / energy)" :"energetic",
+"The speech from my coach was very ________ before the game.  (energetic / energising / energy)" :"energising",
+"You need a lot of ________ to play volleyball.  (energetic / energising / energy)" :"energy",
+"The speaker was so _________ that I now know more about my goals. (motivated / motivating / motivation)" :"motivating",
+"The dog was ________ by the rewards. (motivated / motivating / motivation)" :"motivated",
+"Learning a language requires a lot of ___________. (motivated / motivating / motivation)" :"motivation",
+"The hiker was ________ after walking up the mountain. (exhausted / exhausting / exhaust)" :"exhausted",
+"My sister is ___________ because she always wants to play. (exhausted / exhausting / exhaust)" :"exhausting",
+"I __________ my dog on his walks so he won’t bark at visitors. (exhausted / exhausting / exhaust)" :"exhausting",
+"The _________ announcement surprised everyone. (astonished / astonishing / astonishment)" :"astonishing",
+"Andy was _______ when he got his birthday present. (astonished / astonishing / astonishment)" :"astonished",
+"She looked with ___________ as the girl won the race. (astonished / astonishing / astonishment)" :"astonishment",
+};
+var options_hard = {
+"I am _________ by the stars and planets.  (fascinated / fascinate / fascination)" :"fascinated",
+"She has a huge _________ with inventing and designing new things. (fascinated / fascinate / fascination)" :"fascination",
+"Dinosaurs often _________ children . (fascinated / fascinate / fascination)" :"fascinate",
+"You need to _________ your views in a debate.  (defend / defence / defensive)" :"defend",
+"Lawyers build a _________ for their clients.  (defend / defence / defensive)" :"defence",
+"People may be _________ if you question them about their behaviour.  (defend / defence / defensive)" :"defensive",
+"As the children grow up, they become more _______.  (independent / independence / independently)" :"independent",
+"You should encourage _________ from a young age.  (independent / independence / independently)" :"independence",
+"She got ready for school _________.  (independent / independence / independently)" :"independently",
+"I enjoy the _________ of my art more than the final piece.  (creation / creative / creativity)" :"creation",
+"My _________ friend made me this ornament.  (creation / creative / creativity)" :"creative",
+"_________ should be nurtured in school.  (creation / creative / creativity)" :"creativity",
+"I like to _________ puzzles in my spare time.  (solve / solution / solvable)" :"solve",
+"The _________ to the Rubik’s cube can be practised.  (solve / solution / solvable)" :"solution",
+"These maths problems are really _________ so I am finding it too easy.  (solve / solution / solvable)" :"solvable",
+"There is a high _________ it will rain tomorrow.  (probability / probable / probably)" :"probability",
+"The _________ reason this hasn’t worked is its design.  (probability / probable / probably)" :"probable",
+"You _________ want to know what I got you for your birthday.  (probability / probable / probably)" :"probably",
+"I want to _________ with different options before I choose one.  (experiment / experimental / experimentally)" :"experiment",
+"The music is very _________ with many different instruments.  (experiment / experimental / experimentally)" :"experimental",
+"The child mixed their paint __________.  (experiment / experimental / experimentally)" :"experimentally",
+"Some people think all animals should be _________.  (equal / equally / equality)" :"equal",
+"Both ideas are _________ good.  (equal / equally / equality)" :"equally",
+" _________ among races is a great goal for mankind.  (equal / equally / equality)" :"equality",
+"This kid _________ in everything she does.  (succeeds / successes / successful)" :"succeeds",
+"Focus on your ________ to keep you motivated.  (succeeds / successes / successful)" :"successes",
+"My dad is a _________ sales person.  (succeeds / successes / successful)" :"successful",
+"I might be an _________ to my phone.  (addict / addictions / addictive)" :"addict",
+"Some sugary foods are particularly _________.  (addict / addictions / addictive)" :"addictive",
+"People with _________ sometimes make poor decisions.  (addict / addictions / addictive)" :"addictions",
+"The _________ reason for your pain is unknown to me.  (medical / medicine / medic)" :"medical",
+"Try to take your _________ when it tells you to on the box.  (medical / medicine / medic)" :"medicine",
+"The _________ who came to my rescue at the poolside was so professional.  (medical / medicine / medic)" :"medic",
+"I particularly enjoy walking in _________.  (nature / natural / naturally)" :"nature",
+"The _________ landscape in this country is breathtaking.  (nature / natural / naturally)" :"natural",
+"I prefer to get my vitamins _________ so without supplements.  (nature / natural / naturally)" :"naturally",
+"The _________ you gave was not sincere.  (apology / apologise / apologetically)" :"apology",
+"If you know you are wrong, you should _________.  (apology / apologise / apologetically)" :"apologise",
+"The stranger moved from my seat _______ when I got on the train.  (apology / apologise / apologetically)" :"apologetically",
+"He was _________ he had left it on the bus.  (certain / certainly / certainty)" :"certain",
+"I _________ prefer coffee to tea.  (certain / certainly / certainty)" :"certainly",
+"I can say with ________ that you have passed the test.  (certain / certainly / certainty)" :"certainty",
+"Andy felt _______ when he left work at the end of the day. (liberated / liberating / liberation)" :"liberated",
+"Knowing the holidays are coming is quite _______. (liberated / liberating / liberation)" :"liberating",
+"The _______ of the slaves was the right thing to do. (liberated / liberating / liberation)" :"liberation",
+"You should _________ your parents until you are older.  (obey / obedience / obedient)" :"obey",
+" _________ is important when choosing a dog.  (obey / obedience / obedient)" :"obedience",
+" _________ students often get in less trouble.  (obey / obedience / obedient)" :"obedient",
+"The _________ at this airport aren’t very friendly.  (security / securely / secure)" :"security",
+"She closed the lock _________.  (security / securely / secure)" :"securely",
+"I want to _________ my coat to my backpack.  (security / securely / secure)" :"secure",
+"I hope my window is _________.  (clear / clarity / clearly)" :"clear",
+"I will ask for _______ regarding my plane ticket.  (clear / clarity / clearly)" :"clearity",
+"People who speak _________ are easier to understand.  (clear / clarity / clearly)" :"clearly",
+};
+    // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

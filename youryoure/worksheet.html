@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your / You're  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: _____________________ <br><br>
+            <label for="diffselect">Difficulty: </label>
+            <select class="form-select" aria-label="Default select example" id="diffselect">
+              <option value="0" selected>Level 1</option>
+              <option value="1">Level 2</option>
+              <option value="2">Level 3</option>
+            </select>   
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: your / you're<br><br>Task: fill the gap<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>your = belonging to you &nbsp; | &nbsp; you're = you are
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: your / you're</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+ var options_easy = {
+" _____ my hero!": "you're",
+"Wow! ____ the best!": "you're",
+"_____ my best friend.": "you're",
+"___ eating too fast. ": "you're",
+"______ my best friend!": "you're",
+"_____ being too noisy.": "you're",
+"What if ____ too tired?": "you're",
+"____ working really hard.": "you're",
+"I love that _____ confident.": "you're",
+"I can see ____ fun and kind.": "you're",
+"_______ always ready on time.": "you're",
+"______ eating all the cakes! ": "you're",
+"Can you tell me when _____ ready?": "you're",
+"________ painting the spare room.": "you're",
+" ______ always checking in on me. ": "you're",
+"_______ the youngest in the class.": "you're",
+"________ the oldest in your family.": "you're",
+
+"What's ____ name?": "your",
+"____ bag was stolen. ": "your",
+"This is ______ book. ": "your",
+"Is this _______ bag? ": "your",
+"Is this _______ tea? ": "your",
+"Is this _______ mess?": "your",
+" _______ work is best.": "your",
+"Can ____ dog do tricks?": "your",
+"Can I borrow ____ ruler?": "your",
+"Is this_______ drawing? ": "your",
+"How is ____ sister doing?": "your",
+" ________ work is untidy.": "your",
+" _____ anger worries me. ": "your",
+"What's ___ brother's name?": "your",
+"Where's ______ pencil case?": "your",
+"_____ house is pretty big. ": "your",
+"Are these ______blue shoes?": "your",
+
+};
+
+var options_medium = {
+
+"_________ writing about the museum.": "you're",
+"I hope ____ happy with your present.": "you're",
+"When ______ in France, try the cakes.": "you're",
+"What ___ doing is really interesting.": "you're",
+"I love that _______ caring and kind. ": "you're",
+" ______ always teasing everyone else. ": "you're",
+"Do you know when _____ going to arrive?": "you're",
+"______ spilling the water; be careful. ": "you're",
+"I know _____ going to have a lovely day.": "you're",
+"___________ telling a great ghost story.": "you're",
+"I know _______ the tallest in the class. ": "you're",
+"________ going to tell them the bad news.": "you're",
+" _______the girl who is new to the school.": "you're",
+"__________ the main actor in the new play.": "you're",
+"_____ full of great ideas for our project. ": "you're",
+"I think ______ making lots of good friends.": "you're",
+"The teacher wants to know if _______ talking.": "you're",
+"_____ the most important player on the team. ": "you're",
+"I know _______ quick at calculations. ": "you're",
+"Do you know when ________ going to tell them?": "you're",
+"I think _______nearly at the front of the line.": "you're",
+"I know __________ the main actor in the new play.": "you're",
+"_____ full of great ideas when we collaborate. ": "you're",
+"I think ______ doing really well.": "you're",
+"The teacher wants to know if _______ coming on the trip.": "you're",
+"We think _____ the most important player on the team. ": "you're",
+"_____ work is really great!": "your",
+"Is this _________ clothing?": "your",
+"Put _____ coat on the chair.": "your",
+"When do you do ___ homework?": "your",
+" ______ cooking is tastiest.": "your",
+" I am visiting ______ house. ": "your",
+" ______ ball is on the field. ": "your",
+"What's _____ favourite lesson?": "your",
+"_____ hair is very neat today.": "your",
+"______ uniform is really cool.": "your",
+"You love ___ mother very much.": "your",
+"What's _____ idea for this task?": "your",
+" ______ writing is most creative.": "your",
+" ______ drawing is most accurate.": "your",
+"______ lunch is left on the table.": "your",
+"_________ job is to protect people.": "your",
+"Does ______ bag have pockets inside?": "your",
+"Do ____ shoes have laces or buckles?": "your",
+"I think _____ brother is very funny.": "your",
+"I wish I had ____ basketball skills.": "your",
+"Is this _______ painting hung here? ": "your",
+"It is_______ cooking which I prefer.": "your",
+"Does ______ family all live together?": "your",
+" ______ hat has been left on the bus.": "your",
+" Where's ______ pride with this work?": "your",
+"What is the name of _______ principal?": "your",
+
+};
+var options_hard = {
+
+
+  "I know _______ quick at calculations. ": "you're",
+"Do you know when ________ going to tell them?": "you're",
+"I think _______nearly at the front of the line.": "you're",
+"I know __________ the main actor in the new play.": "you're",
+"_____ full of great ideas when we collaborate. ": "you're",
+"I think ______ doing really well.": "you're",
+"The teacher wants to know if _______ coming on the trip.": "you're",
+"We think _____ the most important player on the team. ": "you're",
+"When ______ working, take plenty of breaks too.": "you're",
+"If ____ looking for a nice coat, go to Skippers.": "you're",
+"If ____ scared, you can always stop and try later.": "you're",
+"_______ exciting me with the great ideas you have.": "you're",
+"____ talking too much when the teacher is talking. ": "you're",
+"I wonder who ______ the new teacher is going to be. ": "you're",
+"____ going to get the present and I will get the cake.": "you're",
+"The student ______ thinking about needs to prove herself.": "you're",
+" I can't wait to find out if _____ going to win the trophy.": "you're",
+"______ allowed to have dessert if you finish your vegetables. ": "you're",
+"The principal, who _______ bound to know, is wearing a blue suit. ": "you're",
+"The teacher will ask questions if ______ not paying attention. ": "you're",
+"The teacher checks if ________ listening throughout the lesson. ": "you're",
+"My parents would like to know whether _______ my friend at school.": "you're",
+"________ often playing with your dog instead of listening to me. ": "you're",
+"I believe _________ the unfortunate individual who left their passport at home.": "you're",
+
+"Could you give me some of ____ grapes?": "your",
+"________ happiness is most important? ": "your",
+"________ baking is really successful. ": "your",
+"_____ birthday party will be so much fun!": "your",
+"Are these _________ drawings in my book? ": "your",
+"Do you know when _____ friend will arrive?": "your",
+"It doesn't matter if this is ________ pen.": "your",
+" ____ hobbies are interesting and diverse.": "your",
+"I think ________ pet is the most interesting.": "your",
+"______ singing sounds beautiful and powerful.": "your",
+" ______ house has lovely pictures on the wall.": "your",
+"It is great that ______ interests are like mine.": "your",
+" I hope it is not______ feelings which are hurt.": "your",
+" I can't wait to find out if this is_____ trophy.": "your",
+"The child wants to ask whether this is _____ dog. ": "your",
+"_________ interesting speech really grabbed my attention.": "your",
+"It is ________ responsibility is it to clean up the kitchen": "your",
+"I'd like to know if ________ training had the best results. ": "your",
+"The director will only hire you if______ singing is in tune.": "your",
+"Use this as _______ classroom while I am out for lunch.": "your",
+"The school wants to be sure _____ parents are supportive at home.": "your",
+"How can we know if this is ______ wallet if it doesn't have a name? ": "your",
+"Businesses should research _______ tastes before advertising to you.": "your",
+"You'll get a good report if ______ attitude to learning is positive. ": "your",
+"The coach only works with you if _______ goal is to become a professional.": "your",
+"I'd like to help you with _______ exciting project.": "your", 
+
+};
+ // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

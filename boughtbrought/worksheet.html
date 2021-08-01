@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bought / Brought  Worksheet - Rollama</title>
+   <link
+  rel="icon"
+  href="../img/Baby_Logo.png">
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>
+            Name: _____________________ 
+            <br><br>
+            <label for="diffselect">Difficulty: </label>
+              <select class="form-select" aria-label="Default select example" id="diffselect">
+                <option value="0" selected>Level 1</option>
+                <option value="1">Level 2</option>
+                <option value="2">Level 3</option>
+              </select>   
+          </th> 
+          
+          </th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+<th>Focus: bought / brought<br><br>Task: fill the gap<br>
+
+        
+        </th>
+                <th>
+          Teacher Tip: <br><br>bought = past tense of buy &nbsp; | &nbsp; brought = past tense of bring
+          
+        </th>
+
+        <th style="font-size: xx-large;">✏ <br></th>
+      </thead>
+
+      <tbody class="printbody"></tbody>
+
+
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: bought / brought</th>
+          <th>
+            <img
+              src="../img/Newrollamalogo.png"
+              alt="banner"
+              height="80px"
+            />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+   var options_easy = {
+        "I _____ some apples at the shop.": "bought",
+        "Have you ever _____ the wrong type of milk?": "bought",
+        "We _____ our TV two years ago.": "bought",
+        "My parents _____ a new house.": "bought",
+        "Have you _____ yourself a new hat?": "bought",
+        "I _____ a cake to the party.": "brought",
+        "Have you _____ your swimming bag?": "brought",
+        "He _____ his dog to the park.": "brought",
+        "The haunted book ______ bad luck to anyone who read it.": "brought",
+        "She _____ a positive outlook to every situation. ": "brought",
+        "I _______ a tent for my camping trip. ": "brought",
+        "The child _______ all their equipment to school. ": "brought",
+        "He ______ everything he needed to his swimming lesson ": "brought",
+        "The pirate _____ the crew to the deck of his boat.": "brought",
+        "The children ______ their water bottles outside for break time.":
+          "brought",
+        "The holiday _____ joy to the family. ": "brought",
+        "James ______ his pet to school!": "brought",
+        "Hannah _____ the sports equipment to the field for the teacher ":
+          "brought",
+        " The dogs _______ mud into the house after their walk!": "brought",
+        "I was able to take notes because I _______ a pen and paper with me.":
+          "brought",
+        "She _____ all the dumplings until there weren't any more! ": "bought",
+        "He _____ everybody ice creams as a treat. ": "bought",
+        "My mother ______ me some shoes for school. ": "bought",
+        "The child _____ a new pen with their own pocket money. ": "bought",
+        "When it started raining during my walk, I quicky ____ an umbrella. ":
+          "bought",
+        "When my bag broke, I quicky ____ a new one. ": "bought",
+        "When my pen ran out of ink, I ____ another one. ": "bought",
+        "He ______ some dog food at the supermarket. ": "bought",
+        "I _____ some tickets online. ": "bought",
+        " The people _______ all the pizza so now there isn't any more! ":
+          "bought",
+        "Mrs. Brown _______ herself a new hat for the summer. ": "bought",
+        " He _____ the latest phone soon after it went on sale. ": "bought",
+        " The dog _____ back the ball after I threw it. ": "brought",
+        " You should have ____ your library book to your English class. ":
+          "brought",
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if(diff){
+           if(diff == "0"){
+            options = options_easy;
+          }
+          else if(diff == "1"){
+            options = options_medium;
+          }
+          else if(diff == "2"){
+            options = options_hard;
+          }
+          
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+        <script src="../js/worksheet.js"></script>
+
+  </body>
+</html>

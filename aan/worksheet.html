@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A / An Worksheet - Rollama</title>
+    <link rel="icon" href="../img/Baby_Logo.png" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/printsheet_2021-6-20.css" />
+  </head>
+  <body>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Name: __________________________<br><br>          
+            <label for="diffselect">Difficulty: </label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              id="diffselect"
+            >
+              <option value="0" selected>Level 1</option>
+              <option value="1">Level 2</option>
+              <option value="2">Level 3</option>
+            </select>
+  </th>
+          <th>
+            <img src="../img/Newrollamalogo.png" alt="banner" height="80px" />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+        <th>
+          Focus: a / an<br><br>Task: fill the gap with 'a' or 'an'
+        
+          <br />
+        </th>
+        <th>
+          Teacher Tip:<br /><br />
+          use 'an' before a vowel *sound* (not just vowel letters)
+        </th>
+        <th style="font-size: xx-large">✏ <br /></th>
+      </thead>
+
+      <tbody class="printbody">
+        <tr></tr>
+      </tbody>
+      <tbody style="background-color: rgb(248, 248, 248)">
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <b>Circle how confident you feel about this task:</b>
+            <table style="margin: auto">
+              <tr style="vertical-align: top">
+                <td width="20%">1 <br />Not confident <br />😕</td>
+                <td width="20%">2</td>
+                <td width="20%">3<br /><br />So-so <br />😐</td>
+                <td width="20%">4</td>
+                <td width="20%">
+                  5<br />Very confident <br />
+                  🙂
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align: center; vertical-align: top">
+            <b
+              >Score: <br /><br /><br />
+              __________</b
+            ><br />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagebreak"></div>
+    <table id="printview">
+      <thead>
+        <tr>
+          <th>Focus: a / an</th>
+          <th>
+            <img src="../img/Newrollamalogo.png" alt="banner" height="80px" />
+          </th>
+          <th>
+            <img src="../img/New_Baby_Logo.png" alt="logo" height="80px" />
+          </th>
+        </tr>
+      </thead>
+      <tbody class="printbody printbody2">
+        <tr></tr>
+      </tbody>
+    </table>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Needed for diffculty code to work -->
+    <script src=../js/js.cookie.min.js></script>
+
+    <script>
+   var options_easy = {
+        "There is __ car.": "a",
+        "There is ___ car.": "a",
+        "There is ___ house.": "a",
+        "There is ___ truck.": "a",
+        "There is ___ baby.": "a",
+        "There is ___ wheel.": "a",
+        "There is ___ umbrella.": "an",
+        "There is ___ apple.": "an",
+        "There is ___ llama.": "a",
+        "There is ___ pen.": "a",
+        "There is ___ cup.": "a",
+        "There is ___ spoon.": "a",
+        "There is ___ lion.": "a",
+        "There is ___ cloud.": "a",
+        "There is ___ aunty.": "an",
+        "There is ___ ant.": "an",
+        "There is ___ grape.": "a",
+        "There is ___ drink.": "a",
+        "There is ___ doctor.": "a",
+        "There is ___ fireman.": "a",
+        "There is ___ question.": "a",
+        "There is ___ superhero.": "a",
+        "There is ___ elbow.": "an",
+        "There is ___ eye.": "an",
+        "There is ___ finger.": "a",
+        "There is ___ thumb.": "a",
+        "There is ___ cookie.": "a",
+        "There is ___ flower.": "a",
+        "There is ___ shape.": "a",
+        "There is ___ dress.": "a",
+        "There is ___ ox.": "an",
+        "There is ___ eagle.": "an",
+        "There is ___ cat.": "a",
+        "There is ___ island.": "an",
+        "There is ___ egg.": "an",
+        "There is ___ elephant.": "an",
+        "There is ___ ear.": "an",
+        "There is ___ anteater.": "an",
+        "There is ___ orange.": "an",
+        "There is ___ ankle.": "an",
+        "There is ___ idea.": "an",
+        "There is ___ apron.": "an",
+        "There is ___ axe.": "an",
+   }
+   var options_medium = {
+        "There is ___ hour left.": "an",
+        "There is ___ university.": "a",
+        "There is ___ unicorn.": "a",
+        "There is ___ orchestra.": "an",
+        "There is ___ enormous dog.": "an",
+        "There is ___ big elephant.": "a",
+        "There is ___ school bus.": "a",
+        "There is ___ useful book.": "a",
+        "There is ___ exciting movie. ": "an",
+        "There is ___ honest person.": "an",
+        "There is ___ tasty cake.": "a",
+        "There is ___ open box.": "an",
+        "There is ___ amazing singer. ": "an",
+        "There is ___ happy baby.": "a",
+        "There is ___ annoying fly.": "an",
+        "There is ___ ostrich eating.": "an",
+        "There is ___ boy playing.": "a",
+        "There is ___ teacher speaking.": "a",
+        "There is ___ enormous mountain.": "an",
+        "There is ___ unicycle.": "a",
+        "There is ___ piece of cake.": "a",
+        "There is ___ energetic kitten": "an",
+        "There is ___ envious friend.": "an",
+        "There is ___ fantastic helicopter.": "a",
+        "There is ___ silly poem.": "a",
+        "There is ___ ungrateful child.": "a",
+        "There is ___ evil alien. ": "an",
+        "There is ___ evolving dinosaur.": "an",
+        "There is ___ touch of salt": "a",
+        "There is ___ organized student.": "an",
+        "There is ___ amazing play. ": "an",
+        "There is ___ hopeful contestant.": "a",
+        "There is ___ angry policeman.": "an",
+        "There is ___ orange orangutan.": "an",
+        "There is ___ bouncing ball.": "a",
+        "There is ___ tall oak tree.": "a",
+        "There is ___ ice cube.": "an",
+        "There is ___ boiled egg.": "a",
+        "There is ___ ink pen.": "an",
+        "There is ___ old shoe.": "an",
+        "There is ___ character.": "a",
+        "There is ___ illness.": "a",
+        "There is ___ engine.": "an",
+        "There is ___ robotic dog.": "a",
+   }
+   var options_hard = {
+        "There is ___ interesting painting.": "an",
+        "There is ___ empty room.": "an",
+        "There is ___ eight-legged octopus swimming.": "an",
+        "There is ___ spider's web.": "a",
+        "There is ___ owl in the tree.": "an",
+        "There is ___ ugly pair of socks.": "an",
+        "There is ___ quicker way.": "a",
+        "There is ___ funny joke I know.": "a",
+        "There is ___ even bigger spider.": "an",
+        "There is ___ silly llama.": "a",
+        "There is ___ nice pencil case. ": "a",
+        "There is ___ naughty kitten.": "a",
+        "There is ___ even sillier llama.": "an",
+        "There is ___ extra piece of homework.": "an",
+        "There is ___ new timetable.": "a",
+        "There is ___ evil genius.": "an",
+        "There is ___ angry dog.": "an",
+        "There is ___ lost phone somewhere.": "a",
+        "There is ___ answer you should know.": "an",
+        "There is ___ endangered animal": "an",
+        "There is ___ whole apple": "a",
+        "There is ___ itchy mosquito bite": "an",
+        "There is ___ English teacher": "an",
+        "There is ___ horrible pirate with a missing leg.": "a",
+        "There is ___ slimy frog sitting on a rock": "a",
+        "There is ___ extra lesson after school.": "an",
+        "There is ___ shy fly.": "a",
+        "There is ___ confident speaker on stage. ": "a",
+        "There is ___ courageous player on the field.": "a",
+        "There is ___ interesting movie in the cinema.": "an",
+        "There is ___ able writing with creative ideas.": "an",
+        "There is ___ lost pencil case.": "a",
+        "There is ___ American baseball team.": "an",
+        "There is ___ African recipe": "an",
+        "There is ___ useless pair of glasses": "a",
+        "There is ___ honorable king.": "an",
+        "There is ___ useful invention": "a",
+        "There is ___ unique product": "a",
+        "There is ___ universal belief": "a",
+        "There is ___ untied shoelace": "an",
+        "There is ___ universe of stars and galaxies": "a",
+        "There is ___ utility cupboard": "a",
+        "There is ___ university professor": "a",
+      };
+
+      // Part of difficulty code
+      var options;
+      // Difficulty code start
+      var diff = Cookies.get("llama_diff");
+      $(document).ready(function () {
+        if (diff) {
+          if (diff == "0") {
+            options = options_easy;
+          } else if (diff == "1") {
+            options = options_medium;
+          } else if (diff == "2") {
+            options = options_hard;
+          }
+        }
+        // Difficulty code end
+        var answers = [];
+        var alreadyDone = [];
+        var keys = Object.keys(options);
+        for (var i = 0; i < 20; i++) {
+          var num = Math.floor(Math.random() * keys.length);
+          while (alreadyDone.includes(num)) {
+            num = Math.floor(Math.random() * keys.length);
+          }
+          alreadyDone.push(num);
+          $(".printbody").append(
+            "<tr><td colspan='2'>" +
+              (i + 1) +
+              ". " +
+              keys[num] +
+              "</td> <td class='answers'> </td>"
+          );
+          answers.push(options[keys[num]]);
+        }
+
+        $(".printbody2 .answers").each(function (i) {
+          $(this).text(answers[i]);
+        });
+      });
+    </script>
+    <script src="../js/worksheet.js"></script>
+  </body>
+</html>
