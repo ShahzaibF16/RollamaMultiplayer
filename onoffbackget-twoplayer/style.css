@@ -15,7 +15,7 @@ body {
     border-radius: 25px;
     height: 90px;
     padding-top: 10px;
-    box-shadow: 5px 10px #733381;
+    box-shadow: 3px 8px #733381;
     padding-right: 15px;
 }
 
@@ -33,7 +33,8 @@ body {
 /* finger option size */
 
 .nameblk1.qblock h2 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+    align-items: center;
 }
 
 /* finger option size */
@@ -43,7 +44,7 @@ body {
 }
 
 .nameblk1 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 /* prompt size */
@@ -477,25 +478,26 @@ body {
 
 #answers {
     margin-top: 10px;
-    margin-left: 95px;
+    margin-left: 135px;
     position: absolute;
+    justify-content: center;
     bottom: 10px;
-    left: 0;
+    left: 0px;
     right: 0;
 }
 
 #answers .optionblock {
-    height: 50px;
-    width: 230px;
-    padding-bottom: 10px;
+    height: 40px;
+    width: 370px;
+    padding-bottom: 14px;
     cursor: pointer;
 }
 
 #questionBlock .qblock {
     width: 100%;
     height: 60px;
-    padding-top: 5px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 19px;
     background-color: #efad56;
 }
 
@@ -594,7 +596,7 @@ body {
     .qblock {
         margin-top: 20px;
     }
-    #questionBlock .qblock{
+    #questionBlock .qblock {
         height: 130px;
     }
 }
