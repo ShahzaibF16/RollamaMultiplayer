@@ -478,17 +478,17 @@ body {
 
 #answers {
     margin-top: 10px;
-    /* margin-left: 60px; */
+    margin-left: 90px;
     position: absolute;
     justify-content: center;
-    bottom: 10px;
-    left: 80px;
+    bottom: 12px;
+    left: 0px;
     right: 0;
 }
 
 #answers .optionblock {
-    height: 30px;
-    width: 220px;
+    height: 33px;
+    width: 250px;
     padding-bottom: 14px;
     cursor: pointer;
 }

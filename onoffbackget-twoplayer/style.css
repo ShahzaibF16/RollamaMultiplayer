@@ -478,10 +478,10 @@ body {
 
 #answers {
     margin-top: 10px;
-    margin-left: 135px;
+    margin-left: 150px;
     position: absolute;
     justify-content: center;
-    bottom: 10px;
+    bottom: 12px;
     left: 0px;
     right: 0;
 }
