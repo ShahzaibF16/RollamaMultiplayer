@@ -21,7 +21,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <!--new css file added-->
     <link rel="stylesheet" href="../css/fa/css/all.css">
-    <link rel="stylesheet" href="../css/layout-31-07.css" />
+    <link rel="stylesheet" href="./layout-31-07.css" />
 </head>
 
 <body>
@@ -159,23 +159,26 @@
                         <p>Timer</p>
                     </div>
                 </div>
-                <div id="questionBlock" class="row" style="margin-top: 10px">
+                <div id="questionBlock" class="row" style="margin-top: 8px">
                     <div class="nameblk1 qblock top-block">
                         <h1></h1>
                     </div>
                 </div>
-                <div id="resultsBar">
-                    <span class="bar">
-                        <p>Player 1</p>
-                    </span>
-                    <span class="bar">
-                        <p>Player 2</p>
-                    </span>
-                    <span class="bar">
-                        <p>Player 3</p>
-                    </span>
+                <div style="background-color: rgba(88, 156, 72, 0.3); height: 170px;
+                padding: 20px 30px 10px 30px; border-radius: 5px;
+                 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                    <div id="resultsBar">
+                        <span class="bar p1">
+                            <p>Player 1</p>
+                        </span>
+                        <span class="bar p2">
+                            <p>Player 2</p>
+                        </span>
+                        <span class="bar p3">
+                            <p>Player 3</p>
+                        </span>
+                    </div>
                 </div>
-
                 <div class="row" id="answers">
                     <div class="col">
                         <div class="row">
@@ -541,7 +544,6 @@
                 document.getElementById("chooseEnd").style.display = "flex";
             }
             document.getElementById("restart").onclick = restartGame;
-
             function endGame() {
                 restartGame();
                 const gameScreen = document.getElementById("gameScreen");
@@ -597,10 +599,13 @@
             function checkScores() {
                 return scores.indexOf(10);
             }
+
             function finishGameAndShowResults(finish = false) {
                 // It can be called if first to ten or when timer finishes
                 if (finish) {
                     clearQuestionTimerManually();
+                    
+                    window.alert("Win");
                     document
                         .querySelectorAll("#answers .optionblock")
                         .forEach((option) => {
@@ -615,7 +620,8 @@
                         allScoresBars[i].style.height = `${currentScore * 10}px`;
                         allScoresBars[i].style.transform = `translateY(${currentScore * 10 * -1
                             }px)`;
-                    } else {
+                    }
+                    else {
                         allScoresBars[i].style.height = `${currentScore * 10 * -1}px`;
                     }
                     allScoresBars[i].querySelector(
@@ -623,6 +629,10 @@
                     ).innerText = `Score: ${currentScore}`;
                 }
             }
+            // showTheWiner
+            //    function showTheWiner(){
+            //     if
+            //    }
             function loadNextQuestionInHTML() {
                 // Check scores before loading next question if firstToTen mode active
                 if (firstToTen) {

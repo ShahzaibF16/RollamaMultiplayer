@@ -478,18 +478,18 @@ body {
 
 #answers {
     margin-top: 10px;
-    margin-left: 190px;
+    margin-left: 150px;
     position: absolute;
     justify-content: center;
-    bottom: 14px;
+    bottom: 12px;
     left: 0px;
     right: 0;
 }
 
 #answers .optionblock {
-    height: 45px;
-    width: 400px;
-    padding-bottom: 15px;
+    height: 40px;
+    width: 370px;
+    padding-bottom: 14px;
     cursor: pointer;
 }
 
@@ -544,7 +544,6 @@ body {
 
 #resultsBar .p2 {
     background-color: #EEC0C6;
-
 }
 
 #resultsBar .bar p {

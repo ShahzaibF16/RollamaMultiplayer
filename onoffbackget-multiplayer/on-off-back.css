@@ -15,7 +15,7 @@ body {
     border-radius: 25px;
     height: 90px;
     padding-top: 10px;
-    box-shadow: 5px 10px #733381;
+    box-shadow: 3px 8px #733381;
     padding-right: 15px;
 }
 
@@ -33,7 +33,8 @@ body {
 /* finger option size */
 
 .nameblk1.qblock h2 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+    align-items: center;
 }
 
 /* finger option size */
@@ -43,7 +44,7 @@ body {
 }
 
 .nameblk1 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 /* prompt size */
@@ -477,17 +478,18 @@ body {
 
 #answers {
     margin-top: 10px;
-    margin-left: 95px;
+    margin-left: 90px;
     position: absolute;
-    bottom: 10px;
-    left: 0;
+    justify-content: center;
+    bottom: 12px;
+    left: 0px;
     right: 0;
 }
 
 #answers .optionblock {
-    height: 50px;
-    width: 230px;
-    padding-bottom: 10px;
+    height: 33px;
+    width: 250px;
+    padding-bottom: 14px;
     cursor: pointer;
 }
 
@@ -495,7 +497,7 @@ body {
     width: 100%;
     height: 60px;
     padding-top: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 19px;
     background-color: #efad56;
 }
 
@@ -530,11 +532,22 @@ body {
 #resultsBar .bar {
     display: block;
     width: 25%;
-    background-color: #efad56;
     position: relative;
     height: 0px;
     transform: translateY(0px);
     transition: all 500ms ease-in-out;
+}
+
+#resultsBar .p1 {
+    background-color: #9CA3DB;
+}
+
+#resultsBar .p2 {
+    background-color: #D0BCD5;
+}
+
+#resultsBar .p3 {
+    background-color: #EEC0C6;
 }
 
 #resultsBar .bar p {
@@ -582,20 +595,21 @@ body {
 
 @media screen and (max-width: 480px) {
     #answers .optionblock {
-        width: 90px;
-        height: auto;
+        width: 100px;
+        height: 30px;
+        margin-left: -20px;
     }
     #answers {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     .nameblk1.qblock h1 {
         font-size: 2rem;
     }
     .qblock {
-        margin-top: 20px;
+        margin-top: 3px;
     }
-    #questionBlock .qblock{
-        height: 130px;
+    #questionBlock .qblock {
+        height: 120px;
     }
 }
 
